@@ -2,33 +2,37 @@
 <textarea style="display: none">
 <div class="center">
 
-## Bell series of $ f $ modulo $ p $
+## Bell series and Dirichlet multiplication
+
+### Power series multiplication
 
 $$
-f_p(x)
-= \sum_{n=0}^{\infty} f(p^n) x^n
-= f(1) + f(p) x + f(p^2) x^2 + f(p^3) x^3 + \dots
+A(x) = \sum_{n=0}^{\infty} a(n) x^n, \quad
+B(x) = \sum_{n=0}^{\infty} b(n) x^n, \quad
+A(x) B(x) = \sum_{n=0}^{\infty} \underbrace{\sum_{k=0}^n a(k) b(n - k)}_{c(n)} x^n.
 $$
 
-### Theorem 2.24: Uniqueness theorem
+### Power series product and Dirichlet product
 
-\begin{align*}
-f(n)
-& = f(p_1^{a_1} p_2^{a_2} \dots p_k^{a_k})
-= f(p_1^{a_1}) f(p_2^{a_2}) \dots f(p_k^{a_k}), \\ \\
-g(n)
-& = g(p_1^{a_1} p_2^{a_2} \dots p_k^{a_k})
-= g(p_1^{a_1}) g(p_2^{a_2}) \dots g(p_k^{a_k}). \\
-\end{align*}
+$$
+(f * g)_p(x) = f_p(x) g_p(x).
+$$
 
-### Example 1: Möbius function
+$$
+f_p(x) = \sum_{n=0}^{\infty} f(p^n) x^n, \quad
+g_p(x) = \sum_{n=0}^{\infty} g(p^n) x^n, \quad
+f_p(x) g_p(x) = \sum_{n=0}^{\infty} \sum_{k=0}^n f(p^k) g(p^{n-k}) x^n.
+$$
 
-\begin{align*}
-\mu_p(x) = \sum_{n=0}^{\infty} \mu(p^n) x^n
-& = \mu(1) + \mu(p) x + \mu(p^2) x^2 + \mu(p^3) x^3 + \dots \\
-& = 1 - x + 0 + 0 + \dots \\
-& = 1 - x.
-\end{align*}
+$$
+h = f * g = \sum_{d \mid n} f(d) g\left( \frac{n}{d} \right).
+$$
 
+$$
+h_p(x)
+= \sum_{n=0}^{\infty} h(p^n) x^n
+= \sum_{n=0}^{\infty} \sum_{d \mid p^n} f(d) g\left( \frac{p^n}{d} \right) x^n
+= \sum_{n=0}^{\infty} \sum_{k=0}^{n} f(p^k) g(p^{n-k}) x^n.
+$$
 </div>
 </textarea>
