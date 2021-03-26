@@ -1,0 +1,29 @@
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+\begin{align*}
+A(x)B(x)
+& = \sum_{n=0}^{\infty} \Bigl( \sum_{k=0}^{n} a(k) b(n - k) \Bigr) x^n \\
+& = \Bigl( a(0) b(0) \Bigr) x^0 +
+    \Bigl( a(0) b(1) + a(1) b(0) \Bigr) x^1 +
+    \Bigl( a(0) b(2) + a(1) b(1) + a(2) b(0) \Bigr) x^2 +
+    \dots \\
+& = 1.
+\end{align*}
+
+---
+
+\begin{align*}
+A(x) & = 1 + ax + (ax)^2 + (ax)^3 + \dots, \\
+B(x) & = 1 - ax.
+\end{align*}
+
+\begin{align*}
+A(x) B(x) & = \Bigl( 1 + ax + (ax)^2 + (ax)^3 + \dots \Bigr) (1 - ax) \\
+          & = \Bigl( 1 + ax + (ax)^2 + (ax)^3 + \dots \Bigr) -
+              \Bigl( (ax) - (ax)^2 - (ax)^3 - \dots \Bigr). \\
+          & = 1.
+\end{align*}
+</div>
+</textarea>

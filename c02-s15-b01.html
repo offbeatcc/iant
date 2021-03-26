@@ -2,25 +2,19 @@
 <textarea style="display: none">
 <div class="center">
     
-# Commutativity of Product of Formal Power Series
+# Product of Formal Power Series
   
-$$
+\begin{align*}
 A(x)B(x)
-= \sum_{n=0}^{\infty} \underbrace{\left\{ \sum_{k=0}^{n} a(k) b(n - k) \right\}}_{c(n)} x^n.
-$$
-
-$$
-B(x)A(x)
-= \sum_{n=0}^{\infty} \underbrace{\left\{ \sum_{k=0}^{n} a(n - k) b(k) \right\}}_{c'(n)} x^n.
-$$
-
-$$
-c(3) = a(0)b(3) + a(1)b(2) + a(2)b(1) + a(3)b(0).
-$$
-
-$$
-c'(3) = a(3)b(0) + a(2)b(1) + a(1)b(2) + a(0)b(3).
-$$
+& = \left( \sum_{n=0}^{\infty} a(n) x^n \right) \left( \sum_{n=0}^{\infty} b(n) x^n \right) \\
+& = \left( a(0) + a(1)x + a(2)x^2 + \dots \right)
+    \left( b(0) + b(1)x + b(2)x^2 + \dots \right) \\
+& = a(0)b(0) +
+    \Bigl( a(0)b(1) + a(1)b(0) \Bigr) x +
+    \Bigl( a(0)b(2) + a(1)b(1) + a(2)b(0) \Bigr) x^2 + \dots \\
+& = \sum_{k=0}^0 a(k)b(n - k) + \sum_{k=0}^1 a(k)b(1 - k) + \sum_{k=0}^2 a(k)b(2 - k) + \dots \\
+& = \sum_{n=0}^{\infty} \sum_{k=0}^n a(k)b(n - k).
+\end{align*}
 
 </div>
 </textarea>
