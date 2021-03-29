@@ -1,0 +1,35 @@
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+$$
+\int uv \, dt = u \int v \, dt - \int u' \left( \int v \, dt \right) \, dt
+$$
+
+---
+
+$$
+\int t f'(t) \, dt = t f(t) - \int f(t) \, dt.
+$$
+
+$$
+
+\int_y^x t f'(t) \, dt = x f(x) - y f(y) - \int_y^x f(t) \, dt.
+
+$$
+
+---
+
+$$
+\int_y^x f(t) \, dt - x f(x) + y f(y)  + \int_y^x t f'(t) \, dt = 0.
+$$
+
+\begin{align*}
+\sum_{y < n \le x} f(n)
+& = -\int_y^x [t] f'(t) \, dt + [x] f(x) - [y] f(y) \\
+& = -\int_y^x [t] f'(t) \, dt + [x] f(x) - [y] f(y) +
+    \underbrace{\left( \int_y^x f(t) \, dt - x f(x) + y f(y)  + \int_y^x t f'(t) \, dt \right)}_{0}.
+\end{align*}
+
+</div>
+</textarea>

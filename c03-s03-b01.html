@@ -1,0 +1,25 @@
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+$$
+0, \quad
+\underbrace{[y]}_{=\,m}, \quad
+y, \quad
+\underbrace{[y] + 1}_{=\,m + 1}, \quad
+\underbrace{[x]}_{=\,k}, \quad
+x
+$$
+
+---
+
+$$
+\int_y^x f(t)\,dt
+= \int_{y}^{[y] + 1} f(t)\,dt
++ \underbrace{\int_{[y] + 1}^{[y] + 2} f(t)\,dt + \dots
++ \int_{[x] - 1}^{[x]} f(t)\,dt}_{=\,\int_{[y] + 1}^{[x]} f(t)\, dt}
++ \int_{[x]}^{x} f(t)\,dt.
+$$
+
+</div>
+</textarea>
