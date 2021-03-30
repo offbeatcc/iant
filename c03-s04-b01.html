@@ -1,0 +1,45 @@
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+$$
+\int_1^{\infty} f(t) \, dt - \int_x^{\infty} f(t) \, dt = \int_1^x f(t) \, dt.
+$$
+
+---
+
+$$
+\int_x^{\infty} \frac{1}{t^2} \, dt
+= \lim_{b \to \infty} \int_x^b \frac{1}{t^2} dt
+= \lim_{b \to \infty} \frac{-1}{t} \Biggr|_x^b
+= \left( \lim_{b \to \infty} \frac{-1}{b} \right) + \frac{1}{x}
+= 0 + \frac{1}{x} = \frac{1}{x}.
+$$
+
+---
+
+$$
+C = \lim_{n \to \infty} \left( 1 + \frac{1}{2} + \frac{1}{3} + \dots + \frac{1}{n} - \log n \right)
+  = \lim_{x \to \infty} \left( \sum_{n \le x} \frac{1}{n} - \log x \right).
+$$
+
+---
+
+$$
+\sum_{n \le x} \frac{1}{n}
+= \log x + \underbrace{1 - \int_1^{\infty} \frac{t - [t]}{t^2} \, dt}_{\text{Is this C?}} + O\left( \frac{1}{x} \right).
+$$
+
+---
+
+$$
+1 - \int_1^{\infty} \frac{t - [t]}{t^2} \, dt + O\left( \frac{1}{x} \right)
+= \sum_{n \le x} \frac{1}{n} - \log x
+$$
+
+$$
+1 - \int_1^{\infty} \frac{t - [t]}{t^2} \, dt
+= \lim_{x \to \infty} \left( \sum_{n \le x} \frac{1}{n} - \log x \right) = C.
+$$
+</div>
+</textarea>
