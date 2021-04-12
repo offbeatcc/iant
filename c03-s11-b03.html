@@ -1,0 +1,45 @@
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+  <div class="center">
+
+# Illustration of Legendre's Identity Proof
+
+\begin{align*}
+\sum_{n \le 10} \Lambda(n) \left[ \frac{10}{n} \right]
+& = \Lambda(1) \left[ \frac{10}{1} \right] +
+\Lambda(2) \left[ \frac{10}{2} \right] +
+\Lambda(3) \left[ \frac{10}{3} \right] +
+\Lambda(4) \left[ \frac{10}{4} \right] +
+\Lambda(5) \left[ \frac{10}{5} \right] +
+\Lambda(6) \left[ \frac{10}{6} \right] +
+\Lambda(7) \left[ \frac{10}{7} \right] +
+\Lambda(8) \left[ \frac{10}{8} \right] +
+\Lambda(9) \left[ \frac{10}{9} \right] +
+\Lambda(10) \left[ \frac{10}{10} \right] \\
+& = \Lambda(2) \left[ \frac{10}{2} \right] +
+\Lambda(3) \left[ \frac{10}{3} \right] +
+\Lambda(4) \left[ \frac{10}{4} \right] +
+\Lambda(5) \left[ \frac{10}{5} \right] +
+\Lambda(7) \left[ \frac{10}{7} \right] +
+\Lambda(8) \left[ \frac{10}{8} \right] +
+\Lambda(9) \left[ \frac{10}{9} \right] \\
+& = \left( \Lambda(2) \left[ \frac{10}{2} \right] +
+\Lambda(4) \left[ \frac{10}{4} \right] +
+\Lambda(8) \left[ \frac{10}{8} \right] \right) +
+\left( \Lambda(3) \left[ \frac{10}{3} \right] +
+\Lambda(9) \left[ \frac{10}{9} \right] \right) +
+\Lambda(5) \left[ \frac{10}{5} \right] +
+\Lambda(7) \left[ \frac{10}{7} \right] \\
+& = (\log{2}) \left( \left[ \frac{10}{2} \right ] + \left[ \frac{10}{4} \right] + \left[ \frac{10}{8} \right] \right) +
+(\log{3}) \left( \left[ \frac{10}{3} \right] + \left[ \frac{10}{9} \right] \right) +
+\log{5} \left[ \frac{10}{5} \right] + \log{7} \left[ \frac{10}{7} \right] \\
+& = \sum_{m=1}^{\infty} \left[ \frac{10}{2^m} \right] \log{2} +
+\sum_{m=1}^{\infty} \left[ \frac{10}{3^m} \right] \log{3} +
+\sum_{m=1}^{\infty} \left[ \frac{10}{5^m} \right] \log{5} +
+\sum_{m=1}^{\infty} \left[ \frac{10}{7^m} \right] \log{7} \\
+& = \sum_{p \le 10} \sum_{m=1}^{\infty} \left[ \frac{x}{p^m} \right] \log{p}.
+\end{align*}
+
+  </section>
+</div>
+</textarea>

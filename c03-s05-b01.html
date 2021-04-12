@@ -1,0 +1,66 @@
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+  <div class="center">
+
+# Summation Rearrangements
+
+$$
+\sum_{n \le x} \sum_{d \mid n} f(d)
+= \sum_{\substack{q, d \\ qd \le x}} f(d)
+= \sum_{d \le x} \sum_{q \le x/d} f(q)
+= \sum_{q \le x} f(q) \left[ \frac{x}{q} \right].
+$$
+
+</div>
+<section>
+  <section class="center">
+
+
+## Illustration of $ \displaystyle \sum_{n \le x} \sum_{d \mid n} f(d) $ with $ x = 6 $
+
+\begin{align*}
+\sum_{n \le 6} \sum_{d \mid n} f(d)
+= & \sum_{d \mid 1} f(d) +
+\sum_{d \mid 2} f(d) +
+\sum_{d \mid 3} f(d) + \\
+& \sum_{d \mid 4} f(d) +
+\sum_{d \mid 5} f(d) +
+\sum_{d \mid 6} f(d).
+\end{align*}
+
+\begin{align*}
+\sum_{d \mid 1} f(d) & = f(1), \\
+\sum_{d \mid 2} f(d) & = f(1) + f(2), \\
+\sum_{d \mid 3} f(d) & = f(1) + f(3), \\
+\sum_{d \mid 4} f(d) & = f(1) + f(2) + f(4), \\
+\sum_{d \mid 5} f(d) & = f(1) + f(5), \\
+\sum_{d \mid 6} f(d) & = f(1) + f(2) + f(3) + f(6).
+\end{align*}
+
+  </section>
+  <section class="center">
+
+## Illustration of $ \displaystyle \sum_{d \le x} \sum_{q \le x/d} f(q) $ with $ x = 6 $
+
+\begin{align*}
+\sum_{d \le 6} \sum_{q \le 6/d} f(q)
+= & \sum_{q \le 6/1} f(q) +
+\sum_{q \le 6/2} f(q) +
+\sum_{q \le 6/3} f(q) + \\
+& \sum_{q \le 6/4} f(q) +
+\sum_{q \le 6/5} f(q) +
+\sum_{q \le 6/6} f(q).
+\end{align*}
+
+\begin{align*}
+\sum_{q \le [6/1]} & = f(1) + f(2) + f(3) + f(4) + f(5) + f(6), \\
+\sum_{q \le [6/2]} & = f(1) + f(2) + f(3), \\
+\sum_{q \le [6/3]} & = f(1) + f(2), \\
+\sum_{q \le [6/4]} & = f(1), \\
+\sum_{q \le [6/5]} & = f(1), \\
+\sum_{q \le [6/6]} & = f(1).
+\end{align*}
+
+  </section>
+</div>
+</textarea>

@@ -1,0 +1,37 @@
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+  <div class="center">
+
+# Partial Sums of Dirichlet Product
+
+$$
+h = f * g,
+\qquad
+H(x) = \sum_{n \le x} h(n),
+\qquad
+F(x) = \sum_{n \le x} f(n),
+\qquad
+G(x) = \sum_{n \le x} g(n).
+$$
+
+$$
+H(x) = \sum_{n \le x} f(n) G\left( \frac{x}{n} \right).
+$$
+
+---
+
+$$
+\sum_{n \le x} \sum_{d \mid n} f(d) g \left(\frac{n}{d} \right)
+= \sum_{n \le x} f(n) \sum_{d \le \frac{x}{n}} g(d).
+$$
+
+---
+
+$$
+\sum_{\substack{q,\, d \\ qd \le x}} f(d) g(q)
+= \sum_{n \le x} f(n) \sum_{d \le \frac{x}{n}} g(d).
+$$
+
+  </section>
+</div>
+</textarea>
