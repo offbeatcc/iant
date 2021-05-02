@@ -1,13 +1,27 @@
 (require "asdf")
 
 (defvar *titles*
-  '(:c02 "Arithmetical Functions and Dirichlet Multiplication"
+  '(:begin ""
+    :c02 "Arithmetical Functions and Dirichlet Multiplication"
     :c02-s15 "Formal Power Series"
     :c02-s16 "The Bell Series of an Arithmetical Function"
     :c02-s17 "Bell Series and Dirichlet Multiplication"
     :c02-s18 "Derivatives of Arithmetical Functions"
     :c03 "Averages of Arithmetical Functions"
-    :c03-s03 "Euler's Summation Formula"))
+    :c03-s03 "Euler's Summation Formula"
+    :c03-s04 "Some Elementary Asymptotic Formulas"
+    :c03-s05 "The Average Order of $ d(n) $"
+    :c03-s11 "Applications to $ \\mu(n) $ and $ \\Lambda(n) $"
+    :c03-s12 "Another Identity for the Partial Sums of a Dirichlet Product"
+    :c04 "Some Elementary Theorems on the Distribution of Prime Numbers"
+    :c04-s02 "Chebyshev's Functions $ \\psi(x) $ and $ \\vartheta(x) $"
+    :c04-s03 "Relations Connecting $ \\vartheta(x) $ and $ \\pi(x) $"
+    :c04-s04 "Some Equivalent Forms of the Prime Number Theorem"
+    :c04-s05 "Inequalities for $ \\pi(n) $ and $ p_n $"
+    :c04-s06 "Shapiro's Tauberian Theorem"
+    :c04-s08 "An Asymptotic Formula for the Partial Sums $ \\sum_{p \le x} (1/p) $"
+    :c04-s09 "The Partial Sums of the Möbius Function"
+    :end ""))
 
 (defun extract-string (string start-token end-token)
   "Extract string between start-token and end-token."
@@ -34,7 +48,7 @@
 
 (defun board-file-list ()
   "Return the list of board HTML files in the current directory."
-  (sort (directory "c02-*.html") #'string-lessp :key #'namestring))
+  (sort (directory "c*.html") #'string-lessp :key #'namestring))
 
 (defun chapter-num (chapter-key)
   "Given a chapter or section key, return the chapter number as a string."
