@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Notes on the Proof of Theorem 4.5</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Notes on the Proof of Theorem 4.5
+
+Induction step to show that $ 2^n \le \binom{2n}{n} $:
+
+\begin{align*}
+\binom{2(n + 1)}{n + 1}
+& = \frac{(2n + 2)!}{(n + 1)! (n + 1)!}
+  = \frac{(2n + 2)(2n + 1)}{(n + 1)(n + 1)} \cdot \frac{(2n)!}{n! \, n!}
+  = \frac{2(2n + 1)}{n + 1} \binom{2n}{n} \\
+& \ge \frac{2(2n + 1)}{n + 1} 2^n
+= \left( \frac{2n + 1}{n + 1} \right) 2^{n + 1} > 2^{n + 1}.
+\end{align*}
+
+---
+
+$$
+4^n
+= (1 + 1)^{2n}
+= \sum_{k=0}^{2n} \binom{2n}{k}
+= \binom{2n}{0} + \binom{2n}{1} + \dots + \binom{2n}{n} + \dots + \binom{2n}{2n}
+> \binom{2n}{n}.
+$$
+
+---
+
+$$
+10! = 2^{\alpha(2)} \cdot 3^{\alpha(3)} \cdot 5^{\alpha(5)} \cdot 7^{\alpha(7)}.
+$$
+
+$$
+\alpha(2) = \left[ \frac{10}{2} \right] + \left[ \frac{10}{2^2} \right] + \left[ \frac{10}{2^3} \right] = 5 + 2 + 1 = 8.
+$$
+
+$$
+\alpha(p) = \left[ \frac{n}{p} \right] + \left[ \frac{n}{p^2} \right] + \left[ \frac{n}{p^3} \right] + \dots + \left[ \frac{n}{p^\left[ \log_p n \right]} \right]
+$$
+
+$$
+n! = p_1^{\alpha(p_1)} p_2^{\alpha(p_2)} \dots p_k^{\alpha(p_k)} = \prod_{p \le n} p^{\alpha(p)}.
+$$
+
+---
+
+$$
+\log n! = \alpha(p_1) \log p_1 + \alpha(p_2) \log p_2 + \dots + \alpha(p_k) \log p_k = \sum_{p \le n} \alpha(p) \log p.
+$$
+
+---
+
+$$
+x = 9.4, \qquad [2x] = [18.8] = 18, \qquad 2[x] = 2[9.4] = 2(9) = 18.
+$$
+
+$$
+x = 9.9, \qquad [2x] = [19.8] = 19, \qquad 2[x] = 2[9.9] = 2(9) = 18.
+$$
+
+$$
+x = [x] + \{x\}.
+$$
+
+$$
+[2x] = [2[x] + 2\{x\}] =
+\begin{cases}
+2[x]     & \text{ if } 0 \le \{x\} < 0.5, \\
+2[x] + 1 & \text{ if } 0.5 \le \{x\} < 1.
+\end{cases}
+$$
+
+---
+
+$$
+\sum_{n < p \le 2n} \log p
+= \sum_{p \le 2n} \log p - \sum_{p \le n} \log p = \vartheta(2n) - \vartheta(n).
+$$
+
+---
+
+\begin{align*}
+\vartheta(2) - \vartheta(1) & < 2 \log 2, \\
+\vartheta(2^2) - \vartheta(2) & < 2^2 \log 2, \\
+\vartheta(2^3) - \vartheta(2^2) & < 2^3 \log 2, \\
+& \vdots \\
+\vartheta(2^{k + 1}) - \vartheta(2^k) & < 2^{k + 1} \log 2.
+\end{align*}
+
+$$
+\vartheta(2^{k + 1}) - \vartheta(1)
+< (2 + 2^2 + \dots + 2^{k + 1}) \log 2
+= (2^{k + 2} - 2) \log 2
+< 2^{k + 2} \log 2.
+$$
+
+---
+
+Let $ k = \pi(n) - \pi(n^{\alpha}) $.
+
+\begin{align*}
+(\pi(n) - \pi(n^{\alpha})) \log n^{\alpha}
+& = \underbrace{\log n^{\alpha} + \log n^{\alpha} + \dots + \log n^{\alpha}}_{k \text{ times}} \\
+& < \log(p_1) + \log(p_2) + \dots + \log(p_k) \tag{since $p_i > n^{\alpha}$} \\
+& = \sum_{n^{\alpha} < p \le n} \log p.
+\end{align*}
+
+---
+
+Substituting $ x = e^{1/c} $ into $ f(x) = x^{-c} \log x $, we get
+$$
+f(x) = (e^{1/c})^{-c} \left( \log e^{1/c} \right) = e^{-1} \cdot \frac{1}{c} = \frac{1}{ce}.
+$$
+
+---
+
+Taking $ \alpha = 2/3 $, we get
+\begin{align*}
+\frac{n}{\log n} \left( \frac{4 \log 2}{\alpha} + \frac{\log n}{n^{1 - \alpha}} \right)
+& = \frac{n}{\log n} \left( \frac{4 \log 2}{\frac{2}{3}} + \frac{\log n}{n^{1 - \frac{2}{3}}} \right)
+= \frac{n}{\log n} \left( 6 \log 2 + n^{-1/3} \log n \right) \\
+& < \frac{n}{\log n} \left( 6 \log 2 + \frac{1}{(1/3)e} \right)
+= \frac{n}{\log n} \left( 6 \log 2 + \frac{3}{e} \right) \\
+& = \frac{n}{\log n} \cdot 5.2625214 < 6 \frac{n}{\log n}.
+\end{align*}
+
+</div>
+</textarea>

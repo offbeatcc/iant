@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Some Integrals in Proof of Theorem 3.2 (b)</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+$$
+\int_1^x \frac{dt}{t^s}
+= \frac{t^{-s + 1}}{-s + 1} \Biggr|_1^x
+= \frac{t^{1 - s}}{1 - s} \Biggr|_1^x
+= \frac{x^{1 - s}}{1 - s} - \frac{1}{1 - s}.
+$$
+
+---
+
+$$
+\int_1^x \frac{t - [t]}{t^{s + 1}} \, dt
+= \int_1^{\infty} \frac{t - [t]}{t^{s + 1}} \, dt - \int_x^{\infty} \frac{t - [t]}{t^{s + 1}} \, dt
+= \int_1^{\infty} \frac{t - [t]}{t^{s + 1}} \, dt
+  + \underbrace{\frac{1}{s} O\left( x^{-s}\right)}_{\text{explained below}}.
+$$
+
+$$
+0
+\le \int_x^{\infty} \frac{t - [t]}{t^{s + 1}} \, dt
+\le \int_x^{\infty} \frac{1}{t^{s + 1}} \, dt
+= \frac{-1}{st^s} \Biggr|_x^\infty = \frac{1}{sx^s} = \frac{1}{s} x^{-s}.
+$$
+
+---
+
+\begin{align*}
+\sum_{n \le x} \frac{1}{n^s}
+& = \int_1^x \frac{dt}{t^s} - s \int_1^x \frac{t - [t]}{t^{s + 1}} + 1 - \frac{x - [x]}{x^s} \, dt \\
+& = \frac{x^{1 - s}}{1 - s} - \frac{1}{1 - s}
+     - s \int_1^{\infty} \frac{t - [t]}{t^{s + 1}} \, dt + 1 + O(x^{-s}).
+\end{align*}
+
+</div>
+</textarea>

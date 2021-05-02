@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ANT Meet Scribbling Boards</title>
+    <title>Analytic Number Theory Book Club Meeting Notes</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spcss">
-    <link rel="stylesheet" href="https://susam.in/css/div.css?antmeetboard">
     <link rel="icon" type="image/png" href="../favicon.png">
+    <script>window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } }</script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
-    <h1>ANT Meet Scribbling Boards</h1>
+    <h1>ANT Book Club Meeting Notes</h1>
     <p>
       This page contains an archive of scribbling boards from our
       analytic number theory book club meetings. The reference
@@ -21,10 +22,10 @@
       Note that these boards are not meant to be a systematic
       exposition of analytic number theory. Instead these are just a
       collection of some examples that illustrate some of the theorems
-      in the reference textbook and some steps that are not explicitly
-      expressed in the book. These boards were used to aid the
-      discussions during our book club meetings. As a result, the
-      content of these boards is informal in nature and is not
+      in the reference textbook and some intermediate steps that are
+      not explicitly expressed in the book. These boards were used to
+      aid the discussions during our book club meetings. As a result,
+      the content of these boards is informal in nature and is not
       intended to be a substitute for the book or the actual book club
       meetings.
     </p>
@@ -39,102 +40,135 @@
       or <a href="https://github.com/antmeet/boards">send a pull
       request</a>.
     </p>
+    <!-- begin chapters -->
     <ul>
-      <li>Chapter 2: Arithmetical Functions and Dirichlet Multiplication
-        <ul>
-          <li>&sect; 2.15: Formal power series
+      <li><strong>Chapter 2: Arithmetical Functions and Dirichlet Multiplication
+        </strong><ul>
+          <li>&sect; 2.15: Formal Power Series
             <ul>
-              <li><a href="c02-s15-b01.html">Board 1</a></li>
-              <li><a href="c02-s15-b02.html">Board 2</a></li>
-              <li><a href="c02-s15-b03.html">Board 3</a></li>
-              <li><a href="c02-s15-b04.html">Board 4</a></li>
+              <li><a href="c02-s15-b01.html">Product of Formal Power Series</a></li>
+              <li><a href="c02-s15-b02.html">Commutativity of Product of Formal Power Series</a></li>
+              <li><a href="c02-s15-b03.html">Distributivity of Multiplication Over Addition in Formal Power Series</a></li>
+              <li><a href="c02-s15-b04.html">Inverse of Power Series</a></li>
             </ul>
           </li>
-          <li>&sect; 2.16: The Bell series of an arithmetical function
+          <li>&sect; 2.16: The Bell Series of an Arithmetical Function
             <ul>
-              <li><a href="c02-s16-b01.html">Board 1</a></li>
+              <li><a href="c02-s16-b01.html">Bell Series of $ f $ modulo $ p $</a></li>
             </ul>
           </li>
-          <li>&sect; 2.17: Bell series and Dirichlet multiplication
+          <li>&sect; 2.17: Bell Series and Dirichlet Multiplication
             <ul>
-              <li><a href="c02-s17-b01.html">Board 1</a></li>
-              <li><a href="c02-s17-b02.html">Board 2</a></li>
-              <li><a href="c02-s17-b03.html">Board 3</a></li>
-              <li><a href="c02-s17-b04.html">Board 4</a></li>
+              <li><a href="c02-s17-b01.html">Bell Series Multiplication and Dirichlet Multiplication</a></li>
+              <li><a href="c02-s17-b02.html">Bell Series Multiplication and Dirichlet Multiplication: Example 1</a></li>
+              <li><a href="c02-s17-b03.html">Bell Series Multiplication and Dirichlet Multiplication: Example 2</a></li>
+              <li><a href="c02-s17-b04.html">Bell Series Multiplication and Dirichlet Multiplication: Example 3</a></li>
             </ul>
           </li>
-          <li>&sect; 2.18: Derivatives of arithmetical functions
+          <li>&sect; 2.18: Derivatives of Arithmetical Functions
             <ul>
-              <li><a href="c02-s18-b01.html">Board 1</a></li>
+              <li><a href="c02-s18-b01.html">Similarity of Ordinary Derivative and Special Derivative</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Chapter 3: Averages of Arithmetical Functions
+        </strong><ul>
+          <li>&sect; 3.3: Euler's Summation Formula
+            <ul>
+              <li><a href="c03-s03-b01.html">Main Idea Behind the Proof of Euler's Summation Formula</a></li>
+              <li><a href="c03-s03-b02.html">Sum of Integrals in the Proof of Euler's Summation Formula</a></li>
+              <li><a href="c03-s03-b03.html">Equation (6) in the Proof of Euler's Summation Formula</a></li>
+              <li><a href="c03-s03-b04.html">Using Integration by Parts in the Proof of Euler's Summation Formula</a></li>
+            </ul>
+          </li>
+          <li>&sect; 3.4: Some Elementary Asymptotic Formulas
+            <ul>
+              <li><a href="c03-s04-b01.html">Splitting Integral in Proof of Theorem 3.2</a></li>
+              <li><a href="c03-s04-b02.html">Euler's Constant In the Proof of Theorem 3.2 (a)</a></li>
+              <li><a href="c03-s04-b03.html">Some Integrals in Proof of Theorem 3.2 (b)</a></li>
+            </ul>
+          </li>
+          <li>&sect; 3.5: The Average Order of $ d(n) $
+            <ul>
+              <li><a href="c03-s05-b01.html">Rearrangement of Summations</a></li>
+            </ul>
+          </li>
+          <li>&sect; 3.11: Applications to $ \mu(n) $ and $ \Lambda(n) $
+            <ul>
+              <li><a href="c03-s11-b01.html">Final Step of Theorem 3.13</a></li>
+              <li><a href="c03-s11-b02.html">Illustration of Legendre's Identity</a></li>
+              <li><a href="c03-s11-b03.html">Illustration of the Proof of Legendre's Identity</a></li>
+            </ul>
+          </li>
+          <li>&sect; 3.12: Another Identity for the Partial Sums of a Dirichlet Product
+            <ul>
+              <li><a href="c03-s12-b01.html">Notation for Theorem 3.17</a></li>
+              <li><a href="c03-s12-b02.html">Theorem 3.10 as a Special Case of Theorem 3.17</a></li>
+              <li><a href="c03-s12-b03.html">Some Steps in Proof of Theorem 3.17</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Chapter 4: Some Elementary Theorems on the Distribution of Prime Numbers
+        </strong><ul>
+          <li>&sect; 4.2: Chebyshev's Functions $ \psi(x) $ and $ \vartheta(x) $
+            <ul>
+              <li><a href="c04-s02-b01.html">Illustration of $ \psi(x) $ and $ \vartheta(x) $</a></li>
+              <li><a href="c04-s02-b02.html">Some Steps in the Proof of Theorem 4.1</a></li>
+            </ul>
+          </li>
+          <li>&sect; 4.3: Relations Connecting $ \vartheta(x) $ and $ \pi(x) $
+            <ul>
+              <li><a href="c04-s03-b01.html">Some Steps in the Proof of Abel's Identity</a></li>
+              <li><a href="c04-s03-b02.html">From Abel's Identity to Euler's Summation Formula</a></li>
+              <li><a href="c04-s03-b03.html">Integration by Parts to Obtain Euler's Summation Formula From Abel's Identity</a></li>
+            </ul>
+          </li>
+          <li>&sect; 4.4: Some Equivalent Forms of the Prime Number Theorem
+            <ul>
+              <li><a href="c04-s04-b01.html">A Step in the Proof of Theorem 4.5</a></li>
+            </ul>
+          </li>
+          <li>&sect; 4.5: Inequalities for $ \pi(n) $ and $ p_n $
+            <ul>
+              <li><a href="c04-s05-b01.html">Notes on the Proof of Theorem 4.5</a></li>
+              <li><a href="c04-s05-b02.html">Notes on the Proof of Theorem 4.7</a></li>
+            </ul>
+          </li>
+          <li>&sect; 4.6: Shapiro's Tauberian Theorem
+            <ul>
+              <li><a href="c04-s06-b01.html">Notes on the Proof of Theorem 4.8</a></li>
+            </ul>
+          </li>
+          <li>&sect; 4.8: An Asymptotic Formula for the Partial Sums $ \sum_{p le x} (1/p) $
+            <ul>
+              <li><a href="c04-s08-b01.html">From $ \sum_{p \le x} \frac{\log p}{p} $ to $ \sum_{n \le x} a(n) \frac{\log n}{n} $</a></li>
+              <li><a href="c04-s08-b02.html">Applying Abel's Identity in $ \sum_{p \le x} (1/p) $</a></li>
+            </ul>
+          </li>
+          <li>&sect; 4.9: The Partial Sums of the Möbius Function
+            <ul>
+              <li><a href="c04-s09-b01.html">Applying Möbius Inversion Formula in Theorem 4.14</a></li>
+              <li><a href="c04-s09-b02.html">Applying Theorem 3.10 in Theorem 4.14</a></li>
+              <li><a href="c04-s09-b03.html">Applying Theorem 3.13 in Theorem 4.14</a></li>
             </ul>
           </li>
         </ul>
       </li>
     </ul>
-    <ul>
-      <li>Chapter 3: Averages of Arithmetical Functions
-        <ul>
-          <li>&sect; 3.3: Euler's summation formula
-            <ul>
-              <li><a href="c03-s03-b01.html">Board 1</a></li>
-              <li><a href="c03-s03-b02.html">Board 2</a></li>
-              <li><a href="c03-s03-b03.html">Board 3</a></li>
-            </ul>
-          </li>
-          <li>&sect; 3.4: Some elementary asymptotic formulas
-            <ul>
-              <li><a href="c03-s04-b01.html">Board 1</a></li>
-              <li><a href="c03-s04-b02.html">Board 2</a></li>
-            </ul>
-          </li>
-          <li>&sect; 3.5: The average order of d(n)
-            <ul>
-              <li><a href="c03-s05-b01.html">Board 1</a></li>
-            </ul>
-          </li>
-          <li>&sect; 3.11: Applications to &mu;(n) and &Lambda;(n)
-            <ul>
-              <li><a href="c03-s11-b01.html">Board 1</a></li>
-              <li><a href="c03-s11-b02.html">Board 2</a></li>
-              <li><a href="c03-s11-b03.html">Board 3</a></li>
-            </ul>
-          </li>
-          <li>&sect; 3.12: Another identity for the partial sums of a Dirichlet product
-            <ul>
-              <li><a href="c03-s12-b01.html">Board 1</a></li>
-              <li><a href="c03-s12-b02.html">Board 2</a></li>
-              <li><a href="c03-s12-b03.html">Board 3</a></li>
-            </ul>
-          </li>
-        </ul>
-    </ul>
-    <ul>
-      <li>Chapter 4: Some Elementary Theorems on the Distribution of Prime Numbers
-        <ul>
-          <li>&sect; 4.2: Cheybyshev's functions &psi;(x) and &thetav;(x)
-            <ul>
-              <li><a href="c04-s02-b01.html">Board 1</a></li>
-              <li><a href="c04-s02-b02.html">Board 2</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li>&sect; 4.3: Relations connecting &thetav;(x) and &pi;(x)
-            <ul>
-              <li><a href="c04-s03-b01.html">Board 1</a></li>
-              <li><a href="c04-s03-b02.html">Board 2</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li>&sect; 4.4: Some equivalent forms of the prime number theorem
-            <ul>
-              <li><a href="c04-s04-b01.html">Board 1</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <!-- end chapters -->
+    <hr style="margin: 1em 0; border: 0; border-bottom: thin solid gray">
+    <footer style="font-size: small; text-align: center">
+      <p>
+        The source code of this website is
+        <a href="https://github.com/antmeet/boards/">available on GitHub</a>.
+      </p>
+      <p>
+        To receive updates on upcoming book club meetings, please
+        <a href="https://twitter.com/intent/follow?screen_name=susam">follow
+        Susam on Twitter</a>.
+      </p>
+    </footer>
   </body>
 </html>
-

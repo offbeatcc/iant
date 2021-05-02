@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Using Integration by Parts in the Proof of Euler's Summation Formula</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Using Integration by Parts in the Proof of Euler's Summation Formula
+
+## Integration by Parts
+
+$$
+\int uv \, dt = u \int v \, dt - \int u' \left( \int v \, dt \right) \, dt.
+$$
+
+$$
+\int_y^x t f'(t) \, dt
+= \left. \left( t f(t) - \int f(t) \, dt \right) \right|_y^x
+= x f(x) - y f(y) - \int_y^x f(t) \, dt.
+$$
+
+
+## Final Step of the Proof
+
+\begin{align*}
+\sum_{y < n \le x} f(n)
+& = -\int_y^x [t] f'(t) \, dt + k f(x) - m f(y) \\
+& = -\int_y^x [t] f'(t) \, dt + [x] f(x) - [y] f(y) +
+    \underbrace{\left( \int_y^x t f'(t) \, dt - x f(x) + y f(y)
+                + \int_y^x f(t) \, dt \right)}_{0 \text{ by above definite integral}} \\
+& = \int_y^x f(t) \, dt + \int_y^x (t - [t]) f'(t) \, dt
+    + f(x)([x] - x) - f(y)([y] - y).
+\end{align*}
+
+</div>
+</textarea>

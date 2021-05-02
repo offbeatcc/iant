@@ -1,35 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Equation (6) in the Proof of Euler's Summation Formula</title>
 <script src="https://cdn.jsdelivr.net/npm/muboard"></script>
 <textarea style="display: none">
 <div class="center">
 
-$$
-\int uv \, dt = u \int v \, dt - \int u' \left( \int v \, dt \right) \, dt
-$$
-
----
-
-$$
-\int t f'(t) \, dt = t f(t) - \int f(t) \, dt.
-$$
-
-$$
-
-\int_y^x t f'(t) \, dt = x f(x) - y f(y) - \int_y^x f(t) \, dt.
-
-$$
-
----
-
-$$
-\int_y^x f(t) \, dt - x f(x) + y f(y)  + \int_y^x t f'(t) \, dt = 0.
-$$
+# Equation (6) in the Proof of Euler's Summation Formula
 
 \begin{align*}
 \sum_{y < n \le x} f(n)
-& = -\int_y^x [t] f'(t) \, dt + [x] f(x) - [y] f(y) \\
-& = -\int_y^x [t] f'(t) \, dt + [x] f(x) - [y] f(y) +
-    \underbrace{\left( \int_y^x f(t) \, dt - x f(x) + y f(y)  + \int_y^x t f'(t) \, dt \right)}_{0}.
+& = - \int_{m + 1}^k [t] f'(t) \, dt + k f(k) - m f(m + 1) \\
+& = \left( - \int_y^{m + 1} [t] f'(t) \, dt
+    - \int_{m + 1}^k [t] f'(t) \, dt
+    - \int_k^x [t] f'(t) \, dt \right)
+    + f(k) - m f(m + 1)
+    + \int_y^{m + 1} [t] f'(t) \, dt
+    + \int_k^x [t] f'(t) \, dt \\
+& = - \int_y^x [t] f'(t) \, dt + k f(k) - m f(m + 1)
+    + \int_y^{m + 1} m f'(t) \, dt + \int_k^x k f'(t) \, dt \\
+& = - \int_y^x [t] f'(t) \, dt + k f(k) - m f(m + 1)
+    + \biggl( m f(m + 1) - m f(y) \biggr) + \biggl( k f(x) - k f(k) \biggr) \\
+& = - \int_y^x [t] f'(t) \, dt + k f(x) - m f(y).
 \end{align*}
-
 </div>
 </textarea>

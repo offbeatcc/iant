@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>From $ \sum_{p \le x} \frac{\log p}{p} $ to $ \sum_{n \le x} a(n) \frac{\log n}{n} $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# From $ \sum_{p \le x} \frac{\log p}{p} $ to $ \sum_{n \le x} a(n) \frac{\log n}{n} $
+
+\begin{align*}
+A(x)
+& = \sum_{p \le x} \frac{\log p}{p} \\
+& = \frac{\log 2}{2} + \frac{\log 3}{3} + \frac{\log 5}{5} + \frac{\log 7}{7} + \dots \\
+& = 0 \cdot \frac{\log 1}{1} + 1 \cdot \frac{\log 2}{2} + 1 \cdot \frac{\log 3}{3} +
+    0 \cdot \frac{\log 4}{4} + 1 \cdot \frac{\log 5}{5} + 0 \cdot \frac{\log 6}{6} +
+    1 \cdot \frac{\log 7}{7} + \dots \\
+& = \sum_{n \le x} a(n) \frac{\log n}{n}
+\end{align*}
+where
+$$
+a(n) = \begin{cases}
+1 & \text{ if } n \text{ is prime}, \\
+0 & \text{ otherwise}.
+\end{cases}
+$$
+
+</div>
+</textarea>

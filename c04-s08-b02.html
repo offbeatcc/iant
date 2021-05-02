@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying Abel's Identity in $ \sum_{p \le x} (1/p) $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying Abel's Identity in $ \sum_{p \le x} (1/p) $
+
+## Recap of Abel's Identity
+
+$$
+A(x) = \sum_{n \le x} a(n), \qquad
+\sum_{y < n \le x} a(n) f(n) = A(x) f(x) - A(y) f(y) - \int_y^x A(t) f'(t) \, dt.
+$$
+
+
+## Applying Abel's Identity
+
+\begin{align*}
+\sum_{p \le x} \frac{1}{p}
+& = \sum_{n \le x} \frac{a(n)}{n}
+= \sum_{n \le x} \underbrace{\frac{a(n)}{n} \log n}_{a(n) \text{ in Abel's}} \cdot
+          \underbrace{\frac{1}{\log n}}_{f(n) \text{ in Abel's}} \\
+& = \frac{A(x)}{\log x} - \int_2^x A(t) \left( \frac{-1}{t \log^2 t} \right) \, dt \\
+& = \frac{A(x)}{\log x} + \int_2^x \frac{A(t)}{t \log^2 t} \, dt.
+\end{align*}
+
+</div>
+</textarea>

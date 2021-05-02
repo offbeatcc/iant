@@ -1,19 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sum of Integrals in the Proof of Euler's Summation Formula</title>
 <script src="https://cdn.jsdelivr.net/npm/muboard"></script>
 <textarea style="display: none">
 <div class="center">
 
+# Sum of Integrals in the Proof of Euler's Summation Formula
+
 \begin{align*}
-\int_{[y] + 1}^{[x]} [t] f'(t) dt
-= & \, \int_{[y] + 1}^{[y] + 2} [t] f'(t) dt
-+ \int_{[y] + 2}^{[y] + 3} [t] f'(t) dt + \dots
-+ \int_{[x] - 1}^{[x]} [t] f'(t) dt \\
-= & \, ([y] + 2) f([y] + 2) - ([y] + 1) f([y] + 1) - f([y] + 2) \\
-& + ([y] + 3) f([y] + 3) - ([y] + 2) f([y] + 2) - f([y] + 3) \\
+\int_{m + 1}^{k} [t] f'(t) dt
+= & \, \int_{m + 1}^{m + 2} [t] f'(t) dt
++ \int_{m + 2}^{m + 3} [t] f'(t) dt + \dots
++ \int_{k - 1}^{k} [t] f'(t) dt \\
+= & \, (m + 2) f(m + 2) - (m + 1) f(m + 1) - f(m + 2) \\
+& + (m + 3) f(m + 3) - (m + 2) f(m + 2) - f(m + 3) \\
 & \dots \\
-& + ([x]) f([x]) - ([x] - 1) f([x] - 1) - f([x]) \\
-= & \, [x]f(x) - ([y] + 1)f([y] + 1) - \sum_{n=[y] + 2}^{[x]} f(n) \\
-= & \, [x]f(x) - [y]f([y] + 1) - f([y] + 1) - \sum_{n=[y] + 2}^{[x]} f(n) \\
-= & \, [x]f(x) - [y]f([y] + 1) - \sum_{n=[y] + 1}^{[x]} f(n).
+& + (k) f(k) - (k - 1) f(k - 1) - f(k) \\
+= & \, kf(k) - (m + 1)f(m + 1) - \sum_{n=m + 2}^{k} f(n) \\
+= & \, kf(k) - mf(m + 1) - f(m + 1) - \sum_{n=m + 2}^{k} f(n) \\
+= & \, kf(k) - mf(m + 1) - \sum_{n=m + 1}^{k} f(n) \\
+= & \, kf(k) - mf(m + 1) - \sum_{y < n \le x} f(n).
 \end{align*}
 
 </div>

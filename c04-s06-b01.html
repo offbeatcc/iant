@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Notes on the Proof of Theorem 4.8</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Notes on the Proof of Theorem 4.8
+
+\begin{align*}
+T(x) - 2 T \left( \frac{x}{2} \right)
+& = x \log x + O(x) - 2\left( \frac{x}{2} \log \frac{x}{2} + O(x) \right) \\
+& = x \log x - x \log \frac{x}{2} + O(x) \\
+& = x \log x - x(\log x - \log 2) + O(x) \\
+& = x \log x - x \log x + x \log 2 + O(x) \\
+& = x \log 2 + O(x) \\
+& = O(x). \\
+\end{align*}
+
+</div>
+</textarea>

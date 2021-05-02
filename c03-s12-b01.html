@@ -1,34 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Notation for Theorem 3.17</title>
 <script src="https://cdn.jsdelivr.net/npm/muboard"></script>
 <textarea style="display: none">
-  <div class="center">
+<div class="center">
 
-# Partial Sums of Dirichlet Product
+# Notation for Theorem 3.17
 
 $$
-h = f * g,
-\qquad
-H(x) = \sum_{n \le x} h(n),
-\qquad
 F(x) = \sum_{n \le x} f(n),
 \qquad
-G(x) = \sum_{n \le x} g(n).
+G(x) = \sum_{n \le x} g(n),
+\qquad
+h = f * g,
+\qquad
+H(x)
+= \sum_{n \le x} h(n)
+= \sum_{n \le x} (f * g)(n)
+= \sum_{n \le x} \sum_{d \mid n} f(d) g \left(\frac{n}{d} \right).
 $$
 
-$$
-H(x) = \sum_{n \le x} f(n) G\left( \frac{x}{n} \right).
-$$
 
----
+## Rearrangement of Summations in $ H(x) $
 
 $$
-\sum_{n \le x} \sum_{d \mid n} f(d) g \left(\frac{n}{d} \right)
+H(x) = \sum_{n \le x} \sum_{d \mid n} f(d) g \left(\frac{n}{d} \right)
+= \sum_{n \le x} f(n) \sum_{d \le \frac{x}{n}} g(d)
 = \sum_{n \le x} f(n) \sum_{d \le \frac{x}{n}} g(d).
 $$
 
----
+
+## Recap of Theorem 3.10
 
 $$
-\sum_{\substack{q,\, d \\ qd \le x}} f(d) g(q)
+H(x)
+= \sum_{n \le x} f(n) G\left( \frac{x}{n} \right)
 = \sum_{n \le x} f(n) \sum_{d \le \frac{x}{n}} g(d).
 $$
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying Theorem 3.10 in Theorem 4.14</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying Theorem 3.10 in Theorem 4.14
+
+## Recap of Theorem 3.10
+
+\begin{gather*}
+h = f * g, \quad
+H(x) = \sum_{n \le x} h(n), \quad
+F(x) = \sum_{n \le x} f(n), \quad
+G(x) = \sum_{n \le x} g(n) \\
+\implies
+H(x)
+= \sum_{n \le x} f(n) G\left( \frac{x}{n} \right)
+= \sum_{n \le x} g(n) F\left( \frac{x}{n} \right).
+\end{gather*}
+
+
+## Applying Theorem 3.10
+
+Let $ f = \mu $ and  $ g = \Lambda $.
+
+Then $ G(x) = \sum_{n \le x} \Lambda(n) = \psi(x) $ and $ h = f * g = \mu * \Lambda $.
+
+We know that $ h = \mu * \Lambda = - \mu(n) \log n $. Therefore
+
+\begin{align*}
+\sum_{n \le x} - \mu(n) \log n
+= \sum_{n \le x} h(n)
+= H(x)
+= \sum_{n \le x} f(n) G\left( \frac{x}{n} \right)
+= \sum_{n \le x} \mu(n) \psi\left( \frac{x}{n} \right).
+\end{align*}
+
+</div>
+</textarea>

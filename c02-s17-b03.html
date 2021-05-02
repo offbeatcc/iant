@@ -1,8 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bell Series Multiplication and Dirichlet Multiplication: Example 2</title>
 <script src="https://cdn.jsdelivr.net/npm/muboard"></script>
 <textarea style="display: none">
 <div class="center">
 
-# Example 2: Microsteps
+# Example 2: Some Steps
 
 \begin{align*}
 \frac{1}{1 - p^{\alpha}} \cdot \frac{1}{1 - x}
@@ -11,14 +14,12 @@
 & = \frac{1}{1 - \sigma_{\alpha}(p)x + p^{\alpha}x^2}.
 \end{align*}
 
----
+Note that
+$ \sigma_{\alpha}(n) = \sum_{d\,\mid\,n} d^{\alpha} $,
+so
+$$
+\sigma_{\alpha}(p) = \sum_{d\,\mid\,p} d^{\alpha} = 1^{\alpha} + p^{\alpha} = 1 + p^{\alpha}.
+$$
 
-$$
-\sigma_{\alpha}(n) = \sum_{d \mid n} d^{\alpha}.
-$$
-
-$$
-\sigma_{\alpha}(p) = \sum_{d \mid p} d^{\alpha} = 1^{\alpha} + p^{\alpha} = 1 + p^{\alpha}.
-$$
 </div>
 </textarea>

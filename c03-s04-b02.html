@@ -1,44 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Euler's Constant In the Proof of Theorem 3.2 (a)</title>
 <script src="https://cdn.jsdelivr.net/npm/muboard"></script>
 <textarea style="display: none">
 <div class="center">
 
-$$
-\sum_{n \le x} \frac{1}{n^s}
-= \int_1^x \frac{dt}{t^s}
-- s \int_1^x \frac{t - [t]}{t^{s + 1}} \, dt
-+ 1 - \underbrace{\frac{x - [x]}{x^s}}_{O(x^{-s})}.
-$$
+# Euler's Constant in the Proof of Theorem 3.2 (a)
 
----
+## Definition of Euler's Constant
 
 $$
-\int_1^x \frac{dt}{t^s}
-= \frac{t^{-s + 1}}{-s + 1} \Biggr|_1^x
-= \frac{t^{1 - s}}{1 - s} \Biggr|_1^x
-= \frac{x^{1 - s}}{1 - s} - \frac{1}{1 - s}.
+C = \lim_{n \to \infty}
+    \left( 1 + \frac{1}{2} + \frac{1}{3} + \dots + \frac{1}{n} - \log n \right)
+  = \lim_{x \to \infty} \left( \sum_{n \le x} \frac{1}{n} - \log x \right).
 $$
 
----
+
+## Euler's Constant Emerging In the Proof of Theorem 3.2 (a)
 
 $$
-\int_1^x \frac{t - [t]}{t^{s + 1}} \, dt
-= \int_1^{\infty} \frac{t - [t]}{t^{s + 1}} \, dt - \int_x^{\infty} \frac{t - [t]}{t^{s + 1}} \, dt
-= \int_1^{\infty} \frac{t - [t]}{t^{s + 1}} \, dt + \frac{1}{s} O\left( x^{-s}\right).
+\sum_{n \le x} \frac{1}{n}
+= \log x
+  + \underbrace{1 - \int_1^{\infty} \frac{t - [t]}{t^2} \, dt}_{\text{This is C as shown below}}
+  + O\left( \frac{1}{x} \right).
 $$
 
 $$
-0
-\le \int_x^{\infty} \frac{t - [t]}{t^{s + 1}} \, dt
-\le \int_x^{\infty} \frac{1}{t^{s + 1}} \, dt
-= \frac{-1}{st^s} \Biggr|_x^\infty = \frac{1}{sx^s} = \frac{1}{s} x^{-s}.
+\sum_{n \le x} \frac{1}{n} - \log x
+= 1 - \int_1^{\infty} \frac{t - [t]}{t^2} \, dt
+  + O\left( \frac{1}{x} \right).
 $$
 
----
+$$
+C
+= \lim_{x \to \infty} \left( \sum_{n \le x} \frac{1}{n} - \log x \right)
+= \lim_{x \to \infty} \left( 1 - \int_1^{\infty} \frac{t - [t]}{t^2} \, dt + O\left( \frac{1}{x} \right) \right)
+= 1 - \int_1^{\infty} \frac{t - [t]}{t^2} \, dt.
+$$
 
-$$
-\sum_{n \le x} \frac{1}{n^s}
-= \frac{x^{1 - s}}{1 - s} - \frac{1}{1 - s}
-- s \int_1^{\infty} \frac{t - [t]}{t^{s + 1}} \, dt + 1 + O(x^{-s}).
-$$
 </div>
 </textarea>

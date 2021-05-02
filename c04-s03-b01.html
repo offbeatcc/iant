@@ -1,22 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Some Steps in the Proof of Abel's Identity</title>
 <script src="https://cdn.jsdelivr.net/npm/muboard"></script>
 <textarea style="display: none">
 <div class="center">
 
-# Proof of Abel's Identity (Some Steps)
+# Some Steps in the Proof of Abel's Identity
 
-\begin{align*}
-A(n) & = a(1) + a(2) + \dot + a(n - 1) + a(n) \\
-     & = A(n - 1) + a(n). \\ \\
-A(n) - A(n - 1) & = a(n).
-\end{align*}
+$$
+A(n)
+= a(1) + a(2) + \dots + a(n - 1) + a(n)
+= A(n - 1) + a(n).
+$$
+
+Therefore $ a(n) = A(n) - A(n - 1)$.
 
 ---
 
-\begin{align*}
+$$
 \sum_{n=m + 1}^k A(n - 1) f(n)
-& = A(m) f(m + 1) + A(m + 1) f(m + 2) + \dots + A(k - 1) f(k) \\
-& = \sum_{n=m}^{k - 1} A(n) f(n + 1).
-\end{align*}
+= A(m) f(m + 1) + A(m + 1) f(m + 2) + \dots + A(k - 1) f(k)
+= \sum_{n=m}^{k - 1} A(n) f(n + 1).
+$$
 
 ---
 

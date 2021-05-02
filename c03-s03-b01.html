@@ -1,6 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Main Idea Behind the Proof of Euler's Summation Formula</title>
 <script src="https://cdn.jsdelivr.net/npm/muboard"></script>
 <textarea style="display: none">
 <div class="center">
+
+# Main Idea Behind the Proof of Euler's Summation Formula
+
+## Important Numbers in the Proof
 
 $$
 0, \quad
@@ -11,7 +18,8 @@ y, \quad
 x
 $$
 
----
+
+## Splitting Definite Integral
 
 $$
 \int_y^x f(t)\,dt
@@ -20,6 +28,15 @@ $$
 + \int_{[x] - 1}^{[x]} f(t)\,dt}_{=\,\int_{[y] + 1}^{[x]} f(t)\, dt}
 + \int_{[x]}^{x} f(t)\,dt.
 $$
+
+$$
+\int_y^x f(t)\,dt
+= \int_m^{m + 1} f(t)\,dt
++ \underbrace{\int_{m + 1}^{m + 2} f(t)\,dt + \dots
++ \int_{k - 1}^{k} f(t)\,dt}_{=\,\int_{m + 1}^{k} f(t)\, dt}
++ \int_{k}^{x} f(t)\,dt.
+$$
+
 
 </div>
 </textarea>

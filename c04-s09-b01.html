@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying Möbius Inversion Formula in Theorem 4.14</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying Möbius Inversion Formula in Theorem 4.14
+
+## Recap of Möbius Inversion Formula
+
+$$
+f = g * u \iff f * \mu = g.
+$$
+
+$$
+f(n) = \sum_{d \mid n} g(d) \iff \sum_{d \mid n} f(d) \mu\left( \frac{n}{d} \right) = g(n).
+$$
+
+## Applying Möbius Inversion Formula
+
+$$
+\underbrace{\Lambda(n)}_f = \underbrace{\sum_{d \mid n} - \mu(d) \log d}_{g\,*\,u}
+\iff
+\underbrace{\sum_{d \mid n} \mu(d) \Lambda\left( \frac{n}{d} \right)}_{f\,*\,\mu} = \underbrace{- \mu(n) \log n}_{g}.
+$$
+
+</div>
+</textarea>

@@ -1,12 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Splitting Integral in Proof of Theorem 3.2</title>
 <script src="https://cdn.jsdelivr.net/npm/muboard"></script>
 <textarea style="display: none">
 <div class="center">
 
+# Some Integrals in Proof of Theorem 3.2
+
+## Splitting Definite Integral
+
 $$
+\int_1^{\infty} f(t) \, dt = \int_1^{x} f(t) \, dt + \int_x^{\infty} f(t) \, dt.
+\iff
 \int_1^{\infty} f(t) \, dt - \int_x^{\infty} f(t) \, dt = \int_1^x f(t) \, dt.
 $$
 
----
+
+## Solving Improper Integral
 
 $$
 \int_x^{\infty} \frac{1}{t^2} \, dt
@@ -16,30 +26,5 @@ $$
 = 0 + \frac{1}{x} = \frac{1}{x}.
 $$
 
----
-
-$$
-C = \lim_{n \to \infty} \left( 1 + \frac{1}{2} + \frac{1}{3} + \dots + \frac{1}{n} - \log n \right)
-  = \lim_{x \to \infty} \left( \sum_{n \le x} \frac{1}{n} - \log x \right).
-$$
-
----
-
-$$
-\sum_{n \le x} \frac{1}{n}
-= \log x + \underbrace{1 - \int_1^{\infty} \frac{t - [t]}{t^2} \, dt}_{\text{Is this C?}} + O\left( \frac{1}{x} \right).
-$$
-
----
-
-$$
-1 - \int_1^{\infty} \frac{t - [t]}{t^2} \, dt + O\left( \frac{1}{x} \right)
-= \sum_{n \le x} \frac{1}{n} - \log x
-$$
-
-$$
-1 - \int_1^{\infty} \frac{t - [t]}{t^2} \, dt
-= \lim_{x \to \infty} \left( \sum_{n \le x} \frac{1}{n} - \log x \right) = C.
-$$
 </div>
 </textarea>

@@ -1,12 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Theorem 3.10 as a Special Case of Theorem 3.17</title>
 <script src="https://cdn.jsdelivr.net/npm/muboard"></script>
 <textarea style="display: none">
-  <div class="center">
+<div class="center">
 
-# Partial Sums of Dirichlet Product
+# Theorem 3.10 as a Special Case of Theorem 3.17
+
+## Theorem 3.10
 
 $$
 \sum_{\substack{q,\, d \\ qd \le x}} f(d) g(q) = \sum_{n \le x} f(n) G\left( \frac{x}{n} \right).
 $$
+
+
+## Theorem 3.17
 
 $$
 \sum_{\substack{q,\, d \\ qd \le x}} f(d) g(q)
@@ -18,23 +26,19 @@ $$
 F(a)G(b).
 $$
 
----
+
+## From Theorem 3.17 to Theorem 3.10
 
 \begin{align*}
 \sum_{\substack{q,\, d \\ qd \le x}} f(d) g(q)
 & =
-\sum_{n \le x} f(n) G\left( \frac{x}{n} \right)
-+
-\sum_{n \le 1} g(n) F\left( \frac{x}{n} \right)
--
+\sum_{n \le x} f(n) G\left( \frac{x}{n} \right) +
+\sum_{n \le 1} g(n) F\left( \frac{x}{n} \right) -
 F(x)G(1) \\
-& = \sum_{n \le x} f(n) G\left( \frac{x}{n} \right) + g(1) F(x) - F(x)G(1) \\
 & = \sum_{n \le x} f(n) G\left( \frac{x}{n} \right) + g(1) F(x) - F(x)\sum_{n \le 1} g(n) \\
 & = \sum_{n \le x} f(n) G\left( \frac{x}{n} \right) + g(1) F(x) - F(x) g(1) \\
-
-& = \sum_{n \le x} f(n) G\left( \frac{x}{n} \right). \\
+& = \sum_{n \le x} f(n) G\left( \frac{x}{n} \right).
 \end{align*}
 
-  </section>
 </div>
 </textarea>
