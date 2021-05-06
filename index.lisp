@@ -21,6 +21,9 @@
     :c04-s06 "Shapiro's Tauberian Theorem"
     :c04-s08 "An Asymptotic Formula for the Partial Sums $ \\sum_{p \le x} (1/p) $"
     :c04-s09 "The Partial Sums of the Möbius Function"
+    :c05 "Congruences"
+    :c05-s01 "Definition and Basic Properties of Congruences"
+    :c05-s02 "Residue Classes and Complete Residue Systems"
     :end ""))
 
 (defun extract-string (string start-token end-token)

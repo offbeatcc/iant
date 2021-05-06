@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>The Little-o Notation</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# The Little-o Notation
+
+## Equivalence With Asymptotic Equality
+
+$$
+f(x) \sim g(x)
+\iff
+g(x) + o(g(x)) \text{ as } x \to \infty.
+$$
+
+## Rephrased Using Limits
+
+$$
+\lim_{x \to \infty} \frac{f(x)}{g(x)} = 1
+\iff
+\lim_{x \to \infty} \frac{f(x) - g(x)}{g(x)} = 0.
+$$
+
+</div>
+</textarea>
