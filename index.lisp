@@ -24,6 +24,7 @@
     :c05 "Congruences"
     :c05-s01 "Definition and Basic Properties of Congruences"
     :c05-s02 "Residue Classes and Complete Residue Systems"
+    :c05-s03 "Linear Congruences"
     :end ""))
 
 (defun extract-string (string start-token end-token)
