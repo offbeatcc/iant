@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Some Steps in the Proof of Theorem 5.21: Lagrange's Theorem</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Some Steps in the Proof of Lagrange's Theorem
+
+\begin{align*}
+f(x) & = c_0 + c_1 x + \dots + c_n x^n, \\
+f(x_0) & = c_0 + c_1 x_0 + \dots + c_n x_0^n.
+\end{align*}
+
+\begin{align*}
+f(x) - f(x_0)
+& = c_1 (x - x_0) + \dots + c_n (x - x_0^n) \\
+& = \sum_{r=1}^n c_r (x^r - x_0^r).
+\end{align*}
+
+$$
+(x^r - x_0^r)
+= (x - x_0) (x^{r - 1} + x^{r - 2} x_0 + x^{r - 3} x_0^2 + \dots + x_0^{r - 1})
+= (x - x_0) h_{r-1}(x).
+$$
+
+Therefore
+
+\begin{align*}
+f(x) - f(x_0)
+& = \sum_{r=1}^n c_r (x^r - x_0^r)
+= \sum_{r=1}^n c_r (x - x_0) h_{r-1}(x) \\
+& = (x - x_0) \sum_{r=1}^n c_r h_{r-1}(x)
+= (x - x_0) \underbrace{g(x)}_{\text{degree } n - 1}.
+\end{align*}
+
+</div>
+</textarea>

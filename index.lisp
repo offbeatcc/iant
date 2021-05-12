@@ -26,6 +26,13 @@
     :c05-s02 "Residue Classes and Complete Residue Systems"
     :c05-s03 "Linear Congruences"
     :c05-s04 "Reduced Residue Systems and the Euler-Fermat Theorem"
+    :c05-s05 "Polynomial Congruences Modulo \( p \). Lagrange's Theorem"
+    :c05-s06 "Applications of Lagrange's Theorem"
+    :c05-s07 "Simultaneous Linear Congruences. The Chinese Remainder Theorem"
+    :c05-s08 "Applications of the Chinese Remainder Theorem"
+    :c05-s09 "Polynomial Congruences With Prime Power Moduli"
+    :c05-s10 "The Principle of Cross-Classification"
+    :c05-s11 "A Decomposition Property of Reduced Residue Systems"
     :end ""))
 
 (defun extract-string (string start-token end-token)
