@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Proof of Wolstenholm's Theorem</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Illustration of Proof of Wolstenholme's Theorem With $ p = 5 $
+
+\begin{align*}
+  (x - 1)(x - 2)(x - 3)(x - 4)
+  & = \begin{aligned}[t]
+    x^4 & - (1 + 2 + 3 + 4)x^3 \\
+    &  + (1 \cdot 2 + 1 \cdot 3 + 1 \cdot 4 + 2 \cdot 3 + 2 \cdot 4 + 3 \cdot 4) x^2 \\
+    & - (1 \cdot 2 \cdot 3 + 1 \cdot 2 \cdot 4 + 1 \cdot 3 \cdot 4 + 2 \cdot 3 \cdot 4) x \\
+    & + (1 \cdot 2 \cdot 3 \cdot 4)
+  \end{aligned} \\
+  & = x^4 - 10x^3 + 35x^2 - 50x + 24.
+\end{align*}
+
+
+# Reducing the Equation Modulo $ p^3 $
+
+$$
+\underbrace{p^{p-1} - S_1 \, p^{p-2} + \dots + S_{p-3} \, p^2}_{\text{divisible by } p^3} - S_{p-2} \, p
+= 0.
+$$
+
+Therefore
+
+$$
+p S_{p-2} \equiv 0 \pmod{p^3}.
+$$
+
+</div>
+</textarea>
