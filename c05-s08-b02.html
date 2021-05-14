@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Illustration of Theorem 5.29</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Illustration With $ k = 3 $
+
+## Matrix of Primes
+
+\begin{array}{c c c | c c}
+  2   &   3 &    5 &   30 & (= m_1) \\
+  7   &  11 &   13 & 1001 & (= m_2) \\
+  17  &  19 &   23 & 7429 & (= m_3)\\
+  \hline
+  238 & 627 & 1445 & \\
+  (= M_1) & (= M_2) & (= M_3) & \\
+\end{array}
+
+
+## Solve
+
+\begin{align*}
+  x & \equiv -1 \pmod{30}, & y & \equiv -1 \pmod{238}, \\
+  x & \equiv -2 \pmod{1001}, & y & \equiv -2 \pmod{627}, \\
+  x & \equiv -3 \pmod{7429}, & y & \equiv -3 \pmod{1495},
+\end{align*}
+
+
+## Solutions
+
+\begin{align*}
+  x & \equiv 119740619 \pmod{223092870}, \\
+  y & \equiv 121379047 \pmod{223092870}.
+\end{align*}
+
+
+## Observe
+
+\begin{align*}
+  x + 1 & \equiv 0 \pmod{30}, & y + 1 & \equiv 0 \pmod{238}, \\
+  x + 2 & \equiv 0 \pmod{1001}, & y + 2 & \equiv 0 \pmod{627}, \\
+  x + 3 & \equiv 0 \pmod{7429}, & y + 3 & \equiv 0 \pmod{1495}.
+\end{align*}
+
+
+## Consider These Points
+
+\begin{align*}
+  (x + 1, y + 1), \quad (x + 1, y + 2), \quad (x + 1, y + 3), \\
+  (x + 2, y + 1), \quad (x + 2, y + 2), \quad (x + 2, y + 3), \\
+  (x + 3, y + 1), \quad (x + 3, y + 2), \quad (x + 3, y + 3).
+\end{align*}
+
+</div>
+</textarea>
