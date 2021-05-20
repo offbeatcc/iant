@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Some Steps in the Proof of Theorem 5.31</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Some Steps in the Proof of Theorem 5.31
+
+\begin{align*}
+  N_r(S)
+  &= N_{r-1}(S) - N_{r-1}(S S_r) \\
+  &= N_{r-1}(S) - N_{r-1}(S_r) \\
+  &= \{ N_{r-2}(S) - N_{r-2}(S S_{r-1}) \} - \{ N_{r-2}(S_r) - N_{r-2}(S_r S_{r-1}) \} \\
+  &= N_{r-2}(S) - \Bigl( (N_{r-2}(S_{r-1}) + N_{r-2}(S_r) \Bigr) + N_{r-2}(S_r S_{r-1}) \\
+  & \;\,\vdots \\
+  &= \begin{aligned}[t]
+    N_{r-3}(S)
+    &- \Bigl( N_{r-3}(S_{r-2}) + N_{r-3}(S_{r-1}) + N_{r-3}(S_r) \Bigr) \\
+    &+ \Bigl( N_{r-3}(S_{r-1} S_{r-2}) + N_{r-3}(S_r S_{r-2}) + N_{r-3}(S_r S_{r-1}) \Bigr) \\
+    &- N_{r-3}(S_r S_{r-1} S_{r-2})
+  \end{aligned} \\
+  & \;\,\vdots \\
+  &= \begin{aligned}[t]
+    N_0(S)
+    &- \Bigl( N_0(S_1) + N_0(S_2) + \dots + N_0(S_r) \Bigr) \\
+    &+ \Bigl( N_0(S_1 S_2) + N_0(S_1 S_3) + \dots + N_0(S_{r-1} S_r) \Bigr) \\
+    &- \Bigl( N_0(S_1 S_2 S_3) + N_0(S_1 S_2 S_4) + \dots + N_0(S_{r-2} S_{r-1} S_r) \Bigr) \\
+    & \;\,\vdots \\
+    & + (-1)^r N_0(S_1 S_2 \dots S_r).
+  \end{aligned} \\
+\end{align*}
+
+</div>
+</textarea>
