@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Illustration of Theorem 5.32</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Illustration of Theorem 5.32
+
+$$
+k = 30, \quad d = 3, \quad \frac{k}{d} = 10, \quad r = 4.
+$$
+
+$$
+S = \{ 4 + 3t : t = 1, 2, \dots, 10 \} = \{ 7, 10, 13, 16, 19, 22, 25, 28, 31, 44 \}.
+$$
+
+Number of elements in $ S $ relatively prime to $ 30 $:
+$
+\lvert \{ 7, 13, 19, 31 \} \rvert = 4 = \frac{\varphi(30)}{\varphi(3)} = \frac{8}{2} = 4.
+$
+
+---
+
+$$
+p_1 = 2, \quad p_2 = 5, \quad k' = p_1 p_2 = 2 \cdot 5 = 10.
+$$
+
+\begin{align*}
+  S_1 &= \{ 10, 16, 22, 28, 34 \}, & N(S_1) &= \frac{10}{2} = 5, \\
+  S_2 &= \{ 10, 25 \}, & N(S_2) &= \frac{10}{5} = 2, \\
+  S_1 S_2 &= \{ 10 \}, & N(S_3) &= \frac{10}{10} = 1.
+\end{align*}
+
+$$
+N(S - (S_1 \cup S_2)) = N(S) - N(S_1) - N(S_2) + N(S_1 S_2) = 10 - 5 - 2 + 1 = 4.
+$$
+</div>
+</textarea>
