@@ -33,6 +33,17 @@
     :c05-s09 "Polynomial Congruences With Prime Power Moduli"
     :c05-s10 "The Principle of Cross-Classification"
     :c05-s11 "A Decomposition Property of Reduced Residue Systems"
+    :c06 "Finite Abelian Groups and Their Characters"
+    :c06-s01 "Definitions"
+    :c06-s02 "Examples of Groups and Subgroups"
+    :c06-s03 "Elementary Properties of Groups"
+    :c06-s04 "Construction of Subgroups"
+    :c06-s05 "Characters of Finite Abelian Groups"
+    :c06-s06 "The Character Group"
+    :c06-s07 "The Orthogonality Relations for Characters"
+    :c06-s08 "Dirichlet Characters"
+    :c06-s09 "Sums Involving Dirichlet Characters"
+    :c06-s10 "The Nonvanishing of \( L(1, \chi) \) for Real Nonprincipal \( \chi \)"
     :end ""))
 
 (defun extract-string (string start-token end-token)
