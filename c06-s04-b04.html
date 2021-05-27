@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Some Steps in the Proof of Theorem 6.6</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Some Steps in the Proof of Theorem 6.6
+
+## Usage of Abelian Property (Commutativity)
+
+$$
+(x a^k)(y a^j)
+= x (a^k y) a^j
+= \underset{\text{by commutativity}}{x (y a^k) a^j}
+= (xy)(a^k a^j).
+$$
+
+## Overall Idea
+
+$$
+(xy) a^{k+j} = (xy) a^{qh+r} = (xy a^{qh}) a^r = w a^r.
+$$
+
+Since $ x, y, a^{qh} \in G' $, by closure we get, $ w = xya^{qh} \in
+G' $.
+
+Since $ w \in G' $ and $ a \notin G' $, $ w a^r $ is in a form that it
+qualifies to be a member of $ G'' $.
+
+For $ k = 0 $, $ (xa^k)^{-1} = x^{-1} $. Since $ x \in G'
+$, $ x^{-1} \in G' $. Therefore $ x^{-1} \in G'' $ by definition of $
+G'' $.
+
+For $ k > 0 $, $ (xa^k)^{-1} = x^{-1} a^{-k} =
+( x^{-1} a^{-h} ) \left( a^{h-k} \right) \in G''. $
+
+</div>
+</textarea>
