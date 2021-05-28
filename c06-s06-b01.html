@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Multiplication of Characters</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Multiplication of Characters
+
+$$ G = \{ 1, 2, 3, 4 \} , \qquad m \cdot n = mn \bmod 5 $$
+
+## Characters
+
+\begin{align*}
+f_1(n) & = \begin{cases}
+  1 & \text{if } n = 1, \\
+  1 & \text{if } n = 2, \\
+  1 & \text{if } n = 3, \\
+  1 & \text{if } n = 4.
+\end{cases}
+&
+f_2(n) & = \begin{cases}
+  1 & \text{if } n = 1, \\
+  -1 & \text{if } n = 2, \\
+  -1 & \text{if } n = 3, \\
+  1 & \text{if } n = 4.
+\end{cases} \\ \\
+f_3(n) & = \begin{cases}
+  1 & \text{if } n = 1, \\
+  i & \text{if } n = 2, \\
+  -i & \text{if } n = 3, \\
+  -1 & \text{if } n = 4.
+\end{cases}
+&
+f_4(n) & = \begin{cases}
+  1 & \text{if } n = 1, \\
+  -i & \text{if } n = 2, \\
+  i & \text{if } n = 3, \\
+  -1 & \text{if } n = 4.
+\end{cases}
+\end{align*}
+
+
+## Illustration of Multiplication of Characters
+
+\begin{align*}
+f_2 f_3 (n) &= f_2(n) f_3(n) = \begin{cases}
+  1 & \text{if } n = 1, \\
+  -i & \text{if } n = 2, \\
+  i & \text{if } n = 3, \\
+  -1 & \text{if } n = 4.
+\end{cases} = f_4(n).
+\end{align*}
+
+\begin{align*}
+f_2 f_2 (n) &= f_2(n) f_2(n) = \begin{cases}
+  1 & \text{if } n = 1, \\
+  1 & \text{if } n = 2, \\
+  1 & \text{if } n = 3, \\
+  1 & \text{if } n = 4.
+\end{cases} = f_1(n).
+\end{align*}
+
+\begin{align*}
+f_3 f_4 (n) &= f_3(n) f_4(n) = \begin{cases}
+  1 & \text{if } n = 1, \\
+  1 & \text{if } n = 2, \\
+  1 & \text{if } n = 3, \\
+  1 & \text{if } n = 4.
+\end{cases} = f_1(n).
+\end{align*}
+
+</div>
+</textarea>

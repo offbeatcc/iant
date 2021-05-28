@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Examples of Characters</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Examples of Characters of $ (Z_5, \cdot) $
+
+$$ G = \{ 1, 2, 3, 4 \} , \qquad m \cdot n = mn \bmod 5 $$
+
+## Characters
+
+\begin{align*}
+f_1(n) & = \begin{cases}
+  1 & \text{if } n = 1, \\
+  1 & \text{if } n = 2, \\
+  1 & \text{if } n = 3, \\
+  1 & \text{if } n = 4.
+\end{cases}
+&
+f_2(n) & = \begin{cases}
+  1 & \text{if } n = 1, \\
+  -1 & \text{if } n = 2, \\
+  -1 & \text{if } n = 3, \\
+  1 & \text{if } n = 4.
+\end{cases} \\ \\
+f_3(n) & = \begin{cases}
+  1 & \text{if } n = 1, \\
+  i & \text{if } n = 2, \\
+  -i & \text{if } n = 3, \\
+  -1 & \text{if } n = 4.
+\end{cases}
+&
+f_4(n) & = \begin{cases}
+  1 & \text{if } n = 1, \\
+  -i & \text{if } n = 2, \\
+  i & \text{if } n = 3, \\
+  -1 & \text{if } n = 4.
+\end{cases}
+\end{align*}
+
+
+## Illustration of Multiplicative Property $ f(ab) = f(a) f(b) $
+
+\begin{align*}
+f_2(1 \cdot 3) &= f_2(3) = -1,  & f_2(1) f_2(3) & = (1)(-1) = -1. \\ \\
+f_2(2 \cdot 3) &= f_2(1) = 1,  & f_2(2) f_2(3) &= (-1)(-1) = 1. \\ \\
+f_2(3 \cdot 4) &= f_2(2) = -1, & f_2(3) f_2(4) &= (-1)(1) = 1. \\ \\
+f_3(3 \cdot 4) &= f_3(2) = i,  & f_3(3) f_3(4) &= (-i)(-1) = i.
+\end{align*}
+
+</div>
+</textarea>
