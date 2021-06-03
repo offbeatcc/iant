@@ -43,7 +43,17 @@
     :c06-s07 "The Orthogonality Relations for Characters"
     :c06-s08 "Dirichlet Characters"
     :c06-s09 "Sums Involving Dirichlet Characters"
-    :c06-s10 "The Nonvanishing of \( L(1, \chi) \) for Real Nonprincipal \( \chi \)"
+    :c06-s10 "The Nonvanishing of $ L(1, \chi) $ for Real Nonprincipal $ \chi $"
+    :c07 "Dirichlet's Theorem on Primes in Arithmetical Progressions"
+    :c07-s01 "Introduction"
+    :c07-s02 "Dirichlet's Theorem for Primes of the Form $ 4n - 1 $ and $ 4n + 1"
+    :c07-s03 "The Plan of the Proof of Dirichlet's Theorem"
+    :c07-s04 "Proof of Lemma 7.4"
+    :c07-s05 "Proof of Lemma 7.5"
+    :c07-s06 "Proof of Lemma 7.6"
+    :c07-s07 "Proof of Lemma 7.8"
+    :c07-s08 "Proof of Lemma 7.7"
+    :c07-s09 "Distribution of Primes in Arithmetic Progressions"
     :end ""))
 
 (defun extract-string (string start-token end-token)
