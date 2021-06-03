@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Final Step of Proof of Theorem 6.20</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Final Step of Proof of Theorem 6.20
+
+\begin{align*}
+2 \sqrt{x} \sum_{n \le \sqrt{x}} \frac{\chi(n)}{n}
+= 2 \sqrt{x} L(1, \chi) + O\left( 2 \sqrt{x} \cdot \frac{1}{\sqrt{x}} \right)
+& = 2 \sqrt{x} L(1, \chi) + O(1).
+\tag{by Theorem 6.18 (9)} \\
+
+A \sum_{n \le \sqrt{x}} \frac{\chi(n)}{\sqrt{n}} & = O(1).
+\tag{by Theorem 6.18 (11)} \\
+
+O\left( \frac{1}{\sqrt{x}} \sum_{n \le \sqrt{x}} \lvert \chi(n) \rvert \right)
+= O\left( \frac{1}{\sqrt{x}} \cdot \sqrt{x} \right)
+& = O(1). \\
+
+B \sum_{n \le \sqrt{x}} \frac{1}{\sqrt{n}}
+= 2B x^{1/4} + B\zeta(1/2) + O(x^{-1/4})
+& = 2B x^{1/4} + O(1). \tag{by Theorem 3.2 (b)} \\
+
+O\left( \frac{1}{\sqrt{x}} \sum_{n \le \sqrt{x}} 1 \right)
+= O\left( \frac{1}{\sqrt{x}} \cdot \sqrt{x} \right)
+& = O(1). \\
+
+\end{align*}
+
+</div>
+</textarea>
