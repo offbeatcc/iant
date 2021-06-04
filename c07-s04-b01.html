@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Equation (8) in the Proof of Lemma 7.4</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Equation (8) in the Proof of Lemma 7.4
+
+LHS in (8) can be written as:
+
+$$
+  \sum_{p \le x} \sum_{r=1}^{\varphi(k)} \chi_r(p) \overline{\chi}_r(h) \frac{\log p}{p}
+  = \sum_{p \le x} \frac{\log p}{p} \left( \sum_{r=1}^{\varphi(k)} \chi_r(p) \overline{\chi}_r(h) \right).
+$$
+
+Let $ k = 10 $ and $ h = 3 $ and see what happens to it:
+
+\begin{align*}
+  \frac{\log 2}{2} \underbrace{\sum_{r=1}^{\varphi(10)} \chi_r(2) \overline{\chi}_r(3)}_{0} +
+  \frac{\log 3}{3} \underbrace{\sum_{r=1}^{\varphi(10)} \chi_r(3) \overline{\chi}_r(3)}_{\varphi(10)} + \dots & +
+  \frac{\log 11}{11} \underbrace{\sum_{r=1}^{\varphi(10)} \chi_r(11) \overline{\chi}_r(3)}_{0} +
+  \frac{\log 13}{13} \underbrace{\sum_{r=1}^{\varphi(10)} \chi_r(13) \overline{\chi}_r(3)}_{\varphi(10)} + \dots \\
+  & = \varphi(10) \frac{\log 3}{3} + \varphi(10) \frac{\log 13}{13} + \dots \\
+  & = \varphi(10) \sum_{\substack{p \le x \\ p \equiv 3 \pmod{10}}} \frac{\log p}{p}.
+\end{align*}
+
+</div>
+</textarea>

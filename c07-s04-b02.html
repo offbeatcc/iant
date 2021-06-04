@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Equation (9) in the Proof of Lemma 7.4</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Equation (9) in the Proof of Lemma 7.4
+
+\begin{align*}
+  \sum_{p \le x} \frac{\log p}{p} \sum_{r=1}^{\varphi(k)} \chi_r(p) \overline{\chi}_r(h)
+  & = \sum_{p \le x} \frac{\log p}{p} \left( \chi_1(p) \overline{\chi}_1(h) + \sum_{r=2}^{\varphi(k)} \chi_r(p) \overline{\chi}_r(h) \right) \\
+  & = \sum_{p \le x} \frac{\chi_1(p) \overline{\chi}_1(h) \log p}{p} + \sum_{p \le x} \frac{\log p}{p} \sum_{r=2}^{\varphi(k)} \chi_r(p) \overline{\chi}_r(h) \\
+  & = \sum_{p \le x} \frac{\chi_1(p) \overline{\chi}_1(h) \log p}{p} + \sum_{p \le x} \sum_{r=2}^{\varphi(k)} \frac{\log p}{p} \chi_r(p) \overline{\chi}_r(h) \\
+  & = \sum_{p \le x} \frac{\chi_1(p) \overline{\chi}_1(h) \log p}{p} + \sum_{r=2}^{\varphi(k)} \sum_{p \le x} \frac{\log p}{p} \chi_r(p) \overline{\chi}_r(h) \\
+  & = \overline{\chi}_1(h) \sum_{p \le x} \frac{\chi_1(p) \log p}{p} + \sum_{r=2}^{\varphi(k)} \overline{\chi}_r(h) \sum_{p \le x} \frac{\log p}{p} \chi_r(p). \\
+\end{align*}
+
+</div>
+</textarea>
