@@ -99,11 +99,13 @@
 
 (defun add-chapter-html (chapters-html new-chapter-key new-sections-html)
   "Add HTML for a new chapter to chapters-html."
-  (format nil "~a~a<li><strong>Chapter ~a: ~a~%~a</strong><ul>~%~a~a</ul>~%~a</li>~%"
+  (format nil "~a~a<li id=\"~a\"><strong>Chapter ~a: ~a</strong><a href=\"#~a\"></a>~%~a<ul>~%~a~a</ul>~%~a</li>~%"
           chapters-html
           (spaces 6)
+          new-chapter-key
           (chapter-num new-chapter-key)
           (get-title new-chapter-key)
+          new-chapter-key
           (spaces 8)
           new-sections-html
           (spaces 8)
@@ -111,23 +113,27 @@
 
 (defun add-section-html (sections-html new-section-key new-boards-html)
   "Add HTML for a new section to sections-html."
-  (format nil "~a~a<li>&sect; ~a: ~a~%~a<ul>~%~a~a</ul>~%~a</li>~%"
+  (format nil "~a~a<li id=\"~a\">&sect; ~a: ~a<a href=\"#~a\"></a>~%~a<ul>~%~a~a</ul>~%~a</li>~%"
           sections-html
           (spaces 10)
+          new-section-key
           (section-num new-section-key)
           (get-title new-section-key)
+          new-section-key
           (spaces 12)
           new-boards-html
           (spaces 12)
           (spaces 10)))
 
-(defun add-board-html (boards-html filename)
+(defun add-board-html (boards-html board-key filename)
   "Add HTML for a new board to boards-html."
-  (format nil "~a~a<li><a href=\"~a\">~a</a></li>~%"
+  (format nil "~a~a<li id=\"~a\"><a href=\"~a\">~a</a><a href=\"#~a\"></a></li>~%"
           boards-html
           (spaces 14)
+          board-key
           filename
-          (read-page-title filename)))
+          (read-page-title filename)
+          board-key))
 
 (defun make-chapter-list-html ()
   "Create HTML for a list of chapters that can be inserted into index.html."
@@ -148,6 +154,7 @@
       (setq filename (file-namestring path))
       (setq chapter-key (subseq filename 0 3))
       (setq section-key (subseq filename 0 7))
+      (setq board-key (subseq filename 0 11))
 
       ;; Set chapter and section keys to that of first chapter and section.
       (unless previous-chapter-key
@@ -167,7 +174,7 @@
         (setq sections-html ""))
 
       ;; Accmulate HTML for current board.
-      (setq boards-html (add-board-html boards-html filename))
+      (setq boards-html (add-board-html boards-html board-key filename))
 
       (setq previous-chapter-key chapter-key)
       (setq previous-section-key section-key))
