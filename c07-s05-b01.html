@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Convergence of Second Sum of (11) in the Proof of Lemma 7.5</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Convergence of Second Sum of (11) in the Proof of Theorem 7.5
+
+## Geometric Series
+
+$$
+\sum_{a=2}^{\infty} \frac{1}{p^a}
+= \frac{1}{p^2} + \frac{1}{p^3} + \dots + ...
+= \frac{\frac{1}{p^2}}{1 - \frac{1}{p}}
+= \frac{1}{p^2} \cdot \frac{p}{p - 1}
+= \frac{1}{p (p - 1)}.
+$$
+
+
+## Convergence Test
+
+Let $ n \ge 2 $. Then
+$$
+0 \le n(n - 2) \implies n^2 \le 2n^2 - 2n \implies \frac{n^{1/2}}{n^2 - n} \le  \frac{2}{n^{3/2}}.
+$$
+We know that \( \log n < n^{1/2} \) for \( n \ge 2 \). Thus
+\begin{align*}
+  \frac{\log n}{n (n - 1)} < \frac{n^{1/2}}{n^2 - n} \le \frac{2}{n^{3/2}}.
+\end{align*}
+We know that $ \sum_{n=2}^{\infty} \frac{2}{n^{3/2}} $ converges. Thus
+by comparison test $ \sum_{n=2}^{\infty} \frac{\log n}{n (n - 1)} $
+converges.
+
+</div>
+</textarea>

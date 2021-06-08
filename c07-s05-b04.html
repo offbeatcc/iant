@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sum in the $ O $-term in Equation (14) in the Proof of Lemma 7.5</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Sum in the $ O $-term in Equation (14) in the Proof of Lemma 7.5
+
+From Theorem 3.15 we know that
+\begin{align*}
+\log[x]!
+& = x \log x - x + O(\log x) \\
+& = x \log x + O(x).
+\end{align*}
+
+Therefore
+\begin{align*}
+[x] \log x - \sum_{d \le x} \log d
+& = [x] \log x - x \log x + O(x) \\
+& = ([x] - x) \log x + O(x) \\
+& = O(x).
+\end{align*}
+
+Thus
+$$
+\frac{1}{x} \left( [x] \log x - \sum_{d \le x} \log d \right) = O(1).
+$$
+
+</div>
+</textarea>
