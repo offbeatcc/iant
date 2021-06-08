@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>More Steps in the Proof of Theorem 2.17</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# More Steps in the Proof of Theorem 2.17
+
+## Möbius Function for Prime Powers
+
+$$
+  \mu(1) = 1, \qquad
+  \mu(p) = -1, \qquad
+  \mu(p^2) = \mu(p^3) = \dots = 0.
+$$
+
+
+## Third Equation in the Proof of Theorem 2.17
+  
+\begin{align*}
+  \sum_{d \mid p^a} \mu(d) f(d) f\left(\frac{p^a}{d}\right)
+  & = \sum_{d = 1, p, p^2, \dots, p^a} \mu(d) f(d) f\left(\frac{p^a}{d}\right) \\
+  & = \mu(1) f(1) f\left( \frac{p^a}{1} \right) + \mu(p) f(p) f\left( \frac{p^a}{p} \right) + \underbrace{\mu(p^2) f(p^2) f\left( \frac{p^a}{p^2} \right) + \dots + \mu(p^a) f(p^a) f\left( \frac{p^a}{p^a} \right)}_0 \\
+  & = \mu(1) f(1) f(p^a) + \mu(p) f(p) f(p^{a - 1}) \\
+  & = f(p^a) - f(p) f(p^{a - 1}).
+\end{align*}
+
+
+## Final Step in the Proof of Theorem 2.17
+
+$$
+  f(p^a)
+  = f(p)f(p^{a - 1}) \\
+  = f(p)f(p)f(p^{a - 2}) \\
+  = \dots \\
+  = \underbrace{f(p)f(p)f(p) \dots f(p)}_{a \text{ times}} \\
+  = \left( f(p) \right)^a
+$$
+
+</div>
+</textarea>
