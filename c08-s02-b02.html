@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Summary of Lagrange's Interpolation Theorem</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Summary of Lagrange's Interpolation Theorem
+
+\begin{align*}
+  P(z_0) &= w_0, \\
+  P(z_1) &= w_1, \\
+  & \;\,\vdots \\
+  P(z_{k-1}) &= w_{k-1}.
+\end{align*}
+
+$$
+P(z) = \sum_{m=0}^{k-1} w_m \frac{A_m(z)}{A_m(z_m)}
+=
+\begin{aligned}[t]
+  & w_0 \frac{(z - z_1)(z - z_2) \dots (z - z_{k-1})}{(z_0 - z_1)(z_0 - z_2) \dots (z - z_{k - 1})} \\
+  & + w_1 \frac{(z - z_0)(z - z_2) \dots (z - z_{k-1})}{(z_1 - z_0)(z_1 - z_2) \dots (z - z_{k - 1})} \\
+  & \;\,\vdots \\
+  & + w_{k-1} \frac{(z - z_0)(z - z_1) \dots (z - z_{k-2})}{(z_{k-1} - z_0)(z_{k-1} - z_1) \dots (z_{k-1} - z_{k - 2})}.
+\end{aligned}
+$$
+
+</div>
+</textarea>

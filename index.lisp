@@ -54,6 +54,15 @@
     :c07-s07 "Proof of Lemma 7.8"
     :c07-s08 "Proof of Lemma 7.7"
     :c07-s09 "Distribution of Primes in Arithmetic Progressions"
+    :c08 "Periodic Arithmetical Functions and Gauss Sums"
+    :c08-s01 "Functions Periodic Modulo $ k $"
+    :c08-s02 "Existence of Finite Fourier Series for Periodic Arithmetical Functions"
+    :c08-s03 "Ramanujan's Sum and Generalizations"
+    :c08-s04 "Multiplicative Properties of the Sums $ s_k(n) $"
+    :c08-s05 "Gauss Sums Associated with Dirichlet Characters"
+    :c08-s06 "Dirichlet Characters with Nonvanishing Gauss Sums"
+    :c08-s07 "Induced Modulii and Primitive Characters"
+    :c08-s08 "Further Properties of Induced Moduli"
     :end ""))
 
 (defun extract-string (string start-token end-token)
