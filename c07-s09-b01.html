@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Summary of Proof of Dirichlet's Theorem</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+Let $ k = 10 $ and $ x = 20 $. Then
+
+$$
+A(10) = \lvert \{ 2, 5 \} \rvert = 2.
+$$
+
+\begin{align*}
+\pi(x) = \pi(20)
+& = \underbrace{\sum_{p = 2, 3, 5, 7, 11, 13, 17, 19} 1}_{8} \\
+& = \underbrace{A(10)}_{2} + \underbrace{\sum_{p = 3, 7, 11, 13, 17, 19} 1}_{6} \\
+& = \underbrace{A(10)} + \sum_{a = 1, 3, 7, 9} \sum_{\substack{p \le x \\ p \equiv a \pmod{10}}} 1 \\
+& = \underbrace{A(10)} + \sum_{a = 1, 3, 7, 9} \pi_a(20) \\
+& = A(k) + \sum_{\substack{a \le k \\ (a, k) = 1}} \pi_a(x).
+\end{align*}
+
+</div>
+</textarea>

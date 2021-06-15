@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Summary of Proof of Dirichlet's Theorem</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+
+<section>
+<section>
+
+**Lemma 7.6.** For $ x > 1 $ and $ \chi \ne \chi_1 $ we have
+$$
+L(1, \chi) \sum_{n \le x} \frac{\mu(n) \chi(n)}{n} = O(1).
+$$
+
+
+**Corollary A.** If $ L(1, \chi) \ne 0 $,
+$$
+\sum_{n \le x} \frac{\mu(n) \chi(n)}{n} = O(1).
+$$
+
+
+**Lemma 7.8.** If $ \chi \ne \chi_1 $ and $ L(1, \chi) = 0 $ we have
+$$
+L'(1, \chi) \sum_{n \le x} \frac{\mu(n) \chi(n)}{n} = \log x + O(1).
+$$
+
+</section>
+
+<!-- split -->
+
+<section>
+
+**Lemma 7.4.** For $ x > 1 $ we have
+$$
+\sum_{\substack{p \le x \\ p \equiv h \pmod{k}}} \frac{\log p}{p}
+= \frac{1}{\varphi(k)} \log x +
+  \frac{1}{\varphi(k)} \sum_{r=2}^{\varphi(k)} \overline{\chi}_r(h)
+  \sum_{p \le x} \frac{\chi_r(p) \log p}{p} + O(1).
+$$
+
+
+**Lemma 7.5.** For $ x > 1 $ and $ \chi \ne \chi_1 $ we have
+$$
+\sum_{p \le x} \frac{\chi(p) \log p}{p}
+= -L'(1, \chi) \sum_{n \le x} \frac{\mu(n) \chi(n)}{n} + O(1).
+$$
+
+
+**Lemma 7.7.** For $ x > 1 $ we have
+$$
+\sum_{\substack{p \le x \\ p \equiv 1 \pmod{k}}} \frac{\log p}{p}
+= \frac{1 - N(k)}{\varphi(k)} \log x + O(1).
+$$
+
+We obtain $ N(k) = 0 $ by contradiction, so $ L(1, \chi) \ne 0 $.
+
+
+</section>
+</section>
+
+---
+
+<div class="center">
+
+Apply Corollary A in Lemma 7.5 to get RHS = O(1). Then substitute
+Lemma 7.5 into Lemma 7.4 to get
+
+**Theorem 7.3.** If $ k > 0 $ and $ (h, k) = 1 $ we have, for all $ x > 1 $,
+$$
+\sum_{\substack{p \le x \\ p \equiv h \pmod{k}}} \frac{\log p}{p}
+= \frac{1}{\varphi(k)} \log x + O(1).
+$$
+</div>
+
+</textarea>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Proof of Lemma 7.6</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Proof of Lemma 7.6
+
+From Theorem 2.23 we get
+
+$$
+x = \sum_{n \le x} \mu(n) \chi(n) G\left( \frac{x}{n} \right)
+\iff
+G(x) = x \sum_{n \le x} \frac{\chi(n)}{n}.
+$$
+
+Therefore
+
+$$
+x = \sum_{n \le x} \mu(n) \chi(n) \frac{x}{n} \sum_{n \le x/n} \frac{\chi(n)}{n}.
+$$
+
+From Theorem 6.18, we know that
+$ \sum_{n \le x} \frac{\chi(n)}{n} = L(1, \chi) + O(\frac{1}{x}) $. Therefore
+
+$$
+x = \sum_{n \le x} \mu(n) \chi(n) \frac{x}{n} \left\{ L(1, \chi) + O\left( \frac{n}{x} \right) \right\}
+= x L(1, \chi) \sum_{n \le x} \frac{\mu(n) \chi(n)}{n} + O\left( x \right).
+$$
+
+</div>
+</textarea>
