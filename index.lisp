@@ -3,6 +3,10 @@
 (defvar *titles*
   '(:begin ""
     :c02 "Arithmetical Functions and Dirichlet Multiplication"
+    :c02-s11 "The Inverse of a Completely Multiplicative Function"
+    :c02-s12 "Liouville's Function $ \lambda(n) $"
+    :c02-s13 "The Divisor Functions $ \sigma_{\alpha}(n) $"
+    :c02-s14 "Generalized Convolutions"
     :c02-s15 "Formal Power Series"
     :c02-s16 "The Bell Series of an Arithmetical Function"
     :c02-s17 "Bell Series and Dirichlet Multiplication"

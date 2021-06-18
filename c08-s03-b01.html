@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Proof of Theorem 8.6</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Proof of Theorem 8.6
+
+From Theorem 8.5, we have
+
+$$
+s_k(n) = \sum_{d \mid (n, k)} f(d) g\left( \frac{k}{d} \right)
+= \sum_{m \, \bmod \, k} a_k(m) e^{2 \pi imn/k}
+\text{ where }
+a_k(n) = \sum_{d \mid (m, k)} g(d) f\left( \frac{k}{d} \right) \frac{d}{k}.
+$$
+
+Substitute $ f(k) = k $ and $ g(k) = \mu(k) $.
+
+$$
+\sum_{d \mid (n, k)} d \mu \left( \frac{k}{d} \right)
+= \sum_{m \, \bmod \, k} a_k(m) e^{2 \pi imn/k}, \text{ where}
+$$
+
+\begin{align*}
+  a_k(m)
+  = \sum_{d \mid (m, k)} \mu(d) \frac{k}{d} \frac{d}{k}
+  = \sum_{d \mid (m, k)} \mu(d)
+  & = \begin{cases}
+    1 & \text{ if } (m, k) = 1, \\
+    0 & \text{ if } (m, k) > 1,
+  \end{cases} \\
+  & = I((m, k)) = \left[ \frac{1}{(m, k)} \right].
+\end{align*}
+
+</div>
+</textarea>
