@@ -94,7 +94,7 @@
 
 (defun board-file-list ()
   "Return the list of board HTML files in the current directory."
-  (sort (directory "c*.html") #'string-lessp :key #'namestring))
+  (sort (directory "boards/c*.html") #'string-lessp :key #'namestring))
 
 (defun chapter-num (chapter-key)
   "Given a chapter or section key, return the chapter number as a string."
@@ -138,23 +138,25 @@
           (spaces 12)
           (spaces 10)))
 
-(defun add-board-html (boards-html board-key filename)
+(defun add-board-html (boards-html board-key filename filepath)
   "Add HTML for a new board to boards-html."
   (format nil "~a~a<li id=\"~a\"><a href=\"~a\">~a</a><a href=\"#~a\"></a></li>~%"
           boards-html
           (spaces 14)
           board-key
           filename
-          (read-page-title filename)
+          (read-page-title filepath)
           board-key))
 
 (defun make-chapter-list-html ()
   "Create HTML for a list of chapters that can be inserted into index.html."
   (let (previous-chapter-key
-        previous-section-key
-        filename
-        chapter-key
-        section-key
+        (previous-section-key)
+        (filename)
+        (filepath)
+        (chapter-key)
+        (section-key)
+        (board-key)
         (chapters-html "")
         (sections-html "")
         (boards-html ""))
@@ -165,6 +167,7 @@
 
       ;; Extract filename, chapter key, and section key from board file path.
       (setq filename (file-namestring path))
+      (setq filepath (format nil "boards/~a" filename))
       (setq chapter-key (subseq filename 0 3))
       (setq section-key (subseq filename 0 7))
       (setq board-key (subseq filename 0 11))
@@ -187,7 +190,7 @@
         (setq sections-html ""))
 
       ;; Accmulate HTML for current board.
-      (setq boards-html (add-board-html boards-html board-key filename))
+      (setq boards-html (add-board-html boards-html board-key filename filepath))
 
       (setq previous-chapter-key chapter-key)
       (setq previous-section-key section-key))
@@ -211,12 +214,12 @@
 (defun main ()
   "Update index.html."
   (let* ((chapter-list-html (make-chapter-list-html))
-         (current-index-html (uiop:read-file-string "index.html"))
+         (current-index-html (uiop:read-file-string "boards/index.html"))
          (updated-index-html (replace-string current-index-html
                                              "    <!-- begin chapters -->"
                                              "    <!-- end chapters -->"
                                              chapter-list-html)))
-    (write-file-string "index.html" updated-index-html)))
+    (write-file-string "boards/index.html" updated-index-html)))
 
 
 (main)
