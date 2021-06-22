@@ -1,0 +1,50 @@
+Look at G(2, X_2).
+
+G(2, X_2) = 3.464i != 0.
+
+q = (n, k) = (2, 12) = 2.
+
+d = k/q = 12/2 = 6.
+
+Choose any a such that
+
+(a, k) = 1 and a ≡ 1 (mod d).
+
+We choose 7. Check: (7, 12) = 1 and 7 ≡ 1 (mod 6). Sure enough X_2(7) = 1.
+
+---
+
+Look at G(3, X_3).
+
+G(3, X_3) = 4i != 0.
+
+q = (n, k) = (3, 12) = 3.
+
+d = k/q = 12/3 = 4.
+
+Choose any a such that
+
+(a, k) = 1 and a ≡ 1 (mod d).
+
+We choose a = 5. Check: (5, 12) = 1 and 5 ≡ 1 (mod 4). Sure enough X_3(5) = 1.
+
+---
+
+Induced modulus d: (a, k) = 1 and a ≡ 1 (mod d) => X(a) = 1.
+
+---
+
+Note that G(n, X_4) is separable.
+Note that d = 2 is not an induced modulus for X_3. X_3(7) != 1.
+Note that d = 4 **is** an induced modulus for X_3. X_3(1) = X_3(5) = 1.
+Note that X_4 is a primitive character.
+
+---
+
+
+    m     1   5   7  11
+         ---------------
+X_1(m) = [1,  1,  1,  1]
+X_2(m) = [1, -1,  1, -1]
+X_3(m) = [1,  1, -1, -1]
+X_4(m) = [1, -1, -1,  1]

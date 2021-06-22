@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Periodicity of Geometric Sum</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Periodicity of Geometric Sum
+
+$$
+k = 4.
+$$
+
+$$
+z
+= e^{i2\pi/k}
+= e^{i2\pi/4}
+= \cos\left( \frac{\pi}{2} \right) + i \sin\left( \frac{\pi}{2} \right)
+= i.
+$$
+
+$$
+g(n)
+= \sum_{m=0}^{k-1} e^{i2\pi nm/k} = \sum_{m=0}^3 e^{i2\pi nm/4}
+= \sum_{m=0}^3 (z^n)^m.
+$$
+
+\begin{align*}
+  n &= 0, &
+  z^n &= i^0 = 1, &
+  g(n) &= \sum_{m=0}^3 (z^n)^m = \sum_{m=0}^3 (1)^m = 1 + 1 + 1 + 1 = 4. \\
+
+  n &= 1, &
+  z^n &= i^1 = i, &
+  g(n) &= \sum_{m=0}^3 (z^n)^m = \sum_{m=0}^3 (i)^m = i - 1 - i + 1 = 0. \\
+
+  n &= 2, &
+  z^n &= i^2 = -1, &
+  g(n) &= \sum_{m=0}^3 (z^n)^m = \sum_{m=0}^3 (-1)^m = -1 + 1 - 1 + 1 = 0. \\
+
+  n &= 3, &
+  z^n &= i^3 = -i, &
+  g(n) &= \sum_{m=0}^3 (z^n)^m = \sum_{m=0}^3 (-i)^m = -i - 1 + i + 1 = 0. \\
+
+  n &= 4, &
+  z^n &= i^4 = 1, &
+  g(n) &= \sum_{m=0}^3 (z^n)^m = \sum_{m=0}^3 (1)^m = 1 + 1 + 1 + 1 = 4. \\
+
+  n &= 5, &
+  z^n &= i^5 = i, &
+  g(n) &= \sum_{m=0}^3 (z^n)^m = \sum_{m=0}^3 (i)^m = i - 1 -i + 1 = 0. \\
+
+  & & & & & \;\,\vdots
+\end{align*}
+
+</div>
+</textarea>
+
+
