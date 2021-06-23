@@ -67,6 +67,10 @@
     :c08-s06 "Dirichlet Characters with Nonvanishing Gauss Sums"
     :c08-s07 "Induced Modulii and Primitive Characters"
     :c08-s08 "Further Properties of Induced Moduli"
+    :c08-s09 "The Conductor of a Character"
+    :c08-s10 "Primitive Characters and Separable Gauss Sums"
+    :c08-s11 "The Finite Fourier Series of the Dirichlet Characters"
+    :c08-s12 "Polya's Inequality for the Partial Sums of Primitive Characters"
     :end ""))
 
 (defun extract-string (string start-token end-token)
@@ -104,7 +108,7 @@
   "Given a section key, return section number as string."
   (format nil "~a.~a"
           (chapter-num section-key)
-          (string-trim "0" (subseq section-key 5 7))))
+          (string-left-trim "0" (subseq section-key 5 7))))
 
 (defun spaces (num)
   "Return a string consisting of num spaces."

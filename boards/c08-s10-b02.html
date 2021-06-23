@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Application of Theorem 5.33 (a) in Theorem 8.19</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Application of Theorem 5.33 (a) in Theorem 8.19
+
+Let $ f(m) = \psi(m) e^{2 \pi i m/d} $.
+Note $ f(m) $ is periodic modulo $ d $.
+
+Let $ k = 15 $ and $ d = 3 $.
+
+\begin{align*}
+  \sum_{\substack{m \, \bmod \, 15 \\ (m, 15) = 1}} f(m)
+  & = f(1) + f(2) + f(4) + f(7) + f(8) + f(11) + f(13) + f(14) \\
+  & = \Bigl( f(1) + f(2) \Bigr) +
+      \Bigl( f(4) + f(8) \Bigr) +
+      \Bigl( f(7) + f(11) \Bigr) +
+      \Bigl( f(13) + f(14) \Bigr) \\
+  & = \Bigl( f(1) + f(2) \Bigr) +
+      \Bigl( f(1) + f(2) \Bigr) +
+      \Bigl( f(1) + f(2) \Bigr) +
+      \Bigl( f(1) + f(2) \Bigr) \\
+  & = \frac{\varphi(15)}{\varphi(3)} \Bigl( f(1) + f(2) \Bigr) \\
+  & = \frac{\varphi(15)}{\varphi(3)} \sum_{\substack{m \, \bmod \, 3 \\ (m, 3) = 1}} f(m)
+\end{align*}
+
+</div>
+</textarea>
