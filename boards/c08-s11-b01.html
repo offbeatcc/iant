@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Summary of Proof of Theorem 8.20</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Summary of Proof of Theorem 8.20
+
+\begin{align*}
+  \chi(m)
+  &= \sum_{n=1}^k a_k(n) e^{2 \pi imn/k}
+  = \sum_{n=1}^k \frac{G(-n, \chi)}{k} e^{2 \pi imn/k}
+  = \sum_{n=1}^k \frac{\overline{\chi}(-n) G(1, \chi)}{k} e^{2 \pi imn/k} \\
+  &= \frac{G(1, \chi)}{k} \sum_{n=1}^k \overline{\chi}(-n) e^{2 \pi imn/k} \\
+  &= \frac{G(1, \chi)}{k} \sum_{n=0}^{k-1} \overline{\chi}(-n) e^{2 \pi imn/k}
+  = \frac{G(1, \chi)}{k} \sum_{n=-k}^{-1} \overline{\chi}(-n) e^{2 \pi imn/k}
+  = \frac{G(1, \chi)}{k} \sum_{n=1}^{k} \overline{\chi}(n) e^{-2 \pi imn/k} \\
+  &= \frac{G(1, \chi)}{\sqrt{k}} \frac{1}{\sqrt{k}} \sum_{n=1}^{k} \overline{\chi}(n) e^{-2 \pi imn/k} \\
+  &= \frac{\tau_k(\chi)}{\sqrt{k}} \sum_{n=1}^{k} \overline{\chi}(n) e^{-2 \pi imn/k}.
+\end{align*}
+
+</div>
+</textarea>

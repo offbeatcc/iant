@@ -170,41 +170,41 @@
       (format t "Found ~a ...~%" path)
 
       ;; Extract filename, chapter key, and section key from board file path.
-      (setq filename (file-namestring path))
-      (setq filepath (format nil "boards/~a" filename))
-      (setq chapter-key (subseq filename 0 3))
-      (setq section-key (subseq filename 0 7))
-      (setq board-key (subseq filename 0 11))
+      (setf filename (file-namestring path))
+      (setf filepath (format nil "boards/~a" filename))
+      (setf chapter-key (subseq filename 0 3))
+      (setf section-key (subseq filename 0 7))
+      (setf board-key (subseq filename 0 11))
 
       ;; Set chapter and section keys to that of first chapter and section.
       (unless previous-chapter-key
-        (setq previous-chapter-key chapter-key)
-        (setq previous-section-key section-key))
+        (setf previous-chapter-key chapter-key)
+        (setf previous-section-key section-key))
 
       ;; Accumulate HTML for previous section when a new section is found.
       (when (string/= previous-section-key section-key)
-        (setq sections-html
+        (setf sections-html
               (add-section-html sections-html previous-section-key boards-html))
-        (setq boards-html ""))
+        (setf boards-html ""))
 
       ;; Accumulate HTML for previous section when a new chapter is found.
       (when (string/= previous-chapter-key chapter-key)
-        (setq chapters-html
+        (setf chapters-html
               (add-chapter-html chapters-html previous-chapter-key sections-html))
-        (setq sections-html ""))
+        (setf sections-html ""))
 
       ;; Accmulate HTML for current board.
-      (setq boards-html (add-board-html boards-html board-key filename filepath))
+      (setf boards-html (add-board-html boards-html board-key filename filepath))
 
-      (setq previous-chapter-key chapter-key)
-      (setq previous-section-key section-key))
+      (setf previous-chapter-key chapter-key)
+      (setf previous-section-key section-key))
 
     ;; Accumulate HTML for last section.
-    (setq sections-html
+    (setf sections-html
           (add-section-html sections-html section-key boards-html))
 
     ;; Accumulate HTML for last chapter.
-    (setq chapters-html
+    (setf chapters-html
           (add-chapter-html chapters-html chapter-key sections-html))
 
     ;; Complete HTML list markup for chapter list.

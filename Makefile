@@ -10,4 +10,8 @@ boards: FORCE
 code: FORCE
 	for f in code/*.py; do python3 "$$f" > "$${f%.py}.out.txt"; done
 
+pub:
+	git push
+	cd ../offbeat && make pub
+
 FORCE:
