@@ -71,6 +71,9 @@
     :c08-s10 "Primitive Characters and Separable Gauss Sums"
     :c08-s11 "The Finite Fourier Series of the Dirichlet Characters"
     :c08-s12 "Polya's Inequality for the Partial Sums of Primitive Characters"
+    :c09 "Quadratic Residues and the Quadratic Reciprocity Law"
+    :c09-s01 "Quadratic Residues"
+    :c09-s02 "Legendre's Symbol and its Properties"
     :end ""))
 
 (defun extract-string (string start-token end-token)
@@ -144,13 +147,12 @@
 
 (defun add-board-html (boards-html board-key filename filepath)
   "Add HTML for a new board to boards-html."
-  (format nil "~a~a<li id=\"~a\"><a href=\"~a\">~a</a><a href=\"#~a\"></a></li>~%"
+  (format nil "~a~a<li id=\"~a\"><a href=\"~a\">~a</a></li>~%"
           boards-html
           (spaces 14)
           board-key
           filename
-          (read-page-title filepath)
-          board-key))
+          (read-page-title filepath)))
 
 (defun make-chapter-list-html ()
   "Create HTML for a list of chapters that can be inserted into index.html."
