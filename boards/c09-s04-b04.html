@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Illustration of Theorem 9.7</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Illustration of Theorem 9.7
+  
+## Example 1
+
+Let $ n = 3 $ and $ p = 11 $.
+
+\begin{align*}
+  m &= \sum_{t=1}^{(p-1)/2} \left[ \frac{tn}{p} \right] +
+       (n - 1) \frac{p^2 - 1}{8} \pmod{2} \\
+    &= \sum_{t=1}^5 \left[ \frac{3t}{p} \right] +
+       (3 - 1) \frac{11^2 - 1}{8} \\
+    &= \left[ \frac{3}{11} \right] + \left[ \frac{6}{11} \right] +
+       \left[ \frac{9}{11} \right] + \left[ \frac{12}{11} \right] +
+       \left[ \frac{15}{11} \right] + 2 \left( \frac{120}{8} \right) \\
+    &= 2 + 2 \cdot 15 \equiv 0 \pmod{2}.
+\end{align*}
+
+## Example 2
+
+Let $ n = 6 $ and $ p = 11 $.
+
+\begin{align*}
+  m &= \sum_{t=1}^{(p-1)/2} \left[ \frac{tn}{p} \right] +
+       (n - 1) \frac{p^2 - 1}{8} \pmod{2} \\
+    &= \sum_{t=1}^5 \left[ \frac{6t}{p} \right] +
+       (6 - 1) \frac{11^2 - 1}{8} \\
+    &= \left[ \frac{6}{11} \right] + \left[ \frac{12}{11} \right] +
+       \left[ \frac{18}{11} \right] + \left[ \frac{24}{11} \right] +
+       \left[ \frac{30}{11} \right] + 5 \left( \frac{120}{8} \right) \\
+    &= 6 + 5 \cdot 15 \equiv 1 \pmod{2}.
+\end{align*}
+
+</div>
+</textarea>

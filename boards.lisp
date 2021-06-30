@@ -74,6 +74,15 @@
     :c09 "Quadratic Residues and the Quadratic Reciprocity Law"
     :c09-s01 "Quadratic Residues"
     :c09-s02 "Legendre's Symbol and its Properties"
+    :c09-s03 "Evaluation of $ (-1 \mid p) $ and $ (2 \mid p) $"
+    :c09-s04 "Gauss' Lemma"
+    :c09-s05 "The Quadratic Reciprocity Law"
+    :c09-s06 "Applications of the Reciprocity Law"
+    :c09-s07 "The Jacobi Symbol"
+    :c09-s08 "Applications to Diophantine Equations"
+    :c09-s09 "Gauss Sums and the Quadratic Reciprocity Law"
+    :c09-s10 "The Reciprocity Law for Quadratic Gauss Sums"
+    :c09-s11 "Another Proof of the Quadratic Reciprocity Law"
     :end ""))
 
 (defun extract-string (string start-token end-token)
