@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Illustration of Euler's Criterion</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Illustration of Euler's Criterion
+
+## Quadratic Residues Modulo 5
+
+\begin{align*}
+  1^2 &\equiv 1 \pmod{5}, & 2^2 &\equiv 4 \pmod{5}, \\
+  4^2 &\equiv 1 \pmod{5}, & 3^2 &\equiv 4 \pmod{5}.
+\end{align*}
+
+Quadratic residues: 1, 4. Quadratic nonresidues: 2, 3.
+
+## Euler's Criterion
+
+$$
+p \nmid n \implies
+n^{p-1} \equiv 1 \pmod{p} \implies
+n^{(p-1)/2} \equiv \pm 1 \pmod{p}.
+$$
+
+$$
+p \text{ is odd prime} \implies
+(n \mid p) \equiv n^{(p-1)/2} \pmod{p}.
+$$
+
+## Illustration
+
+\begin{align*}
+  1^4 &\equiv 1 \pmod{5}, & 1^2 &\equiv \phantom{+}1 \pmod{5}, & (1 \mid 5) &= \phantom{+}1, \\
+  2^4 &\equiv 1 \pmod{5}, & 2^2 &\equiv -1 \pmod{5},  & (2 \mid 5) &= -1, \\
+  3^4 &\equiv 1 \pmod{5}, & 3^2 &\equiv -1 \pmod{5},  & (3 \mid 5) &= -1, \\
+  4^4 &\equiv 1 \pmod{5}, & 4^2 &\equiv \phantom{+}1 \pmod{5},  & (4 \mid 5) &= \phantom{+}1. \\
+  5^4 &\equiv 0 \pmod{5}, & 5^2 &\equiv \phantom{+}0 \pmod{5},  & (5 \mid 5) &= \phantom{+}0.
+\end{align*}
+
+</div>
+</textarea>
