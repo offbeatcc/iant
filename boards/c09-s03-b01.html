@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Proof of Theorem 9.4</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Proof of Theorem 9.4
+
+\begin{align*}
+  (-1 \mid p) = (-1)^{(p-1)/2}
+  &= \begin{cases}
+    \phantom{+}1  & \text{ if } \frac{p - 1}{2} \equiv 0 \pmod{2}, \\
+    -1 & \text{ if } \frac{p - 1}{2} \equiv 1 \pmod{2},
+  \end{cases} \\ \\
+  &= \begin{cases}
+    \phantom{+}1  & \text{ if } p - 1 \equiv 0 \pmod{4}, \\
+    -1 & \text{ if } p - 1 \equiv 2 \pmod{4},    
+  \end{cases} \\ \\
+  &= \begin{cases}
+    \phantom{+}1  & \text{ if } p  \equiv 1 \pmod{4}, \\
+    -1 & \text{ if } p \equiv 3 \pmod{4}.
+  \end{cases}
+\end{align*}
+
+</div>
+</textarea>
