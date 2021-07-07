@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Illustration of Some Steps in the Proof of Theorem 9.10</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Illustration of Some Steps in the Proof of Theorem 9.10
+
+\begin{align*}
+\Bigl( 1 + (p_1 - 1) \Bigr)\Bigl( 1 + (p_2 - 1) \Bigr)\Bigl( 1 + (p_3 - 1) \Bigr)
+&= \begin{aligned}[t]
+  1
+  & + (p_1 - 1) + (p_2 - 1) + (p_3 - 1) \\
+  & + (p_1 - 1)(p_2 - 1) \\
+  & + (p_1 - 1)(p_2 - 1) \\
+  & + (p_1 - 1)(p_3 - 1) \\
+  & + (p_1 - 1)(p_2 - 1)(p_3 - 1).
+\end{aligned} \\ \\
+&\equiv 1 + (p_1 - 1) + (p_2 - 1) + (p_3 - 1) \pmod{4}.
+\end{align*}
+
+---
+
+\begin{align*}
+  \prod_{i=1}^m (-1)^{(p_i - 1)/2}
+  &= (-1)^{(p_1 - 1)/2} (-1)^{(p_2 - 1)/2} \dots (-1)^{(p_m - 1)/2} \\
+  &= (-1)^{\frac{p_1 - 1}{2} + \frac{p_2 - 1}{2} + \dots + \frac{p_3 - 1}{2}} \\
+  &= (-1)^{\sum_{i=1}^m \frac{p_i - 1}{2}} \\
+  &= (-1)^{\frac{P - 1}{2}}.
+\end{align*}
+
+---
+
+Let $ p_i = 2k + 1 $ for some positive integer $ k $.
+
+$$
+(p_i^2 - 1) = (p_i + 1)(p_i - 1) = (2k + 2)(2k) = 4k(k + 1) \equiv 0 \pmod{8}.
+$$
+
+</div>
+</textarea>

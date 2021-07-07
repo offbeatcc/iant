@@ -3,19 +3,23 @@ from math import *
 # The imaginary unit.
 i = 1j
 
+w = e**(i * pi / 3)
+
 # Modulus.
-k = 5
+k = 7
 
 # All m such that (m, k) = 1 and 0 < m < k.
-m_list = [1, 2, 3, 4]
+m_list = [m for m in range(1, k)]
 
 # Dirichlet character table.
 X_list = [
-   # 1   2   3   4  <- m    
-    [1,  1,  1,  1], # X_1(m)
-    [1, -1, -1,  1], # X_2(m)
-    [1,  i, -i, -1], # X_3(m)
-    [1, -i,  i, -1], # X_4(m)
+  #  1      2      3      4      5      6     
+    [1,     1,     1,     1,     1,     1],  # X_1(m)
+    [1,     1,    -1,     1,    -1,    -1],  # X_2(m)
+    [1,  w**2,     w,    -w, -w**2,    -1],  # X_3(m)
+    [1,  w**2,    -w,    -w,  w**2,     1],  # X_4(m)
+    [1,    -w,  w**2,  w**2,    -w,     1],  # X_5(m)
+    [1,    -w, -w**2,  w**2,     w,    -1],  # X_6(m)
 ]
 
 # Gauss sum.

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Final Step of Theorem 9.13</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+\begin{align*}
+  \sum_{t=1}^{p-1} (t \mid p)
+  \sum_{r=1}^{p-1} e^{i 2 \pi r (1 + t) / p}
+  &= \sum_{t=1}^{p-2} (t \mid p) \underbrace{\sum_{r=1}^{p-1} e^{i 2 \pi r (1 + t) / p}}_{-1} +
+     (p - 1 \mid p) \underbrace{\sum_{r=1}^{p-1} e^{i 2 \pi r (p) / p}}_{p - 1} \\
+  &= - \sum_{t = 1}^{p - 2} (t \mid p) + (p - 1) (p - 1 \mid p) \\
+  &= - \sum_{t = 1}^{p - 1} (t \mid p) + (p - 1 \mid p) + (p - 1) (p - 1 \mid p) \\
+  &= - \sum_{t = 1}^{p - 1} (t \mid p) + (1 + p - 1) (p - 1 \mid p) \\
+  &= - \sum_{t = 1}^{p - 1} (t \mid p) + p (p - 1 \mid p) \\
+  &= (-1 \mid p)p.
+\end{align*}
+
+</div>
+</textarea>

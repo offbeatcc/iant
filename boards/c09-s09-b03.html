@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Solving the Geometric Sum in the Proof of Theorem 9.13</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Solving the Geometric Sum
+
+Using Theorem 8.1, we get
+
+$$
+\sum_{r=1}^{p} e^{i 2 \pi r n / p} = \begin{cases}
+  0 & \text{ if } p \nmid n, \\
+  p & \text{ if } p \mid n.
+\end{cases}
+$$
+
+Thus
+
+$$
+\sum_{r=1}^{p} e^{i 2 \pi r (1 + t) / p} = \begin{cases}
+  0 & \text{ if } p \nmid (1 + t), \\
+  p & \text{ if } p \mid (1 + t).
+\end{cases}
+$$
+
+Splitting the sum on LHS,
+
+$$
+\sum_{r=1}^{p-1} e^{i 2 \pi r (1 + t) / p} + \underbrace{e^{i 2 \pi p (1 + t)/p}}_1
+= \begin{cases}
+  0 & \text{ if } p \nmid (1 + t), \\
+  p & \text{ if } p \mid (1 + t).
+\end{cases}
+$$
+
+Subtracting 1 from both sides,
+
+$$
+\sum_{r=1}^{p-1} e^{i 2 \pi r (1 + t) / p}
+= \begin{cases}
+  \phantom{p} -1 & \text{ if } p \nmid (1 + t), \\
+  p - 1 & \text{ if } p \mid (1 + t).
+\end{cases}
+$$
+
+</div>
+</textarea>
