@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Computing $ g(z + 1) - g(z) $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Computing $ g(z + 1) - g(z) $
+
+Using the definition of $ g(z) $, i.e.,
+
+$$
+g(z) = \sum_{r=0}^{m-1} e^{i \pi a (z + r)^2/m}.
+$$
+
+we get
+
+\begin{align*}
+  g(z + 1) &= e^{i \pi a(z + 1)^2/m} + e^{i \pi a(z + 2)^2/m} + \dots +
+              e^{i \pi a(z + m - 1)^2/m} + e^{i \pi a(z + m)^2/m}, \\
+  g(z) &= e^{i \pi az^2/m} + e^{i \pi a(z + 1)^2/m} + e^{i \pi a(z + 2)^2/m} \dots +
+          e^{i \pi a(z + m - 1)^2/m}. \\            
+\end{align*}
+
+Thus
+
+\begin{align*}
+  g(z + 1) - g(z)
+  &= e^{i \pi a(z + m)^2/m} - e^{i \pi az^2/m} \\
+  &= e^{i \pi a(z^2 + 2zm + m^2)/m} - e^{i \pi az^2/m} \\
+  &= e^{i \pi az^2/m} \cdot e^{i 2\pi az} \cdot
+     \underbrace{e^{i \pi am}}_{1} - e^{i \pi az^2/m} \\
+  &= e^{i \pi az^2/m} (e^{i2\pi az} - 1) \\
+  &= e^{i \pi az^2/m}
+     \underbrace{(e^{i2\pi z} - 1)
+       (1 + e^{i2\pi z} + e^{i2\pi(2)z} + \dots + e^{i2\pi(a - 1)z})}_{
+         \text{ since } x^a - 1 = (x - 1)(1 + x + x^2 + \dots + x^{a - 1})
+       } \\
+  &= e^{i \pi az^2/m} (e^{i2\pi z} - 1)\sum_{n=0}^{a-1} e^{i2\pi nz}.
+\end{align*}
+
+</div>
+</textarea>
