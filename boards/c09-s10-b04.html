@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Cases in Equation (30)</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Cases in Equation (30)
+  
+$$
+G(1; m)
+= \frac{1}{2} \sqrt{m} (1 + i)(1 + e^{-i \pi m/2})
+= \begin{cases}
+\sqrt{m}        & \text{ if } m \equiv 1 \pmod{4}, \\
+0               & \text{ if } m \equiv 2 \pmod{4}, \\
+i\sqrt{m}       & \text{ if } m \equiv 3 \pmod{4}, \\
+(1 + i)\sqrt{m} & \text{ if } m \equiv 0 \pmod{4}.
+\end{cases}
+$$
+
+\begin{align*}
+m \equiv 1 \pmod{4}
+&\implies
+G(1; m) = \frac{1}{2} \sqrt{m} (1 + i)(1 - i) = \frac{1}{2} \sqrt{m} (1 - (-1)) = \sqrt{m}, \\
+m \equiv 2 \pmod{4}
+&\implies
+G(1; m) = \frac{1}{2} \sqrt{m} (1 + i)(1 - 1) = 0, \\
+m \equiv 3 \pmod{4}
+&\implies
+G(1; m) = \frac{1}{2} \sqrt{m} (1 + i)(1 + i) = \frac{1}{2} \sqrt{m} (1 + 2i - 1) = i \sqrt{m}, \\
+m \equiv 4 \pmod{4}
+&\implies
+G(1; m) = \frac{1}{2} \sqrt{m} (1 + i)(1 + 1) = (1 + i)\sqrt{m}.
+\end{align*}
+
+</div>
+</textarea>

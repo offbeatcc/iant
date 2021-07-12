@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>An Example of Quadratic Gauss Sum</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# An Example of Quadratic Gauss Sum
+  
+\begin{align*}
+  G(n; 7)
+  &= \sum_{r=1}^7 e^{i 2 \pi nr^2/7} \\
+  &= \begin{aligned}[t]
+    & e^{i2 \pi n (1)/7} + e^{i2 \pi n (4)/7} + e^{i2 \pi n (9)/7} + \\
+    & e^{i2 \pi n (16)/7} + e^{i2 \pi n (25)/7} + e^{i2 \pi n (36)/7} + \\
+    & e^{i2 \pi n(49)/7} \\
+  \end{aligned} \\
+  &= \begin{aligned}[t]
+    & e^{i2 \pi n (1)/7} + e^{i2 \pi n (4)/7} + e^{i2 \pi n (2)/7} + \\
+    & e^{i2 \pi n (2)/7} + e^{i2 \pi n (4)/7} + e^{i2 \pi n (1)/7} + \\
+    & e^{i2 \pi n(49)/7}.
+  \end{aligned} \\
+  &= 2 \sum_{\substack{r=1 \\ (r \mid p) = 1}}^7 e^{i 2 \pi nr/7} + 1.
+\end{align*}
+
+</div>
+</textarea>

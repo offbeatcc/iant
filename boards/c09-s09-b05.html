@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining Equation 24 in Proof of Theorem 9.15</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining Equation 24 in Proof of Theorem 9.15
+
+Using Theorem 8.4, for arithmetical function $ f(n) $ with period
+$ p $ we get
+
+$$
+f(n) = \sum_{m \; \bmod \; p} g(m) e^{i 2 \pi mn/p}
+$$
+
+where
+
+$$
+g(m) = \frac{1}{p} \sum_{n \; \bmod \; p} f(n) e^{-i 2 \pi mn/p}.
+$$
+
+Thus
+
+$$
+G(n, \chi)^q = \sum_{m \; \bmod \; p} a_q(m) e^{i 2 \pi m n/p}
+$$
+
+where
+
+$$
+a_q(m) = \frac{1}{p} \sum_{n \; \bmod \; p} G(n, \chi)^q e^{-i 2 \pi mn/p}.
+$$
+
+</div>
+</textarea>

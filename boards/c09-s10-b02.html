@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Relationship Between Quadratic Gauss Sums and Gauss Sums</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Relationship Between Quadratic Gauss Sums and Gauss Sums
+  
+\begin{align*}
+  G(n; p)
+  &= \sum_{r=1}^p e^{i 2\pi nr^2/p}
+  = 2\sum_{\substack{r=1 \\ (r \mid p) = 1}}^p e^{i 2\pi nr/p} + e^{i 2\pi np/p} \\
+  &= \underbrace{\sum_{r=1}^p e^{i 2\pi nr/p}}_{0 \text{ since } p \, \nmid \, n} +
+     \sum_{\substack{r=1 \\ (r \mid p) = 1}}^p e^{i 2\pi nr/p} -
+     \sum_{\substack{r=1 \\ (r \mid p) = -1}}^p e^{i 2\pi nr/p} \\
+  &= \sum_{\substack{r=1 \\ (r \mid p) = 1}}^p (r \mid p) e^{i 2\pi nr/p} +
+     \sum_{\substack{r=1 \\ (r \mid p) = -1}}^p (r \mid p) e^{i 2\pi nr/p} \\
+  &= \sum_{r=1}^p (r \mid p) e^{i 2\pi nr/p} \\
+  &= G(n, \chi).
+\end{align*}
+
+</div>
+</textarea>
