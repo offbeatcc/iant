@@ -4,8 +4,8 @@
   '(:begin ""
     :c02 "Arithmetical Functions and Dirichlet Multiplication"
     :c02-s11 "The Inverse of a Completely Multiplicative Function"
-    :c02-s12 "Liouville's Function $ \lambda(n) $"
-    :c02-s13 "The Divisor Functions $ \sigma_{\alpha}(n) $"
+    :c02-s12 "Liouville's Function $ \\lambda(n) $"
+    :c02-s13 "The Divisor Functions $ \\sigma_{\\alpha}(n) $"
     :c02-s14 "Generalized Convolutions"
     :c02-s15 "Formal Power Series"
     :c02-s16 "The Bell Series of an Arithmetical Function"
@@ -30,7 +30,7 @@
     :c05-s02 "Residue Classes and Complete Residue Systems"
     :c05-s03 "Linear Congruences"
     :c05-s04 "Reduced Residue Systems and the Euler-Fermat Theorem"
-    :c05-s05 "Polynomial Congruences Modulo \( p \). Lagrange's Theorem"
+    :c05-s05 "Polynomial Congruences Modulo $ p $. Lagrange's Theorem"
     :c05-s06 "Applications of Lagrange's Theorem"
     :c05-s07 "Simultaneous Linear Congruences. The Chinese Remainder Theorem"
     :c05-s08 "Applications of the Chinese Remainder Theorem"
@@ -47,7 +47,7 @@
     :c06-s07 "The Orthogonality Relations for Characters"
     :c06-s08 "Dirichlet Characters"
     :c06-s09 "Sums Involving Dirichlet Characters"
-    :c06-s10 "The Nonvanishing of $ L(1, \chi) $ for Real Nonprincipal $ \chi $"
+    :c06-s10 "The Nonvanishing of $ L(1, \\chi) $ for Real Nonprincipal $ \\chi $"
     :c07 "Dirichlet's Theorem on Primes in Arithmetical Progressions"
     :c07-s01 "Introduction"
     :c07-s02 "Dirichlet's Theorem for Primes of the Form $ 4n - 1 $ and $ 4n + 1"
@@ -74,7 +74,7 @@
     :c09 "Quadratic Residues and the Quadratic Reciprocity Law"
     :c09-s01 "Quadratic Residues"
     :c09-s02 "Legendre's Symbol and its Properties"
-    :c09-s03 "Evaluation of $ (-1 \mid p) $ and $ (2 \mid p) $"
+    :c09-s03 "Evaluation of $ (-1 \\mid p) $ and $ (2 \\mid p) $"
     :c09-s04 "Gauss' Lemma"
     :c09-s05 "The Quadratic Reciprocity Law"
     :c09-s06 "Applications of the Reciprocity Law"
@@ -83,6 +83,11 @@
     :c09-s09 "Gauss Sums and the Quadratic Reciprocity Law"
     :c09-s10 "The Reciprocity Law for Quadratic Gauss Sums"
     :c09-s11 "Another Proof of the Quadratic Reciprocity Law"
+    :c10 "Primitive Roots"
+    :c10-s01 "The Exponent of a Number $ \\bmod m $"
+    :c10-s02 "Primitive Roots and Reduced Residue Systems"
+    :c10-s03 "The Nonexistence of Primitive Roots $ \\bmod 2^{\\alpha} $ for $ \\alpha ge 3 $"
+    :c10-s04 "The Existence of Primitive Roots $ \\bmod p $ for Odd Primes $ p $"
     :end ""))
 
 (defun extract-string (string start-token end-token)
@@ -114,7 +119,7 @@
 
 (defun chapter-num (chapter-key)
   "Given a chapter or section key, return the chapter number as a string."
-  (string-trim "0" (subseq chapter-key 1 3)))
+  (string-left-trim "0" (subseq chapter-key 1 3)))
 
 (defun section-num (section-key)
   "Given a section key, return section number as string."
