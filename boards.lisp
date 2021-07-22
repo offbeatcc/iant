@@ -88,6 +88,15 @@
     :c10-s02 "Primitive Roots and Reduced Residue Systems"
     :c10-s03 "The Nonexistence of Primitive Roots $ \\bmod 2^{\\alpha} $ for $ \\alpha ge 3 $"
     :c10-s04 "The Existence of Primitive Roots $ \\bmod p $ for Odd Primes $ p $"
+    :c10-s05 "Primitive Roots and Quadratic Residues"
+    :c10-s06 "The Existence of Primitive Roots $ \\bmod p^{\alpha} $"
+    :c10-s07 "The Existence of Primitive Roots $ \\bmod 2p^{\alpha} $"
+    :c10-s08 "The Nonexistence of Primitive Roots in the Remaining Cases"
+    :c10-s09 "The Number of Primitive Roots $ \bmod m $"
+    :c10-s10 "The Index Calculus"
+    :c10-s11 "Primitive Roots and Dirichlet Characters"
+    :c10-s12 "Real-Valued Dirichlet Characters $ \\bmod p^{\alpha} $"
+    :c10-s13 "Primitive Dirichlet Characters $ \\bmod p^{\alpha} $"
     :end ""))
 
 (defun extract-string (string start-token end-token)
