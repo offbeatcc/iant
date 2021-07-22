@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Raising Both Sides to the $ p $th Power in Proof of Lemma 2</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+$$
+\varphi(p^{\alpha})
+= p^{\alpha - 1}(p - 1)
+= p^{\alpha - 2}(p - 1)p
+= \varphi(p^{\alpha - 1})p.
+$$
+
+$$
+\left( g^{\varphi(p^{\alpha - 1})} \right)^{p}
+= g^{\varphi(p^{\alpha - 1}) p}
+= g^{\varphi(p^{\alpha})}.
+$$
+
+---
+
+\begin{align*}
+  (1 + kp^{\alpha - 1})^p
+  &= \binom{p}{0} + \binom{p}{1} kp^{\alpha - 1} + \binom{p}{2} k^2 p^{2(\alpha - 1)} +
+     \binom{p}{3} k^3 p^{3(\alpha - 1)} + \dots + \binom{p}{p} k^p p^{p(\alpha - 1)} \\
+  &= 1 + kp^{\alpha} + \frac{p(p -1)}{2} k^2 p^{2(\alpha - 1)} + rp^{3(\alpha - 1)}.
+\end{align*}
+
+</div>
+</textarea>

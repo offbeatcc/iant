@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Illustration of Index Calculus</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+\begin{align*}
+  3^0 &\equiv 1 \pmod{10}, & 7^0 &\equiv 1 \pmod{10}, \\
+  3^1 &\equiv 3 \pmod{10}, & 7^1 &\equiv 7 \pmod{10}, \\
+  3^2 &\equiv 9 \pmod{10}, & 7^2 &\equiv 9 \pmod{10}, \\
+  3^3 &\equiv 7 \pmod{10}, & 7^3 &\equiv 3 \pmod{10}.
+\end{align*}
+
+---
+
+$$
+\mathop{\rm ind}\nolimits_3(9 \cdot 7)
+= \mathop{\rm ind}\nolimits_3{63}
+= \mathop{\rm ind}\nolimits_3{3}
+= 1 \equiv 1 \pmod{\varphi(10)}.
+$$
+
+$$
+\mathop{\rm ind}\nolimits_3{9} + \mathop{\rm ind}\nolimits_3{7}
+= 2 + 3 = 5 \equiv 1 \pmod{\varphi(10)}.
+$$
+
+---
+
+$$
+\mathop{\rm ind}\nolimits_3{9^5}
+= \mathop{\rm ind}\nolimits_3{59049}
+= \mathop{\rm ind}\nolimits_3{9}
+= 2 \equiv 2 \pmod{\varphi(10)}.
+$$
+
+$$
+5 \mathop{\rm ind}\nolimits_3{9}
+= 5 \cdot 2 = 10 \equiv 2 \pmod{\varphi(10)}.
+$$
+
+---
+
+$$
+\mathop{\rm ind}\nolimits_3 1 = 0.
+$$
+$$
+\mathop{\rm ind}\nolimits_7 1 = 0.
+$$
+
+---
+
+$$
+\mathop{\rm ind}\nolimits_3 (-1)
+= \mathop{\rm ind}\nolimits_3 9
+= 2 = \varphi(10)/2.
+$$
+
+$$
+\mathop{\rm ind}\nolimits_7 (-1)
+= \mathop{\rm ind}\nolimits_7 9
+= 2 = \varphi(10)/2.
+$$
+
+---
+
+$$
+\mathop{\rm ind}\nolimits_3 9 = 2 \equiv 2 \pmod{\varphi(10)}.
+$$
+
+$$
+\mathop{\rm ind}\nolimits_3 7 \cdot
+\mathop{\rm ind}\nolimits_7 9 = 3 \cdot 2 = 6 \equiv 2 \pmod{\varphi(10)}.
+$$
+
+</div>
+</textarea>

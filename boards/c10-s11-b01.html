@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Periodicity of $ \chi_h $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Periodicity of $ \chi_h $
+
+Let $ p^{\alpha} = 5 $.
+
+\begin{align*}
+  2^0 &\equiv 1 \pmod{5}, & b(1) = \mathop{\rm ind}\nolimits_2 1 &= 0, \\
+  2^1 &\equiv 2 \pmod{5}, & b(2) = \mathop{\rm ind}\nolimits_2 2 &= 1, \\
+  2^2 &\equiv 4 \pmod{5}, & b(4) = \mathop{\rm ind}\nolimits_2 4 &= 2, \\
+  2^3 &\equiv 3 \pmod{5}, & b(3) = \mathop{\rm ind}\nolimits_2 3 &= 3.
+\end{align*}
+
+$$
+\chi_h(n) = \begin{cases}
+  e^{i2\pi h b(n)/4} & \text{ if } 5 \nmid n, \\
+  0 & \text{ if } 5 \mid n.
+\end{cases}
+$$
+
+\begin{array}{r r r r r r}
+  n & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+  \chi_1(n) &
+  e^{i2\pi \cdot 1 \cdot b(1)/4} &
+  e^{i2\pi \cdot 1 \cdot b(2)/4} &
+  e^{i2\pi \cdot 1 \cdot b(3)/4} &
+  e^{i2\pi \cdot 1 \cdot b(4)/4} &
+  0 \\
+\end{array}
+
+\begin{array}{r r r r r r}
+  n & 6 & 7 & 8 & 9 & 10 \\
+  \hline
+  \chi_1(n) &
+  e^{i2\pi \cdot 1 \cdot b(6)/4} &
+  e^{i2\pi \cdot 1 \cdot b(7)/4} &
+  e^{i2\pi \cdot 1 \cdot b(8)/4} &
+  e^{i2\pi \cdot 1 \cdot b(9)/4} &
+  0 \\
+\end{array}
+
+Note that since $ b(6) = b(1) $, we get $ \chi_1(6) = \chi(1) $.
+
+In general, since $ b(n + 5) = b(n) $ for all integers $ n $,
+we get $ \chi_h(n + 5) = \chi_h(n) $.
+
+</div>
+</textarea>
