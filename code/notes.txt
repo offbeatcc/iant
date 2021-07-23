@@ -1,3 +1,5 @@
+k = 12 in these notes.
+
 Look at G(2, X_2).
 
 G(2, X_2) = 3.464i != 0.
@@ -30,13 +32,23 @@ We choose a = 5. Check: (5, 12) = 1 and 5 ≡ 1 (mod 4). Sure enough X_3(5) = 1.
 
 ---
 
-Induced modulus d: (a, k) = 1 and a ≡ 1 (mod d) => X(a) = 1.
+Induced modulus d: d | k and (a, k) = 1 and a ≡ 1 (mod d) => X(a) = 1.
+
+Primitive character: d | k and d < k => d is not an induced modulus.
 
 ---
 
 Note that G(n, X_4) is separable.
 Note that d = 2 is not an induced modulus for X_3. X_3(7) != 1.
 Note that d = 4 **is** an induced modulus for X_3. X_3(1) = X_3(5) = 1.
+Note that X_3 is an imprimitive character.
+
+Note that d = 1 is not an induced modulus for X_4. X_4(5) = -1.
+Note that d = 2 is not an induced modulus for X_4. X_4(5) = -1.
+Note that d = 3 is not an induced modulus for X_4. X_4(7) = -1.
+Note that d = 4 is not an induced modulus for X_4. X_4(5) = -1.
+Note that d = 6 is not an induced modulus for X_4. X_4(7) = -1.
+Note that d = 12 **is** an induced modulus for X_4. X_4(1) = 1.
 Note that X_4 is a primitive character.
 
 ---

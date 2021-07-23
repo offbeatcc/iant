@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Dirichlet Characters Modulo 15</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Computing Dirichlet Characters Modulo 15
+
+## Dirichlet Characters Modulo 3
+
+\begin{array}{r r r r | r r r | r r r | r r r | r r r |}
+  n & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\
+  \hline
+  f_0(n) & 1 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 0 \\
+  f_1(n) & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 & 0
+\end{array}
+
+
+## Dirichlet Characters Modulo 5
+
+\begin{array}{r r r r r r | r r r r r | r r r r r}
+  n & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\
+  \hline
+  g_0(n) & 1 &  1 &  1 &  1 & 0 & 1 &  1 &  1 &  1 & 0 & 1 &  1 &  1 &  1 & 0 \\
+  g_1(n) & 1 &  i & -i & -1 & 0 & 1 &  i & -i & -1 & 0 & 1 &  i & -i & -1 & 0 \\
+  g_2(n) & 1 & -1 & -1 &  1 & 0 & 1 & -1 & -1 &  1 & 0 & 1 & -1 & -1 &  1 & 0 \\
+  g_3(n) & 1 & -i &  i & -1 & 0 & 1 & -i &  i & -1 & 0 & 1 & -i &  i & -1 & 0
+\end{array}
+
+
+## Dirichlet Characters Modulo 15
+
+\begin{array}{r r r r r r}
+  n & 1 & 2 & 4 & 7 & 8 & 11 & 13 & 14 \\
+  \hline
+  f_0(n) g_0(n) & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+  f_0(n) g_1(n) & 1 & i & -1 & i & -i & 1 & -i & -1 \\
+  f_0(n) g_2(n) & 1 & -1 & 1 & -1 & -1 & 1 & -1 & 1 \\
+  f_0(n) g_3(n) & 1 & -i & -1 & -i & i & 1 & i & -1 \\
+  f_1(n) g_0(n) & 1 & -1 & 1 & 1 & -1 & -1 & 1 & -1 \\
+  f_1(n) g_1(n) & 1 & -i & -1 & i & i & -1 & -i & 1 \\
+  f_1(n) g_2(n) & 1 & 1 & 1 & -1 & 1 & -1 & -1 & -1 \\
+  f_1(n) g_3(n) & 1 & i & -1 & -i & -i & -1 & i & 1
+\end{array}
+
+
+</div>
+</textarea>

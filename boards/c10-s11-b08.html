@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Binomial Expansion in Proof of Theorem 10.11</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Binomial Expansion in Proof of Theorem 10.11
+
+\begin{align*}
+  (1 + 4)^{2^{\beta}}
+  &= \binom{2^{\beta}}{0} +
+     \binom{2^{\beta}}{1} 4 +
+     \binom{2^{\beta}}{2} 4^2 + \dots +
+     \binom{2^{\beta}}{2^{\beta}} 4^{2^{\beta}} \\
+  &= 1 + 2^{\beta} \cdot 2^2 + 2^{\beta - 1} \cdot 2^4 + \dots + 2^{2 \cdot 2^{\beta}} \\
+  &= 1 + 2^{\beta + 2} + 2^{\beta + 3} + \dots + 2^{2^{\beta + 1}} \\
+  &= 1 + 2^{\beta + 2} + r 2^{\beta + 3} \\
+  &= 1 + 2^{\beta + 2}(1 + 2r) \\
+  &= 1 + 2^{\beta + 2} t \qquad (t = 1 + 2r \text{ is odd}).
+\end{align*}
+
+</div>
+</textarea>
