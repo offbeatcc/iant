@@ -97,6 +97,11 @@
     :c10-s11 "Primitive Roots and Dirichlet Characters"
     :c10-s12 "Real-Valued Dirichlet Characters $ \\bmod p^{\alpha} $"
     :c10-s13 "Primitive Dirichlet Characters $ \\bmod p^{\alpha} $"
+    :c11 "Dirichlet Series and Euler Products"
+    :c11-s01 "Introduction"
+    :c11-s02 "The Half-Plane of Absolute Convergence of a Dirichlet Series"
+    :c11-s03 "The Function Defined by a Dirichlet Series"
+    :c11-s04 "Multiplication of Dirichlet Series"
     :end ""))
 
 (defun extract-string (string start-token end-token)
