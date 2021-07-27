@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Steps in Proof of Lemma 1</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Steps in Proof of Lemma 1
+
+\begin{align*}
+  \sum_{n=N}^{\infty} \vert f(n) \vert n^{-c} n^{-(\sigma - c)}
+  &= \sum_{n=N}^{\infty} \frac{\vert f(n) \vert}{n^c n^{\sigma - c}} \\
+  &= \frac{\vert f(N) \vert}{N^c N^{\sigma - c}} +
+     \frac{\vert f(N + 1) \vert}{(N + 1)^c (N + 1)^{\sigma - c}} +
+     \frac{\vert f(N + 2) \vert}{(N + 2)^c (N + 2)^{\sigma - c}} + \dots \\
+  &\le \frac{\vert f(N) \vert}{N^c N^{\sigma - c}} +
+       \frac{\vert f(N + 1) \vert}{(N + 1)^c N^{\sigma - c}} +
+       \frac{\vert f(N + 2) \vert}{(N + 2)^c N^{\sigma - c}} + \dots \\
+  &= \frac{1}{N^{\sigma - c}} \sum_{n=N}^{\infty} \frac{\vert f(n) \vert}{n^c} \\
+  &= \frac{1}{N^{\sigma - c}} \sum_{n=N}^{\infty} \vert f(n) \vert n^{-c}.
+\end{align*}
+
+</div>
+</textarea>
