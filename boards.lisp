@@ -102,6 +102,14 @@
     :c11-s02 "The Half-Plane of Absolute Convergence of a Dirichlet Series"
     :c11-s03 "The Function Defined by a Dirichlet Series"
     :c11-s04 "Multiplication of Dirichlet Series"
+    :c11-s05 "Euler Products"
+    :c11-s06 "The Half-Plane of Convergence of a Dirichlet Series"
+    :c11-s07 "Analytic Properties of Dirichlet Series"
+    :c11-s08 "Dirichlet Series with Nonnegative Coefficients"
+    :c11-s09 "Dirichlet Series Expressed as Exponentials of Dirichlet Series"
+    :c11-s10 "Mean Value Formulas for Dirichlet Series"
+    :c11-s11 "An Integral Formula for the Coefficients of a Dirichlet Series"
+    :c11-s12 "An Integral Formula for the Partial Sums of a Dirichlet Series"
     :end ""))
 
 (defun extract-string (string start-token end-token)

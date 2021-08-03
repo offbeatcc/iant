@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Some Steps in Example 2</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Some Steps in Example 2
+
+$$
+  f(n), \quad g(n), \quad g = f^{-1}.
+$$
+
+\begin{align*} 
+  F(s) G(s)
+  & = \sum_{n=1}^{\infty} \frac{(f * g)(n)}{n^s} \\
+  &= \sum_{n=1}^{\infty} \frac{(f * f^{-1})(n)}{n^s} \\
+  &= \sum_{n=1}^{\infty} \frac{\left[ \frac{1}{n} \right]}{n^s} \\
+  &= \sum_{n=1}^{\infty} \frac{I(n)}{n^s} \\
+  &= \frac{1}{1^s} + \frac{0}{2^s} + \frac{0}{3^s} + \dots
+  = 1.
+\end{align*}
+
+</div>
+</textarea>

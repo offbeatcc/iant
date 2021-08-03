@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Steps in Proof of Theorem 11.3</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Steps in Proof of Theorem 11.3
+
+$$
+  \lvert h(N) \rvert
+  = \left\lvert -N^{s_k} \right\rvert
+    \left\lvert \sum_{n=N+1}^{\infty} h(n) n^{-s_k} \right\rvert \\
+  = N^{\sigma_k} \left\lvert \sum_{n=N+1}^{\infty} h(n) n^{-s_k} \right\rvert.
+$$
+
+Substituting $ \sigma = \sigma_k $ and $ N = N + 1 $ in Lemma 1, we
+get
+
+\begin{align*}
+  \lvert h(N) \rvert
+  &\le N^{\sigma_k} (N + 1)^{-(\sigma_k - c)} \sum_{n=N+1}^{\infty} \lvert h(n) \rvert n^{-c} \\
+  &= \frac{N^{\sigma_k}}{(N + 1)^{\sigma_k}} \underbrace{(N + 1)^c
+    \underbrace{\sum_{n=N+1}^{\infty} \lvert h(n) \rvert n^{-c}}_{\text{converges}}}_A \\
+  &= \left( \frac{N}{N + 1} \right)^{\sigma_k} A.
+\end{align*}
+
+</div>
+</textarea>

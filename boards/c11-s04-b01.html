@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Summations in Proof of Theorem 11.5</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Summations in Proof of Theorem 11.5
+
+\begin{align*}
+  F(s) G(s)
+  &= \sum_{n=1}^{\infty} f(n) n^{-s} \sum_{m=1}^{\infty} g(m) m^{-s} \\
+  &= \left( \frac{f(1)}{1^s} + \frac{f(2)}{2^s} + \frac{f(3)}{3^s} + \frac{f(4)}{4^s} + \dots \right)
+  \left( \frac{g(1)}{1^s} + \frac{g(2)}{2^s} + \frac{g(3)}{3^s} + \frac{g(4)}{4^s} + \dots \right) \\
+  &= \begin{aligned}[t]
+    &\frac{f(1)}{1^s} \frac{g(1)}{1^s} + \frac{f(1)}{1^s} \frac{g(2)}{2^s} + \frac{f(1)}{1^s} \frac{g(3)}{3^s} + \frac{f(1)}{1^s} \frac{g(4)}{4^s} + \dots \\
+    &\frac{f(2)}{1^s} \frac{g(1)}{1^s} + \frac{f(2)}{1^s} \frac{g(2)}{2^s} + \frac{f(2)}{1^s} \frac{g(3)}{3^s} + \frac{f(2)}{1^s} \frac{g(4)}{4^s} + \dots \\
+    &\frac{f(3)}{1^s} \frac{g(1)}{1^s} + \frac{f(3)}{1^s} \frac{g(2)}{2^s} + \frac{f(3)}{1^s} \frac{g(3)}{3^s} + \frac{f(3)}{1^s} \frac{g(4)}{4^s} + \dots \\
+    &\frac{f(4)}{1^s} \frac{g(1)}{1^s} + \frac{f(4)}{1^s} \frac{g(2)}{2^s} + \frac{f(4)}{1^s} \frac{g(3)}{3^s} + \frac{f(4)}{1^s} \frac{g(4)}{4^s} + \dots
+  \end{aligned} \\
+  &= \begin{aligned}[t]
+    &\left( \frac{f(1)}{1^s} \frac{g(1)}{1^s} \right) +
+    \left(\frac{f(1)}{1^s} \frac{g(2)}{2^s} + \frac{f(2)}{2^s} \frac{g(1)}{1^s} \right) +
+    \left( \frac{f(1)}{1^s} \frac{g(3)}{3^s} + \frac{f(3)}{3^s} \frac{g(1)}{1^s} \right) + \\
+&\left( \frac{f(1)}{1^s} \frac{g(4)}{4^s} + \frac{f(2)}{2^s} \frac{g(2)}{2^s} + \frac{f(4)}{4^s} \frac{g(1)}{1^s} \right) \\
+  &= \sum_{k=1}^{\infty} \left( \sum_{mn=k} \frac{f(n)}{n^s} \frac{g(m)}{m^s} \right) \\
+  &= \sum_{k=1}^{\infty} \left( \sum_{mn=k} \frac{f(n) g(m)}{k^s} \right) \\
+  &= \sum_{k=1}^{\infty} \frac{1}{k^s} \left( \sum_{mn=k} f(n) g(m) \right) \\
+  &= \sum_{k=1}^{\infty} \frac{1}{k^s} (f * g)(k) \\
+  &= \sum_{k=1}^{\infty} h(k) k^{-s}.
+  \end{aligned}
+\end{align*}
+
+</div>
+</textarea>

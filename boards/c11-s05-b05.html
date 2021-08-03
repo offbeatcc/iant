@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Euler Product for Principal Character</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Euler Product for Principal Character
+  
+\begin{align*}
+  \prod_{p \nmid k} \frac{1}{1 - p^{-s}}
+  &= \frac{\prod_{p} \frac{1}{1 - p^{-s}}}{\prod_{p \mid k} \frac{1}{1 - p^{-s}}} \\
+  &= \prod_{p} \frac{1}{1 - p^{-s}} \prod_{p \mid k} (1 - p^{-s}) \\
+  &= \zeta(s) \prod_{p \mid k} (1 - p^{-s}).
+\end{align*}
+
+</div>
+</textarea>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Some Convergence Tests</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Some Convergence Tests
+
+## Limit Test
+
+\begin{align*}
+  \lim_{n \to \infty} a_n \ne 0 &\implies
+  \sum_{n=1}^{\infty} a_n \text{ diverges}. \\
+  \sum_{n=1}^{\infty} a_n \text{ converges} &\implies \lim_{n \to \infty} a_n = 0.
+\text{ (Contrapositive)}
+\end{align*}
+
+
+## Limit Comparison Test
+
+Let $ a_n $ and $ b_n $ be a sequence of positive numbers. If $$
+\lim_{n \to \infty} \frac{a_n}{b_n} = c $$ for finite $ c $, then
+either both $ \sum_{n=1}^{\infty} a_n $ and $ \sum_{n=1}^{\infty} b_n
+$ converge or both diverge.
+
+
+## Convergence of Infinite Products
+
+Let $ a_n $ be a sequence of positive numbers. Then the infinite product
+$$ \prod_{n=1}^{\infty} (1 + a_n) $$ converges if and only if the
+series $$ \sum_{n=1}^{\infty} a_n $$ converges.
+
+See <https://cornellmath.wordpress.com/2008/01/26/convergence-of-infinite-products/> for details.
+
+</div>
+</textarea>

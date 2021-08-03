@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Some Steps in Example 5</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Some Steps in Example 5
+
+\begin{align*}
+  f(n) &= 1, \\
+  g(n) &= n^{\alpha}. \\ \\
+
+  F(s)
+  &= \sum_{n=1}^{\infty} \frac{1}{n^s}
+  = \zeta(s), \\
+  G(s) &= \sum_{n=1}^{\infty} \frac{n^{\alpha}}{n^s}
+        = \sum_{n=1}^{\infty} \frac{1}{n^{s - \alpha}} = \zeta(s - \alpha)\\ \\
+
+  \zeta(s) \zeta(s - \alpha)
+  &= F(s) G(s) \\
+  &= \sum_{n=1}^{\infty}
+  \frac{\sum_{d \mid n} d^{\alpha}}{n^s} \\
+  &= \sum_{n=1}^{\infty} \frac{\sigma_{\alpha}(n)}{n^s} \\
+  &= \sum_{n=1}^{\infty} \frac{1}{n^{s-1}} \\
+  &= \zeta({s - 1}).
+\end{align*}
+
+\begin{align*}
+  &\mathop{\rm Re}(s) > 1 \iff \sigma > 1, \\
+  &\mathop{\rm Re}(s - \alpha) > 1 \iff
+  \mathop{\rm Re}(s) > 1 + \mathop{\rm Re}(\alpha)
+  \iff \sigma > 1 + \mathop{\rm Re}(\alpha).
+\end{align*}
+
+</div>
+</textarea>
