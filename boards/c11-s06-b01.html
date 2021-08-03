@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying Abel's Identity in Lemma 2</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying Abel's Identity in Lemma 2
+
+## Recap of Abel's Identity
+
+$$
+A(x) = \sum_{n \le x} a(n), \qquad
+\sum_{y < n \le x} a(n) f(n) = A(x) f(x) - A(y) f(y) - \int_y^x A(t) f'(t) \, dt.
+$$
+
+## Application of Abel's Identity
+
+\begin{align*}
+  \sum_{a < n \le b} f(n) n^{-s}
+  &= \sum_{a < n \le b} a(n) n^{s_0 - s} \\
+  &= A(b) b^{s_0 - s} - A(a) a^{s_0 - s} -
+     \int_a^b A(t) \left( \frac{d}{dt} t^{s_0 - s} \right) dt \\
+  &= A(b) b^{s_0 - s} - A(a) a^{s_0 - s} -
+     \int_a^b A(t) (s_0 - s) t^{s_0 - s - 1} dt \\
+  &= A(b) b^{s_0 - s} - A(a) a^{s_0 - s} +
+     (s - s_0) \int_a^b A(t) t^{s_0 - s - 1} dt. \\
+\end{align*}
+
+</div>
+</textarea>
