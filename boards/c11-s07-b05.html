@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Cauchy's Integral Formula</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Cauchy's Integral Formula
+  
+Let $ S \subseteq \mathbb{C} $ be an open set.
+
+Let $ D $ be a closed disk in $ S $ consisting of points $ z $ such
+that $ \lvert z - z_0 \rvert \le r $.
+
+Let $ f : S \to \mathbb{C} $ be a complex analytic function.
+
+Let $ \gamma $ be a counterclockwise oriented boundary of $ D $.
+
+Let $ a $ be in any interior point $ a $ of $ D $.
+
+$$
+f(a) = \frac{1}{2 \pi i} \int_{\gamma} \frac{f(z)}{z - a} dz.
+$$
+
+Also,
+
+\begin{align*}
+  f'(a) &= \frac{1}{2 \pi i} \int_{\gamma} \frac{f(z)}{(z - a)^2} dz, \\
+  f''(a) &= \frac{2}{2 \pi i} \int_{\gamma} \frac{f(z)}{(z - a)^3} dz, \\
+  f'''(a) &= \frac{6}{2 \pi i} \int_{\gamma} \frac{f(z)}{(z - a)^4} dz, \\
+  &\;\,\vdots \\
+  f^{(n)}(a) &= \frac{n!}{2 \pi i} \int_{\gamma} \frac{f(z)}{(z - a)^{n+1}} dz. \\ 
+\end{align*}
+
+</div>
+</textarea>

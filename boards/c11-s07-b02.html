@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Description of Complex Analytic Function</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Description of Complex Analytic Function
+
+## Complex Function
+
+A function that takes a complex argument and yields a complex result.
+
+## Complex Analytic Function on an Open Subset $ S $
+
+A complex function that is complex differentiable at every point in $ S $.
+
+## Complex Limit
+
+$$
+\lim_{z \to z_0} f(z) = L.
+$$
+
+For every $ \epsilon > 0 $, there exists $ \delta > 0 $ such that
+$$
+\lvert z - z_0 \rvert < \delta \implies
+\lvert f(z) - L \rvert < \epsilon.
+$$
+
+Note: $ f(z) $ must be defined on a deleted neighbourhood of $ z_0 $.
+
+## Complex Differentiation
+
+$$
+\frac{df}{dz} = \lim_{\delta z \to 0} \frac{f(z + \delta z) - f(z)}{\delta z}.
+$$
+
+### Example 1: Not Differentiable
+
+$$
+\frac{d \overline{z}}{dz}
+= \lim_{\delta z \to 0}
+  \frac{\overline{z} + \delta \overline{z} - \overline{z}}{\delta z}
+= \lim_{\delta z \to 0} \frac{\delta \overline{z}}{\delta z}.
+$$
+
+The result is different depending on the "direction" of $ \delta z $.
+
+### Example 2: Differentiable
+
+$$
+\frac{d z}{dz}
+= \lim_{\delta z \to 0}
+  \frac{z + \delta z - z}{\delta z}
+= \lim_{\delta z \to 0} \frac{\delta z}{\delta z}
+= 1.
+$$
+
+</div>
+</textarea>
