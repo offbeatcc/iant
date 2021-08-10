@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining Dirichlet Product in Proof of Theorem 11.9</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining Dirichlet Product in Proof of Theorem 11.9
+
+\begin{align*}
+  &\left( \sum_{n=1}^{\infty} \frac{f(n)}{n^s} \right)
+  \left( \sum_{n=1}^{\infty} \frac{g(n)}{n^s} \right) \\
+  &= \left( \frac{f(1)}{1^s} + \frac{f(2)}{2^s} + \frac{f(3)}{3^s} +
+  \frac{f(4)}{4^s} + \dots \right)
+  \left( \frac{g(1)}{1^s} + \frac{g(2)}{2^s} + \frac{g(3)}{3^s} +
+  \frac{g(4)}{4^s} + \dots \right) \\
+  &= \sum_{n=1}^{\infty} \sum_{dq=n} \frac{f(d) g(q)}{d^s q^s} \\
+  &= \sum_{n=1}^{\infty} \frac{1}{n^s} \sum_{dq=n} f(d) g(q) \\
+  &= \sum_{n=1}^{\infty} \frac{(f * g)(n)}{n^s}.
+\end{align*}
+
+</div>
+</textarea>

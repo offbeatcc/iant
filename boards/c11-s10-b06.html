@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining Theorem 11.16 (d)</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining Theorem 11.16 (d)
+
+$$ f(n) = \sigma_0(n). $$
+
+$$
+F(s)
+= \sum_{n=1}^{\infty} \frac{f(n)}{n^s}
+= \sum_{n=1}^{\infty} \frac{\sigma_0(n)}{n^s}
+= \zeta(s) \zeta(s - 0) = \zeta^2(s).
+$$
+
+The last equality above comes from the fourth example under Theorem 11.7.
+
+## LHS
+
+$$
+\lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T \lvert F(\sigma + it) \rvert^2 \, dt
+= \lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T \lvert \zeta^2(\sigma + it) \rvert^2 \, dt
+= \lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T \lvert \zeta(\sigma + it) \rvert^4 \, dt.
+$$
+
+## RHS
+
+$$
+\sum_{n=1}^{\infty} \frac{\lvert f(n) \rvert^2}{n^{2 \sigma}}
+= \sum_{n=1}^{\infty} \frac{\sigma_0^2(n)}{n^{2 \sigma}}
+= \prod_p \frac{1 - p^{-4\sigma}}{(1 - p^{-\sigma})^4}
+= \frac{\zeta^4(2\sigma)}{\zeta(4\sigma)}.
+$$
+
+</div>
+</textarea>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining Final Equation in Proof of Theorem 11.13</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining Final Equation in Proof of Theorem 11.13
+
+\begin{align*}
+  a &= 1 + c \\
+  s &= c - \varepsilon.
+\end{align*}
+
+Thus $ a - s = 1 + \varepsilon $.
+
+---
+
+$$
+e^x = \sum_{k=0}^{\infty} \frac{x^k}{k!}.
+$$
+
+---
+
+\begin{align*}
+F(c - \varepsilon)
+&= \sum_{n=1}^{\infty} \frac{f(n)}{n^a}
+\underbrace{\sum_{k=0}^{\infty} \frac{\{ (1 + \varepsilon) \log n\}^k}{k!}}_{\text{note the power series}} \\
+&= \sum_{n=1}^{\infty} \frac{f(n)}{n^a} e^{(1 + \varepsilon) \log n} \\
+&= \sum_{n=1}^{\infty} \frac{f(n)}{n^a} e^{\log n^{1 + \varepsilon}} \\
+&= \sum_{n=1}^{\infty} \frac{f(n)}{n^a} n^{1 + \varepsilon} \\
+&= \sum_{n=1}^{\infty} \frac{f(n)}{n^{a - 1 - \varepsilon}} \\
+&= \sum_{n=1}^{\infty} \frac{f(n)}{n^{c - \varepsilon}} \\
+\end{align*}
+
+</div>
+</textarea>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining Theorem 11.16 (c)</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining Theorem 11.16 (c)
+
+$$ f(n) = \mu(n). $$
+
+$$
+F(s)
+= \sum_{n=1}^{\infty} \frac{f(n)}{n^s}
+= \sum_{n=1}^{\infty} \frac{\mu(n)}{n^s}
+= \frac{1}{\zeta(s)}.
+$$
+
+The last equality above comes from the second example under Theorem 11.7.
+
+## LHS
+
+$$
+\lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T \lvert F(\sigma + it) \rvert^2 \, dt
+= \lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T \left\lvert \frac{1}{\zeta(\sigma + it)} \right\rvert^2 \, dt
+= \lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T \frac{1}{\lvert \zeta(\sigma + it) \rvert^2} \, dt.
+$$
+
+## RHS
+
+\begin{align*}
+\sum_{n=1}^{\infty} \frac{\lvert f(n) \rvert^2}{n^{2 \sigma}}
+&= \sum_{n=1}^{\infty} \frac{\mu^2(n)}{n^{2 \sigma}}
+= \prod_p \left\{ 1 + \frac{\mu^2(p)}{p^{2\sigma}} + \frac{\mu^2(p^2)}{p^{4\sigma}} + \dots \right\}
+= \prod_p \left( 1 + \frac{1}{p^{2\sigma}} \right) \\
+&= \prod_p (1 + p^{-2\sigma})
+= \prod_p \frac{1 - p^{-4\sigma}}{1 - p^{-2\sigma}}
+= \frac{\zeta(2\sigma)}{\zeta(4\sigma)}.
+\end{align*}
+
+</div>
+</textarea>

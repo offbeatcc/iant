@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining Equation 16 in Proof of Theorem 11.13</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining Equation 16 in Proof of Theorem 11.13
+
+$$
+F^{(k)}(a) = (-1)^k \sum_{n=1}^{\infty} f(n) (\log n)^k n^{-a}.
+$$
+
+\begin{align*}
+  F(s)
+  &= \sum_{k=0}^{\infty} \frac{F^{(k)}(a)}{k!} (s - a)^k \\
+  &= \sum_{k=0}^{\infty} \frac{(s - a)^k}{k!}
+  (-1)^k \left( \sum_{n=1}^{\infty} f(n) (\log n)^k n^{-a} \right) \\
+  &= \sum_{k=0}^{\infty} \frac{(a - s)^k}{k!}
+  \left( \sum_{n=1}^{\infty} f(n) (\log n)^k n^{-a} \right) \\
+  &= \sum_{k=0}^{\infty} \sum_{n=1}^{\infty}
+  \frac{(a - s)^k}{k!} f(n) (\log n)^k n^{-a}.
+\end{align*}
+
+</div>
+</textarea>

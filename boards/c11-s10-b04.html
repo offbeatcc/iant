@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining Theorem 11.16 (b)</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining Theorem 11.16 (b)
+
+$$ f(n) = (-1)^k \log^k n. $$
+
+$$
+F(s)
+= \sum_{n=1}^{\infty} \frac{f(n)}{n^s}
+= \sum_{n=1}^{\infty} \frac{(-1)^k \log^k n}{n^s}
+= \sum_{n=1}^{\infty} (-1)^k \frac{\log^k n}{n^s}
+= \zeta^{(k)}(s).
+$$
+
+The last equality above comes from the note under Theorem 11.12 with $ f(n) = 1 $.
+
+## LHS
+
+$$
+\lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T \lvert F(\sigma + it) \rvert^2 \, dt
+= \lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T \lvert \zeta^{(k)} (\sigma + it) \rvert^2 \, dt.
+$$
+
+## RHS
+
+$$
+\sum_{n=1}^{\infty} \frac{\lvert f(n) \rvert^2}{n^{2 \sigma}}
+= (-1)^{2k} \sum_{n=1}^{\infty} \frac{\log^{2k} n}{n^{2 \sigma}}
+= \zeta^{(2k)}(2 \sigma).
+$$
+
+</div>
+</textarea>

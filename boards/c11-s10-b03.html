@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying Theorem 11.15 in Theorem 11.16</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying Theorem 11.15 in Theorem 11.16
+
+## LHS
+
+\begin{align*}
+  \lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T F(\sigma + it) G(\sigma - it) \, dt
+  &= \lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T F(\sigma + it) \overline{F(\sigma + it)} \, dt \\
+  &= \lim_{T \to \infty} \frac{1}{2T} \int_{-T}^T \lvert F(\sigma + it) \rvert^2 \, dt. \\
+\end{align*}
+
+## RHS
+
+\begin{align*}
+  \sum_{n=1}^{\infty} \frac{f(n) g(n)}{n^{\sigma + \sigma}}
+  &= \sum_{n=1}^{\infty} \frac{f(n) g(n)}{n^{2\sigma}} \\
+  &= \sum_{n=1}^{\infty} \frac{f(n) \overline{f(n)}}{n^{2\sigma}} \\
+  &= \sum_{n=1}^{\infty} \frac{\lvert f(n) \rvert^2}{n^{2\sigma}}. \\
+\end{align*}
+
+</div>
+</textarea>

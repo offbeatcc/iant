@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Complex Conjugates for Theorem 11.16</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Complex Conjugates for Theorem 11.16
+
+$$
+\overline{a^z}
+= \overline{e^{z \log a}}
+= e^{\overline{z \log a}}
+= e^{\overline{z} \, \overline{\log a}}
+= e^{\overline{z} \, \log \overline{a}}
+= \overline{a}^{\overline{z}}.
+$$
+
+---
+
+\begin{align*}
+  F(\sigma + it)
+  &= \frac{f(1)}{1^{\sigma + it}} +
+     \frac{f(2)}{2^{\sigma + it}} +
+     \frac{f(3)}{3^{\sigma + it}} + \dots \\
+
+  G(\sigma - it)
+  &= \frac{g(1)}{1^{\sigma - it}} +
+     \frac{g(2)}{2^{\sigma - it}} +
+     \frac{g(3)}{3^{\sigma - it}} + \dots \\
+  &= \frac{\overline{f(1)}}{1^{\sigma - it}} +
+     \frac{\overline{f(2)}}{2^{\sigma - it}} +
+     \frac{\overline{f(3)}}{3^{\sigma - it}} + \dots \\
+  &= \frac{\overline{f(1)}}{1^{\overline{\sigma + it}}} +
+     \frac{\overline{f(2)}}{2^{\overline{\sigma + it}}} +
+     \frac{\overline{f(3)}}{3^{\overline{\sigma + it}}} + \dots \\
+  &= \frac{\overline{f(1)}}{\overline{1^{\sigma + it}}} +
+     \frac{\overline{f(2)}}{\overline{2^{\sigma + it}}} +
+     \frac{\overline{f(3)}}{\overline{3^{\sigma + it}}} + \dots \\
+  &= \overline{\left( \frac{f(1)}{1^{\sigma + it}} \right)} +
+     \overline{\left( \frac{f(2)}{2^{\sigma + it}} \right)} +
+     \overline{\left( \frac{f(3)}{3^{\sigma + it}} \right)} + \dots \\  
+  &= \overline{\frac{f(1)}{1^{\sigma + it}} +
+     \frac{f(2)}{2^{\sigma + it}} +
+     \frac{f(3)}{3^{\sigma + it}} + \dots} \\
+  &= \overline{F(\sigma + it)}.
+\end{align*}
+
+</div>
+</textarea>
