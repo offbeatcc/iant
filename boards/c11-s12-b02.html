@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Inequalities for Integrals</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+\begin{align*}
+  \left\lvert \int_{c - iT}^{c + iT} \frac{a^z}{z} \, dz \right\rvert
+  & \le
+  \left\lvert \int_{b + iT}^{c + iT} \right\rvert +
+  \left\lvert \int_{b - iT}^{b + iT} \right\rvert +
+  \left\lvert \int_{c - iT}^{b - iT} \right\rvert \\
+  & =
+  \left\lvert \int_{c + iT}^{b + iT} \right\rvert +
+  \left\lvert \int_{b - iT}^{b + iT} \right\rvert +
+  \left\lvert \int_{c - iT}^{b - iT} \right\rvert.
+\end{align*}
+
+---
+
+For the first integral, we write $ z(x) = x + iT $ where $ c \le x \le b $.
+
+\begin{align*}
+  \left\lvert \int_{c + iT}^{b + iT} \frac{a^z}{z} \, dz \right\rvert
+  &= \left\lvert \int_c^b \frac{a^{x + iT}}{x + iT} z'(x) \, dx \right\rvert
+  = \left\lvert \int_c^b \frac{a^{x + iT}}{x + iT} \cdot 1 \, dx \right\rvert \\
+  &\le \int_c^b \left\lvert \frac{a^{x + iT}}{x + iT} \right\rvert \, dx \\
+  &= \int_c^b \frac{a^x}{\sqrt{x^2 + T^2}} \, dx \\
+  &\le \int_c^b \frac{a^x}{T} \, dx.
+\end{align*}
+
+---
+
+For the second integral, we write $ z(y) = b + iy $ where $ -T \le y \le T $.
+
+\begin{align*}
+  \left\lvert \int_{b - iT}^{b + iT} \frac{a^z}{z} \, dz \right\rvert
+  &= \left\lvert \int_{-T}^T \frac{a^{b + iy}}{b + iy} z'(y) \, dy \right\rvert
+  = \left\lvert \int_{-T}^T \frac{a^{b + iy}}{b + iy} i \, dy \right\rvert \\
+  & \le \int_{-T}^T \left\lvert \frac{a^{b + iy}}{b + iy} \right\rvert \lvert i \rvert \, dy
+  = \int_{-T}^T \frac{a^b}{\sqrt{b^2 + y^2}} \, dy \\
+  &= 2 a^b \int_0^T \frac{1}{\sqrt{b^2 + y^2}} \, dy \\
+  &\le 2 a^b \int_0^T \frac{1}{b} \, dy \\
+  &= \frac{2 a^b}{b} \int_0^T \, dy = \frac{2 T a^b}{b}.
+\end{align*}
+
+</div>
+</textarea>

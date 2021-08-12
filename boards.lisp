@@ -1,7 +1,7 @@
 (require "asdf")
 
 (defvar *titles*
-  '(:begin ""
+  '(:begin t
     :c02 "Arithmetical Functions and Dirichlet Multiplication"
     :c02-s11 "The Inverse of a Completely Multiplicative Function"
     :c02-s12 "Liouville's Function $ \\lambda(n) $"
@@ -110,7 +110,24 @@
     :c11-s10 "Mean Value Formulas for Dirichlet Series"
     :c11-s11 "An Integral Formula for the Coefficients of a Dirichlet Series"
     :c11-s12 "An Integral Formula for the Partial Sums of a Dirichlet Series"
-    :end ""))
+    :c12 "The Functions $ \\zeta(s) $ and $ L(s, \\chi) $"
+    :c12-s01 "Introduction"
+    :c12-s02 "Properties of the Gamma Function"
+    :c12-s03 "Integral Representation for the Hurwitz Zeta Function"
+    :c12-s04 "A Contour Integral Representation for the Hurwitz Zeta Function"
+    :c12-s05 "The Analytic Continuation of the Hurwitz Zeta Function"
+    :c12-s06 "Analytic Continuation of $ \\zeta(s) $ and $ L(s, \\chi) $"
+    :c12-s07 "Hurwitz's Formula for $ \\zeta(s, a) $"
+    :c12-s08 "The Functional Equation for the Riemann Zeta Function"
+    :c12-s09 "A Functional Equation for the Hurwitz Zeta Function"
+    :c12-s10 "The Functional Equation for L-Functions"
+    :c12-s11 "Evaluation of $ \\zeta(-n, a) $$"
+    :c12-s12 "Properties of Bernoulli Numbers and Bernoulli Polynomials"
+    :c12-s13 "Formulas for $ L(0, \\chi) $"
+    :c12-s14 "Approximation of $ \\zeta(s, a) $ by Finite Sums"
+    :c12-s15 "Inequalities for $ \\lvert \\zeta(s, a) \\rvert $"
+    :c12-s16 "Inequalities for $ \\lvert \\zeta(s) \\rvert $ and $ \\lvert L(s, \\chi) \\rvert $"
+    :end t))
 
 (defun extract-string (string start-token end-token)
   "Extract string between start-token and end-token."

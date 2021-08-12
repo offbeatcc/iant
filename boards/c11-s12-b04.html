@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Contour Integral Around Pole for Figure 11.5</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Contour Integral Around Pole for Figure 11.5
+
+Integrating around the closed rectangular contour, we get
+
+$$
+\int_{c - iT}^{c + iT} +
+\int_{c + iT}^{-b + iT} +
+\int_{-b + iT}^{-b - iT} +
+\int_{-b - iT}^{c - iT} = 2\pi i.
+$$
+
+Dividing both sides by $ 2\pi i $, we get
+
+$$
+\frac{1}{2\pi i} \left(
+\int_{c - iT}^{c + iT} +
+\int_{c + iT}^{-b + iT} +
+\int_{-b + iT}^{-b - iT} +
+\int_{-b - iT}^{c - iT} \right) = 1.
+$$
+
+Thus
+
+$$
+\left( \frac{1}{2\pi i} \int_{c - iT}^{c + iT} \right) - 1
+=
+\frac{1}{2\pi i}
+\left( 
+-\int_{c + iT}^{-b + iT}
+-\int_{-b + iT}^{-b - iT}
+-\int_{-b - iT}^{c - iT} \right).
+$$
+
+Reversing the limits of integration on RHS, we get
+
+$$
+\left( \frac{1}{2\pi i} \int_{c - iT}^{c + iT} \right) - 1
+=
+\frac{1}{2\pi i}
+\left( 
+\int_{-b + iT}^{c + iT} +
+\int_{-b - iT}^{-b + iT} +
+\int_{c - iT}^{-b - iT} \right).
+$$
+
+</div>
+</textarea>

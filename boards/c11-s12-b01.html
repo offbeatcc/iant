@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Contour Integral for Figure 11.4</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Contour Integral for Figure 11.4
+
+Integrating around the closed rectangular contour, we get
+
+$$
+  \int_{c - iT}^{c + iT} +
+  \int_{c + iT}^{b + iT} +
+  \int_{b + iT}^{b - iT} +
+  \int_{b - iT}^{c - iT} = 0.
+$$
+
+Subtracting the last 3 terms on both sides, we get
+
+$$
+  \int_{c - iT}^{c + iT} =
+  -\int_{c + iT}^{b + iT}
+  -\int_{b + iT}^{b - iT}
+  -\int_{b - iT}^{c - iT}.
+$$
+
+Reversing the limits of integration on RHS, we get
+
+$$
+  \int_{c - iT}^{c + iT} =
+  \int_{b + iT}^{c + iT} +
+  \int_{b - iT}^{b + iT} +
+  \int_{c - iT}^{b - iT}.
+$$
+
+</div>
+</textarea>

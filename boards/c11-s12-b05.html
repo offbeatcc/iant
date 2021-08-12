@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Final Integral in Proof of Lemma 4</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Final Integral in Proof of Lemma 4
+
+With $ z(y) = c + iy $ where $ -T \le y \le T $, we get
+
+\begin{align*}
+  \int_{c - IT}^{c + iT} \frac{1}{z} \, dz
+  &= \int_{-T}^T \frac{1}{c + iy} z'(y) \, dy \\
+  &= \int_{-T}^T \frac{i}{c + iy} \, dy \\
+  &= \int_{-T}^T \frac{i (c - iy)}{c^2 + y^2} \, dy \\
+  &= \int_{-T}^T \frac{y + ic}{c^2 + y^2} \, dy.
+\end{align*}
+
+---
+
+\begin{align*}
+  \int_{-T}^T \frac{y}{c^2 + y^2} \, dy
+  &= \int_{-T}^0 \frac{y}{c^2 + y^2} \, dy +
+  \int_{0}^T \frac{y}{c^2 + y^2} \, dy \\
+  &= -\int_{0}^T \frac{y}{c^2 + y^2} \, dy +
+  \int_{0}^T \frac{y}{c^2 + y^2} \, dy \\
+  &= 0
+\end{align*}
+
+---
+
+We know that for $ x > 0 $,
+$$
+  \arctan x + \arctan \frac{1}{x} = \frac{\pi}{2}.
+$$
+Thus
+$$
+  \arctan{\frac{T}{c}} + \arctan{\frac{c}{T}} = \frac{\pi}{2}.
+$$
+Dividing both sides by $ \frac{1}{\pi} $, we get
+$$
+  \frac{1}{\pi} \arctan{\frac{T}{c}} + \frac{1}{\pi} \arctan{\frac{c}{T}} = \frac{1}{2}.
+$$
+Thus
+$$
+  \frac{1}{\pi} \arctan{\frac{T}{c}} = \frac{1}{2} - \frac{1}{\pi} \arctan{\frac{c}{T}}.
+$$
+  
+
+</div>
+</textarea>
