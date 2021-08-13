@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>TODO</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+\begin{align*}
+  \int_0^1 \frac{e^{-at} t^{\sigma - 1}}{1 - e^{-t}} \, dt
+  &\le \int_0^1 \frac{e^t e^{-at} t^{\delta}}{e^t(1 - e^{-t})} \, dt \\
+  &= \int_0^1 \frac{e^{t(1 - a)} t^{\delta}}{e^t - 1} \, dt \\
+  &\le \int_0^1 \frac{e^{t(1 - a)} t^{\delta}}{t} \, dt. \\
+  &= \int_0^1 e^{t(1 - a)} t^{\delta - 1} \, dt. \\
+  &\le \int_0^1 e^{1(1 - a)} t^{\delta - 1} \, dt \\
+  &= e^{1 - a} \int_0^1 t^{\delta - 1} \, dt \\
+  &= e^{1 - a} \frac{t^{\delta}}{\delta} \Biggr\rvert_0^1 \\
+  &= \frac{e^{1-a}}{\delta}.
+\end{align*}
+
+</div>
+</textarea>

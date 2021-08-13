@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Properties of $ \Gamma(s) $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+$$
+\Gamma(1)
+= \int_0^{\infty} x^0 e^{-x} \, dx
+= -e^{-x} \Biggr\rvert_0^{\infty} = \frac{-1}{e^x} \Biggr\rvert_0^{\infty} = 0 - (-1) = 1.
+$$
+
+---
+
+\begin{align*}
+  \Gamma(s + 1)
+  &= \int_0^{\infty} x^s e^{-x} \, dx \\
+  &= \left[ x^s \int e^{-x} \, dx - \int \left( sx^{s-1} \int e^{-x} \, dx \right) \right]_0^{\infty} \\
+  &= -x^s e^{-x} \Biggr\vert_0^{\infty} + s \int_0^{\infty} x^{s-1} e^x \, dx \\
+  &= s \Gamma(s).
+\end{align*}
+
+---
+
+\begin{align*}
+  \Gamma(2) & = 1 \cdot \Gamma(1) = 1, \\
+  \Gamma(3) &= 2 \cdot \Gamma(2) = 2, \\
+  \Gamma(4) &= 3 \cdot \Gamma(3) = 6, \\
+  &\;\,\vdots \\
+  \Gamma(n) &= (n - 1) \cdot \Gamma(n - 1) = (n - 1)(n - 2) \dots 1 = (n - 1)!.
+\end{align*}
+
+</div>
+</textarea>

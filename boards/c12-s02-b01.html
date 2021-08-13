@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Illustration of $ \Gamma(n) $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Computing $ \Gamma(5) $
+
+\begin{align*}
+  \int x^4 e^{-x} \, dx
+  &= x^4 \int e^{-x} \, dx - \int \left( \frac{d}{dx} x^4 \int e^{-x} \, dx \right) \, dx \\
+  &= x^4 (-e^{-x}) - \int \left( 4x^3 (-e^{-x}) \right) \, dx \\
+  &= -x^4 e^{-x} + 4 \int x^3 e^{-x} \, dx \\
+  &= -x^4 e^{-x} + 4 \left(-x^3 e^{-x} + 3 \int x^2 e^{-x} \, dx \right) \\
+  &= -x^4 e^{-x} - 4 x^3 e^{-x} + 4 \cdot 3 \cdot \int x^2 e^{-x} \, dx \\
+  &= -x^4 e^{-x} - 4 x^3 e^{-x} +
+     4 \cdot 3 \cdot \left( -x^2 e^{-x} + 2 \int x e^{-x} \, dx \right) \\
+  &= -x^4 e^{-x} - 4 x^3 e^{-x} -
+     4 \cdot 3 \cdot x^2 e^{-x} + 4 \cdot 3 \cdot 2 \cdot \int x e^{-x} \, dx \\
+  &= -x^4 e^{-x} - 4 x^3 e^{-x} -
+     4 \cdot 3 \cdot x^2 e^{-x} + 4 \cdot 3 \cdot 2 \cdot \left( -x e^{-x} + 1 \int e^{-x} \, dx \right) \, dx \\
+  &= -x^4 e^{-x} - 4 x^3 e^{-x} -
+     4 \cdot 3 \cdot x^2 e^{-x} - 4 \cdot 3 \cdot 2 \cdot x e^{-x} - 4 \cdot 3 \cdot 2 \cdot 1 \cdot e^{-x} \\
+  &= \frac{-(x^4 + 4x^3 + 12x^2 + 24x + 24)}{e^x}.
+\end{align*}
+
+---
+
+\begin{align*}
+  \Gamma(5)
+  &= \int_0^{\infty} x^4 e^{-x} \, dx \\
+  &= \frac{-(x^4 + 4x^3 + 12x^2 + 24x + 24)}{e^x} \Biggr\rvert_0^{\infty} \\
+  &= 0 - (-24) = 24 = 4!
+\end{align*}
+
+</div>
+</textarea>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Some Steps in Proof of Perron's Formula</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Some Steps in Proof of Perron's Formula
+
+Using Lemma 4, we get
+
+\begin{align*}
+  \int_{c - \infty i}^{c + \infty i} F(s + z) \frac{x^z}{z} dz
+  &= \begin{aligned}[t]
+    &\sum_{n < x} \frac{f(n)}{n^s}
+    \underbrace{\int_{c - \infty i}^{c + \infty i}
+      \left( \frac{x}{n} \right)^z \frac{dz}{z}}_{2\pi i \text{ since } \frac{x}{n} > 1} \\
+    &+ \underbrace{\sum_{n > x} \frac{f(n)}{n^s}
+    \underbrace{\int_{c - \infty i}^{c + \infty i}
+      \left( \frac{x}{n} \right)^z \frac{dz}{z}}_{0 \text{ since } \frac{x}{n} < 1}}_{\text{will be shown to be } 0} \\
+    &+' \frac{f(x)}{x^s}
+    \underbrace{\int_{c - \infty i}^{c + \infty i} \frac{dz}{z}}_{\pi i}.
+  \end{aligned}
+\end{align*}
+
+Therefore
+
+$$
+\int_{c - \infty i}^{c + \infty i} F(s + z) \frac{x^z}{z} dz
+= \sum_{n < x} \frac{f(n)}{n^s} 2\pi i + 0 +' \frac{f(x)}{x^s} \pi i.
+$$
+
+Diving both sides by $ 2\pi i $, we get
+
+$$
+\frac{1}{2\pi i} \int_{c - \infty i}^{c + \infty i} F(s + z) \frac{x^z}{z} dz
+= \sum_{n < x} \frac{f(n)}{n^s} +' \frac{1}{2} \frac{f(x)}{x^s}
+= \sideset{}{^*} \sum_{n \le x} \frac{f(n)}{n^s}.
+$$
+
+</div>
+</textarea>
