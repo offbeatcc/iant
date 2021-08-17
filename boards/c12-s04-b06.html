@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Adding the Integrals</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Adding the Integrals
+
+\begin{align*}
+  &\int_{\infty}^c r^{s-1} e^{-\pi i s} g(-r) \, dr +
+  \int_c^{\infty} r^{s-1} e^{\pi i s} g(-r) \, dr \\
+  &= \int_{\infty}^c r^{s-1} e^{-\pi i s} g(-r) \, dr +
+  \int_c^{\infty} r^{s-1} e^{\pi i s} g(-r) \, dr \\
+  &= -\int_c^{\infty} r^{s-1} e^{-\pi i s} g(-r) \, dr +
+  \int_c^{\infty} r^{s-1} e^{\pi i s} g(-r) \, dr \\
+  &= e^{\pi i s} \int_c^{\infty} r^{s-1} g(-r) \, dr
+  - e^{-\pi i s} \int_c^{\infty} r^{s-1} g(-r) \, dr \\
+  &= (e^{\pi i s} - e^{-\pi i s}) \int_c^{\infty} r^{s-1} g(-r) \, dr \\
+  &= 2i \sin(\pi s) \int_c^{\infty} r^{s-1} g(-r) \, dr.
+\end{align*}
+
+</div>
+</textarea>

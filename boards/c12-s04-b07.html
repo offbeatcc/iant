@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Dividing by $ 2i $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+After obtaining
+$$
+2\pi i I(s, a) = 2i \sin(\pi s) \int_c^{\infty} r^{s-1} g(-r) \, dr +
+ic^s \int_{-\pi}^{pi} e^{is\theta} g(ce^{i\theta}) \, d\theta
+$$
+we divide both sides by $ 2i $ to get
+$$
+\pi I(s, a)
+= \sin(\pi s) \underbrace{\int_c^{\infty} r^{s-1} g(-r) \, dr}_{I_1(s, c)} +
+\underbrace{\frac{c^s}{2} \int_{-\pi}^{\pi} e^{is\theta} g(ce^{i\theta}) \, d\theta}_{I_2(s, c)}
+$$
+Denoting $ I_1(s, c) $ and $ I_2(s, c) $ as shown above, we get
+$$
+\pi I(s, a) = \sin(\pi s) I_1(s, c) + I_2 (s, c)
+$$
+  
+</div>
+</textarea>

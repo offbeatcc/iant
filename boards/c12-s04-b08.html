@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Absolute Value of $ I_2(s, c) $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+\begin{align*}
+  \lvert I_2(s, c) \rvert
+  &= \left\lvert \frac{c^s}{2} \int_{-\pi}^{\pi} e^{is\theta} g(ce^{i\theta}) \, d\theta \right\rvert \\
+  &\le \frac{\lvert c^{\sigma + it} \rvert}{2} \int_{-\pi}^{\pi} \lvert e^{i(\sigma + it)\theta} \rvert \frac{A}{\lvert ce^{i \theta} \rvert} \, d\theta \\
+  &= \frac{c^{\sigma}}{2} \int_{-\pi}^{\pi} \lvert e^{-t \theta + i\sigma\theta} \rvert \frac{A}{c} \, d\theta \\
+  &= \frac{c^{\sigma}}{2} \int_{-\pi}^{\pi} e^{-t \theta}\frac{A}{c} \, d\theta \\
+  &= \frac{Ac^{\sigma - 1}}{2} \int_{-\pi}^{\pi} e^{-t \theta} \, d\theta \\
+  &= \frac{Ac^{\sigma - 1}}{2} \cdot
+     \frac{-e^{-t \theta}}{t} \Biggr\rvert_{-\pi}^{\pi} \\
+  &= \frac{Ac^{\sigma - 1}}{2} \cdot
+     \left( \frac{-e^{-t\pi}}{\pi} - \frac{-e^{t\pi}}{-\pi} \right) \\
+  &\le \frac{Ac^{\sigma - 1}}{2} \cdot
+     \left( \frac{2e^{\pi\lvert t \rvert}}{\pi} \right) \\
+  &\le Ae^{\pi \lvert t \rvert} c^{\sigma - 1}.
+\end{align*}
+  
+</div>
+</textarea>

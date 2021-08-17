@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>First Two Inequalities</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# First Two Inequalities
+
+## Along $ C_1 $
+
+\begin{align*}
+  \lvert z^{s - 1} \rvert
+  = \lvert r^{s - 1} e^{-\pi i (s - 1)} \rvert
+  = \lvert r^{s - 1} \rvert \lvert e^{-\pi i (s - 1)} \rvert
+  &= \lvert r^{\sigma + it - 1} \rvert \lvert e^{-\pi i (\sigma + it - 1)} \rvert \\
+  &= \lvert r^{\sigma + it - 1} \rvert \lvert e^{\pi t - (\sigma - 1)\pi i} \rvert \\
+  &= r^{\sigma - 1} e^{\pi t} \\
+  &\le r^{M - 1} e^{\pi M}.
+\end{align*}
+
+## Along $ C_2 $
+
+\begin{align*}
+  \lvert z^{s - 1} \rvert
+  = \lvert r^{s - 1} e^{\pi i (s - 1)} \rvert
+  = \lvert r^{s - 1} \rvert \lvert e^{\pi i (s - 1)} \rvert
+  &= r^{\sigma - 1} \lvert e^{\pi i (\sigma + it - 1)} \rvert \\
+  &= r^{\sigma - 1} \lvert e^{-\pi t (\sigma - 1)\pi i} \rvert \\
+  &= r^{\sigma - 1} e^{-\pi t} \\
+  &\le r^{M - 1} e^{\pi M}.
+\end{align*}
+
+</div>
+</textarea>
