@@ -20,16 +20,15 @@ a:focus, a:hover, a:active {
   color: #adf;
   text-decoration: underline;
 }
-h1 a:empty:before, h2 a:empty:before, h3 a:empty:before,
-h4 a:empty:before, h5 a:empty:before, h6 a:empty:before {
+a:empty:before, a:empty:before, a:empty:before,
+a:empty:before, a:empty:before, a:empty:before {
   content: "#";
 }
-h1 a:empty, h2 a:empty, h3 a:empty, h4 a:empty, h5 a:empty, h6 a:empty {
+a:empty, a:empty, a:empty, a:empty, a:empty, a:empty {
   visibility: hidden;
   padding-left: 0.25em;
 }
-h1:hover a:empty, h2:hover a:empty, h3:hover a:empty,
-h4:hover a:empty, h5:hover a:empty, h6:hover a:empty {
+:hover > a:empty {
   visibility: visible;
 }
 img {
