@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Computing $ \zeta(0) $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Computing $ \zeta(0) $
+
+\begin{align*}
+  \zeta(0) &= \zeta(0, 1) = \Gamma(1 - 0) I(0, 1) = 1 \cdot I(0, 1) \\
+  &= \frac{1}{2\pi i} \int_{C_2} \frac{e^z}{z (1 - e^z)} \\
+  &= \operatorname*{Res}_{z=0} \frac{e^z}{z(1 - e^z)} \\
+  &= \frac{1}{(2 - 1)!} \lim_{z \to 0} \frac{d}{dz} (z - 0)^2 \frac{e^z}{z(1 - e^z)} \\
+  &= \lim_{z \to 0} \frac{d}{dz} \frac{z e^z}{1 - e^z} \\
+  &= \lim_{z \to 0} \left( ze^z \frac{d}{dz} \frac{1}{1 - e^z} +
+  \frac{1}{1 - e^z} \frac{d}{dz} ze^z \right) \\
+  &= \lim_{z \to 0} \left( ze^z \frac{e^z}{(1 - e^z)^2} +
+  \frac{1}{1 - e^z} (ze^z + e^z) \right) \\
+  &= \lim_{z \to 0} \frac{ze^{2z} + (ze^z + e^z)(1 - e^z)}{(1 - e^z)^2} \\
+  &= \lim_{z \to 0} \frac{ze^{2z} + ze^z - ze^{2z} + e^z - e^{2z}}{(1 - e^z)^2} \\
+  &= \lim_{z \to 0} \frac{e^z(1 + z - e^z)}{(1 - e^z)^2} \\
+  &= \lim_{z \to 0} e^z \cdot \lim_{z \to 0} \frac{1 + z - e^z}{(1 - e^z)^2} \\
+  &= \lim_{z \to 0} \frac{1 - e^z}{2(1 - e^z)(-e^z)} \\
+  &= -\frac{1}{2}.
+\end{align*}
+
+</div>
+</textarea>

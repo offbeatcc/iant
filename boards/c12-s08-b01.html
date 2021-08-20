@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Legendre's Duplication Formula</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+## Legendre's Duplication Formula
+
+$$
+2 \pi^{1/2} 2^{-2s} \Gamma(2s)
+= \Gamma(s) \Gamma\left( s + \frac{1}{2} \right).
+$$
+
+Substituting $ s $ with $ (1 - s)/2 $ we get the following:
+
+LHS:
+
+$$
+2 \pi^{1/2} 2^{-2s} \Gamma(2s)
+= 2 \pi^{1/2} 2^{s - 1} \Gamma(1 - s)
+= 2^s \pi^{1/2} \Gamma(1 - s).
+$$
+
+RHS:
+
+$$
+\Gamma(s) \Gamma\left( s + \frac{1}{2} \right)
+= \Gamma\left( \frac{1 - s}{2} \right) \Gamma\left(\frac{1 - s}{2}  + \frac{1}{2} \right)
+= \Gamma\left( \frac{1 - s}{2} \right) \Gamma\left(1 - \frac{s}{2} \right).
+$$
+
+</div>
+</textarea>

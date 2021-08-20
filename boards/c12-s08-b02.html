@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying Legendre's Duplication Formula</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying Legendre's Duplication Formula
+
+We know that
+$$
+\Gamma(s) \Gamma(1 - s) = \frac{\pi}{\sin \pi s}.
+$$
+
+Substituting $ s $ with $ s/2 $ we get
+$$
+\Gamma\left( \frac{s}{2} \right) \Gamma\left( 1 - \frac{s}{2} \right)
+= \frac{\pi}{\sin \frac{\pi s}{2}}.
+$$
+
+Thus
+$$
+\Gamma\left( 1 - \frac{s}{2} \right)
+= \frac{\pi}{\sin \frac{\pi s}{2} \Gamma \left( \frac{s}{2} \right)}.
+$$
+
+---
+
+We also obtained earlier
+
+$$
+2^s \pi^{1/2} \Gamma(1 - s)
+= \Gamma\left( \frac{1 - s}{2} \right) \Gamma\left( 1 - \frac{s}{2} \right).
+$$
+
+Substituting the value of $ \Gamma\left( 1 - \frac{s}{2} \right) $
+from above we get
+
+$$
+2^s \pi^{1/2} \Gamma(1 - s)
+= \Gamma\left( \frac{1 - s}{2} \right) \frac{\pi}{\sin \frac{\pi s}{2} \Gamma \left( \frac{s}{2} \right)}.
+$$
+
+Thus
+
+$$
+\Gamma(1 - s) \sin \frac{\pi s}{2}
+= \frac{2^{-s} \, \pi^{1/2} \, \Gamma\left( \frac{1 - s}{2} \right) }{\Gamma \left( \frac{s}{2} \right)}.
+$$
+
+</div>
+</textarea>
