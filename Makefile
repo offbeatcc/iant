@@ -10,9 +10,9 @@ boards: FORCE
 code: FORCE
 	for f in code/*.py; do python3 "$$f" > "$${f%.py}.out.txt"; done
 
-live: boards
+pub: boards
 	git diff --exit-code
 	git push
-	cd ../offbeat && make live
+	cd ../offbeat && make pub
 
 FORCE:
