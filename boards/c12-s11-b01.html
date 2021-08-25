@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Final Steps in Proof of Theorem 12.11</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Evaluation of $ \zeta(-n, a) $
+
+From the analytic continuation of the Hurwitz zeta function, we have
+$$
+\zeta(s, a)
+= \Gamma(1 - s) I(s, a)
+= \Gamma(1 - s) \cdot \frac{1}{2\pi i} \int_C \frac{z^{s-1} e^{az}}{1 - e^z} \, dz.
+$$
+
+Setting $ s = -n $ where $ n $ is a nonnegative integer we get
+\begin{align*}
+\zeta(-n, a)
+= \Gamma(1 + n) I(-n, a)
+&= n! \int_{C_2} \frac{z^{-n - 1} e^{az}}{1 - e^z} \, dz \\
+&= n! \cdot \operatorname*{Res}_{z=0} \left( \frac{z^{-n - 1} e^{az}}{1 - e^z} \right).
+\end{align*}
+
+Example:
+
+$$
+\zeta(-1)
+= \zeta(-1, 1)
+= 1! \cdot \operatorname*{Res}_{z=0} \left( \frac{z^{-2} e^{z}}{1 - e^z} \right)
+= \operatorname*{Res}_{z=0} \left( \frac{z^{-2} e^{z}}{1 - e^z} \right)
+= \frac{-1}{12}.
+$$
+
+See [c12-s05-b03.html](c12-s05-b03.html) for the above example worked
+out in detail.
+
+</div>
+</textarea>

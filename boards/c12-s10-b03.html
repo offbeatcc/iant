@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Final Steps in Proof of Theorem 12.11</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Final Steps in Proof of Theorem 12.11
+
+\begin{align*}
+\sum_{h=1}^k \chi(h) \zeta\left( 1 - s, \frac{h}{k} \right)
+&= \frac{\Gamma(s)}{(2\pi)^s}
+   \left\{ e^{-\pi is/2} \sum_{h=1}^k \chi(h) F\left( \frac{h}{k}, s \right) +
+   e^{\pi is/2} \sum_{h=1}^k \chi(h) F\left( \frac{-h}{k}, s \right) \right \} \\
+&= \frac{\Gamma(s)}{(2\pi)^s}
+   \left\{ e^{-\pi is/2} \underbrace{\sum_{h=1}^k \chi(h) F\left( \frac{h}{k}, s \right)} +
+   e^{\pi is/2} \chi(-1) \underbrace{\sum_{h=1}^k \chi(h) F\left( \frac{h}{k}, s \right)} \right \} \\
+&= \frac{\Gamma(s)}{(2\pi)^s}
+   \left\{ e^{-\pi is/2}  +
+   e^{\pi is/2} \chi(-1) \right \} \sum_{h=1}^k \chi(h) F\left( \frac{h}{k}, s \right) \\
+\end{align*}
+
+Multiplying both sides by \( k^{s-1} \), we get
+$$
+\underbrace{k^{-(1 - s)} \sum_{h=1}^k \chi(h) \zeta\left( 1 - s, \frac{h}{k} \right)}_{L(1 - s, \chi)}
+= \frac{k^{s - 1} \Gamma(s)}{(2\pi)^s}
+   \left\{ e^{-\pi is/2}  +
+   e^{\pi is/2} \chi(-1) \right \} \sum_{h=1}^k \chi(h) F\left( \frac{h}{k}, s \right).
+$$
+
+</div>
+</textarea>

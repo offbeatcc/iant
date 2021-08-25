@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>First Equation in Proof of Theorem 12.11</title>
+<title>First Equation in Proof of Theorem 12.10</title>
 <script src="https://cdn.jsdelivr.net/npm/muboard"></script>
 <textarea style="display: none">
 <div class="center">
 
-# First Equation in Proof of Theorem 12.11
+# First Equation in Proof of Theorem 12.10
 
-From Hurwitz's formula, we have
+From equation (9) we have
 $$
-  \zeta(1 - s, x)
-  = \frac{\Gamma(s)}{(2\pi)^s}
-  \left\{ e^{-\pi i s/2} F(x, s) + e^{\pi i s/2} F(-x, s) \right\}.
+F(x, s) = \sum_{n=1}^{\infty} \frac{e^{2\pi inx}}{n^s}.
 $$
 
-Taking $ x = h/k $, we get
+Substituting $ x = h/k $ we get
 $$
-  \zeta\left( 1 - s, \frac{h}{k} \right)  
-  = \frac{\Gamma(s)}{(2\pi)^s}
-  \left\{ e^{-\pi i s/2} F\left( \frac{h}{k}, s \right) +
-          e^{\pi i s/2} F\left( \frac{-h}{k}, s \right) \right\}.
+F\left( \frac{h}{k}, s \right) = \sum_{n=1}^{\infty} \frac{e^{2\pi inh/k}}{n^s}.
 $$
 
-Multiplying each member by $ \chi(h) $ and taking sum on $ h $, we get
+Multiplying both sides by $ \overline{\chi}(h) $ we get
+$$
+  \overline{\chi}(h) F\left( \frac{h}{k}, s \right)
+  = \sum_{n=1}^{\infty} \overline{\chi}(h) e^{2\pi inh/k} n^{-s}.
+$$
 
-\begin{align*}
-  \sum_{h=1}^k \chi(h) \zeta\left( 1 - s, \frac{h}{k} \right)  
-  &= \sum_{h=1}^k \chi(h) \frac{\Gamma(s)}{(2\pi)^s}
-  \left\{ e^{-\pi i s/2} F\left( x, \frac{h}{k} \right) +
-  e^{\pi i s/2} F\left( -x, \frac{h}{k} \right) \right\} \\
-  &= \frac{\Gamma(s)}{(2\pi)^s}
-  \sum_{h=1}^k \left\{ \chi(h) e^{-\pi is/2} F\left( \frac{h}{k}, s \right) +
-                      \chi(h) e^{\pi is/2} F\left( \frac{-h}{k}, s \right) \right \} \\
-  &= \frac{\Gamma(s)}{(2\pi)^s}
-  \left\{ e^{-\pi is/2} \sum_{h=1}^k \chi(h) F\left( \frac{h}{k}, s \right) +
-          e^{\pi is/2} \sum_{h=1}^k \chi(h) F\left( \frac{-h}{k}, s \right) \right \} \\
-\end{align*}
+Summing on $ h $ on both sides, we get
+$$
+  \sum_{h=1}^k \overline{\chi}(h) F\left( \frac{h}{k}, s \right)
+  = \sum_{h=1}^k \sum_{n=1}^{\infty} \overline{\chi}(h) e^{2\pi inh/k} n^{-s}.
+$$
 
 </div>
 </textarea>

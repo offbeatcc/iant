@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Proof of Theorem 12.12</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Proof of Theorem 12.12
+
+## LHS
+$$
+\sum_{n=0}^{\infty} \frac{B_n(x)}{n!} z^n
+= \frac{B_0(x)}{0!} z^0 + \frac{B_1(x)}{1!} z^1 + \frac{B_2(x)}{2!} z^2 + \dots
+$$
+
+## RHS
+\begin{align*}
+  \left( \sum_{n=0}^{\infty} \frac{B_n}{n!} z^n \right)
+  \left( \sum_{n=0}^{\infty} \frac{x^n}{n!} z^n \right)
+  &= \left( \frac{B_0}{0!} z^0 + \frac{B_1}{1!} z^1 + \frac{B_2}{2!} z^2 + \dots \right)
+  \left( \frac{x^0}{0!} z^0 + \frac{x^1}{1!} z^1 + \frac{x^2}{2!} z^2 + \dots \right) \\
+  &= \frac{B_0 x_0}{0! \, 0!} z^0 +
+     \left( \frac{B_0 x^1}{0! \, 1!} + \frac{B_1 x^0}{1! \, 0!} \right) z^1 +
+     \left( \frac{B_0 x^2}{0! \, 2!} + \frac{B_1 x^1}{1! \, 1!} + \frac{B_2 x^0}{2! \, 0!} \right) z^2 +
+     \dots \\
+  &= \frac{B_0 x_0}{0! \; 0!} z^0 +
+     \sum_{k=0}^1 \frac{B_k x^{1-k}}{k! \, (1 - k)!} z^1 +
+     \sum_{k=0}^2 \frac{B_k x^{2-k}}{k! \, (2 - k)!} z^1 + \dots    
+\end{align*}
+
+## Equating Coefficients of $ z_n $
+$$
+\frac{B_n(x)}{n!} = \sum_{k=0}^{n} \frac{B_k x^{n-k}}{k! (n - k)!}
+$$
+
+</div>
+</textarea>
