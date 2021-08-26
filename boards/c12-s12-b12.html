@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Showing $ B_{2n + 1} = 0 $ in Note for Theorem 12.16</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Showing $ B_{2n + 1} = 0 $ in Note for Theorem 12.16
+
+$$
+\frac{z}{e^z - 1} + \frac{1}{2} z = 1 + \sum_{n=2}^{\infty} \frac{B_n}{n!} z^n.
+$$
+
+Since LHS has been shown to be an even function, so is RHS.
+
+$$
+1 + \sum_{n=2}^{\infty} \frac{B_n}{n!} (-z)^n = 1 + \sum_{n=2}^{\infty} \frac{B_n}{n!} z^n.
+$$
+
+The terms involving even powers of $ z $ are going to be equal on both sides. Therefore
+$$
+\sum_{\substack{n=3 \\ n \text{ is } odd}}^{\infty} \frac{B_n}{n!} (-z)^n
+= \sum_{\substack{n=3 \\ n \text{ is } odd}}^{\infty} \frac{B_n}{n!} z^n.
+$$
+
+Equating the coefficients on both sides we get, we get for odd $ n $,
+$ n \ge 3 $.
+$$
+B_n = -B_n.
+$$
+
+Thus for odd $ n $, $ n \ge 3 $, we have
+$$
+B_n = 0.
+$$
+
+</div>
+</textarea>

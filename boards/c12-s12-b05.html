@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Computing $ B_0 $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Computing $ B_0 $
+
+From the definition of $ B_n $ we have
+$$
+\frac{z}{e^z - 1} = \sum_{n=0}^{\infty} \frac{B_n}{n!} z^n.
+$$
+
+Thus
+$$
+(e^z - 1) \sum_{n=0}^{\infty} \frac{B_n}{n!} z^n = z.
+$$
+
+Using Taylor series expansion of $ e^z $ we get
+$$
+\left( z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots \right)
+\left( B_0 + B_1 z + \frac{B_2}{2!} z^2 + \dots \right) = z.
+$$
+
+Equating coefficients we get $ B_0 = 1 $.
+
+---
+
+Bonus:
+
+$$
+\frac{B_0}{2} + B_1 = 0.
+\text{ Therefore }
+B_1 = -\frac{1}{2}. $$
+
+$$
+\frac{B_2}{2} + \frac{B_1}{2} + \frac{B_0}{6} = 0.
+\text{ Therefore }
+B_2 = 2\left( -\frac{B_0}{6} - \frac{B_1}{2} \right)
+= 2\left( -\frac{1}{6} + \frac{1}{4} \right) = \frac{1}{6}.
+$$
+
+</div>
+</textarea>

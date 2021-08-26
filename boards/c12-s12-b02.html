@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining Equation (18) in Proof of Theorem 12.14</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining Equation (18) in Proof of Theorem 12.14
+
+$$
+  \sum_{n=0}^{\infty} \frac{B_n(x + 1) - B_n(x)}{n!} z^n
+  = \sum_{n=0}^{\infty} \frac{x^n}{n!} z^{n + 1}.
+$$
+
+That is,
+
+\begin{align*}
+&\frac{B_0(x + 1) - B_0(x)}{0!} +
+\frac{B_1(x + 1) - B_1(x)}{1!} z +
+\frac{B_2(x + 1) - B_2(x)}{2!} z^2 + \dots \\
+&= \frac{x^0}{0!} z + \frac{x^1}{1!} z^2 + \frac{x^2}{2!} z^3 + \dots
+\end{align*}
+
+Therefore, for \( n \ge 1 \),
+$$
+\frac{B_n(x + 1) - B_n(x)}{n!} = \frac{x^{n - 1}}{(n - 1)!}.
+$$
+
+Thus
+$$
+B_n(x + 1) - B_n(x) = n x^{n - 1}.
+$$
+
+</div>
+</textarea>
