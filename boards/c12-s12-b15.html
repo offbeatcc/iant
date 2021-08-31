@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying Stirling's Formula to Theorem 12.18</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying Stirling's Formula to Theorem 12.18
+
+From Stirling's formula, we get
+$$
+(2k)!
+\sim \left( \frac{2k}{e} \right)^{2k} \sqrt{2\pi (2k)}
+\sim \frac{2^{2k + 1} \cdot k^{2k + 1/2} \cdot \pi^{1/2}}{e^{2k}}
+\text{ as } k \to \infty.
+$$
+
+Substituting this in equation (23) we get
+\begin{align*}
+  (-1)^{k+1} B_{2k}
+  \sim \frac{2 (2k)!}{(2\pi)^{2k}}
+  &\sim \frac{2^{2k + 2} \cdot k^{2k + 1/2} \cdot \pi^{1/2}}{2^{2k} \cdot \pi^{2k} \cdot e^{2k}} \\
+  &\sim \frac{4 \cdot k^{2k + 1/2} \cdot \pi^{1/2}}{\pi^{2k + 1/2} \cdot e^{2k + 1/2}} \cdot e^{1/2} \cdot \pi^{1/2} \\
+  &\sim 4\pi\sqrt{e} \left( \frac{k}{\pi e} \right)^{2k + 1/2}
+  \text{ as } k \to \infty.
+\end{align*}
+
+</div>
+</textarea>

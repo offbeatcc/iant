@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Asymptotic Relation in Note for Theorem 12.18</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Asymptotic Relation in Note for Theorem 12.18
+
+From Theorem 12.18 we have
+$$
+\lim_{k \to \infty} (-1)^{k+1} \frac{(2\pi)^{2k} B_{2k}}{2 (2k)!} = 1.
+$$
+
+Substituting $ k $ with $ k + 1 $ we get
+$$
+\lim_{k \to \infty} (-1)^{k+2} \frac{(2\pi)^{2k + 2} B_{2k + 2}}{2 (2k + 2)!} = 1.
+$$
+
+Dividing both sides of the second equation with the corresponding
+sides of the first one, we get
+$$
+\lim_{k \to \infty} \frac{-B_{2k + 2}}{B_{2k}} \cdot \frac{(2\pi)^2}{(2k + 2)(2k + 1)} = 1.
+$$
+That is,
+$$
+\lim_{k \to \infty} \left\lvert \frac{B_{2k + 2}}{B_{2k}} \right\rvert
+\frac{4\pi^2}{4k^2 + 6k + 2} = 1.
+$$
+Thus
+$$
+\lim_{k \to \infty} \left\lvert \frac{B_{2k + 2}}{B_{2k}} \right\rvert
+\frac{\pi^2}{k^2} = 1.
+$$
+Rewriting the above as
+$$
+\lim_{k \to \infty} \frac{\lvert B_{2k + 2} / B_{2k} \rvert}{k^2 / \pi^2} = 1.
+$$
+This is equivalent to saying that
+$$
+\frac{B_{2k + 2}}{B_{2k}} \sim \frac{k^2}{\pi^2} \text{ as } k \to \infty.
+$$
+</div>
+</textarea>

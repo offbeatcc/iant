@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining $ B_{2n + 1}(x) $ in Theorem 12.19</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining $ B_{2n + 1}(x) $ in Theorem 12.19
+
+From equation (24) We have
+$$
+B_n(x) = -\frac{n!}{(2\pi i)^n} \sum_{\substack{k = -\infty \\ k \ne 0}}^{\infty} \frac{e^{2\pi i k x}}{k^n}
+$$
+Thus
+\begin{align*}
+  B_{2n + 1}(x)
+  &= -\frac{(2n + 1)!}{(2\pi i)^{2n + 1}} \left\{
+  \sum_{k = 1}^{\infty} \frac{e^{2\pi i k x}}{k^{2n + 1}} +
+  \sum_{k = -1}^{-\infty} \frac{e^{2\pi i k x}}{k^{2n + 1}}
+  \right\} \\
+  &= -\frac{(2n + 1)!}{(2\pi)^{2n + 1} \cdot i^{2n + 1}} \sum_{k=1}^{\infty}
+  \left( \frac{e^{2\pi ikx}}{k^{2n + 1}} - \frac{e^{-2\pi ikx}}{k^{2n + 1}} \right) \\
+  &= -\frac{(2n + 1)!}{(2\pi)^{2n + 1} i^{2n + 1}} \sum_{k=1}^{\infty} \frac{2i \sin 2\pi kx}{k^{2n + 1}} \\
+  &= -\frac{2(2n + 1)!}{(2\pi)^{2n + 1} i^{2n}} \sum_{k=1}^{\infty} \frac{\sin 2\pi kx}{k^{2n + 1}} \\
+  &= (-1)^{n+1} \frac{2(2n + 1)!}{(2\pi)^{2n + 1}} \sum_{k=1}^{\infty} \frac{\sin 2\pi kx}{k^{2n + 1}}
+\end{align*}
+
+</div>
+</textarea>

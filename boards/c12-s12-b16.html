@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining $ B_n(x) $ in Theorem 12.19</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining $ B_n(x) $ in Theorem 12.19
+
+From Hurwitz's formula in Theorem 12.6 we get
+$$
+\zeta(1 - n, x)
+= \frac{\Gamma(n)}{(2\pi)^n}
+\left\{ e^{-\pi in/2} \sum_{k=1}^{\infty} \frac{e^{2\pi ikx}}{k^n} +
+        e^{\pi in/2} \sum_{k=1}^{\infty} \frac{e^{-2\pi ikx}}{k^n} \right\}
+$$
+if \( n > 1 \) and \( 0 < x \le 1 \), or if \( n > 0 \) and \( 0 < x < 1 \), that is,
+
+if \( n \ge 2 \) and \( 0 < x \le 1 \), or if \( n = 1 \) and \( 0 < x < 1 \).
+
+From (23) we know that
+$$
+\zeta(-n, x) = -\frac{B_{n+1}(x)}{n + 1}.
+$$
+Substituting $ n $ with $ n - 1 $ we get
+$$
+\zeta(-(n - 1), x) = -\frac{B_n(x)}{n}.
+$$
+Thus
+$$
+-\frac{B_n(x)}{n}
+= \frac{\Gamma(n)}{(2\pi)^n}
+\left\{ e^{-\pi in/2} \sum_{k=1}^{\infty} \frac{e^{2\pi ikx}}{k^n} +
+        e^{\pi in/2} \sum_{k=1}^{\infty} \frac{e^{-2\pi ikx}}{k^n} \right\}
+$$
+Multiplying both sides by $ -n $ we get
+\begin{align*}
+  B_n(x)
+  &= -\frac{n!}{(2\pi)^n}
+      \left\{ e^{-\pi in/2} \sum_{k=1}^{\infty} \frac{e^{2\pi ikx}}{k^n} +
+              e^{\pi in/2} \sum_{k=1}^{\infty} \frac{e^{-2\pi ikx}}{k^n} \right\} \\
+  &= -\frac{n!}{(2\pi)^n}
+      \left\{ e^{-\pi in/2} \sum_{k=1}^{\infty} \frac{e^{2\pi ikx}}{k^n} +
+              e^{\pi in/2} \sum_{k=-1}^{-\infty} \frac{e^{2\pi ikx}}{(-k)^n} \right\} \\
+  &= -\frac{n!}{(2\pi)^n}
+      \left\{ e^{-\pi in/2} \sum_{k=1}^{\infty} \frac{e^{2\pi ikx}}{k^n} +
+              e^{-\pi in/2} \sum_{k=-1}^{-\infty} \frac{e^{2\pi ikx}}{k^n} \right\} \\
+  &= -\frac{n!}{(2\pi)^n} (-i)^n
+      \sum_{\substack{k = -\infty \\ k \ne 0}}^{\infty} \frac{e^{2\pi i k x}}{k^n} \\
+  &= -\frac{n!}{(2\pi i)^n}
+      \sum_{\substack{k = -\infty \\ k \ne 0}}^{\infty} \frac{e^{2\pi i k x}}{k^n}.
+\end{align*}
+
+</div>
+</textarea>
