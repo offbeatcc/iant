@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining First Equation in Proof of Theorem 12.21</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining First Equation in Proof of Theorem 12.21
+
+From Euler's summation formula (Theorem 3.1) we have
+$$
+\sum_{y < n \le x} f(n)
+= \int_y^x f(t) \, dt
++ \int_y^x (t - [t]) f'(t) \, dt
++ f(x)([x] - x) - f(y)([y] - y).
+$$
+Taking $ f(t) = (t + a)^{-s} $ and integers $ x $ and $ y $ we get
+$$
+\sum_{y < n \le x} \frac{1}{(n + a)^s}
+= \int_y^x \frac{dt}{(t + a)^s} \, dt
+- s \int_y^x \frac{t - [t]}{(t + a)^{s+1}} \, dt.
+$$
+
+</div>
+</textarea>

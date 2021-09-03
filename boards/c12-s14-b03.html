@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Integration by Parts in Proof of Theorem 12.22</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Integration by Parts in Proof of Theorem 12.22
+
+## Integration by Parts
+  
+$$
+\int f(x) g(x) \, dx
+= f(x) \int g(x) \, dx - \int u'(x) \left( \int g(x) \, dx \right) \, dx
+$$
+
+# Applying Integration by Parts
+
+\begin{align*}
+\int \frac{u \, du}{(n + a + u)^{s + 1}}
+&= \frac{1}{(n + a + u)^{s + 1}} \int u \, du
+- \int \frac{-(s + 1)}{(n + a + u)^{s + 2}} \left( \int u \, du \right) \, du \\
+&= \frac{u^2}{2 (n + a + u)^{s + 1}}
++ \frac{s + 1}{2} \int \frac{u^2}{(n + a + u)^{s + 2}} \, du.
+\end{align*}
+
+</div>
+</textarea>

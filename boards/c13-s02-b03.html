@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Inequality for Limit Inferior in Proof of Theorem Lemma 2</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Inequality for Limit Inferior in Proof of Theorem Lemma 2
+
+We begin with
+\begin{align*}
+A_1(x) - A_1(\alpha x)
+= \int_{\alpha x}^x A(u) \, du
+&\le \int_{\alpha x}^x A(x) du
+= A(x) (x - \alpha x) \\
+&= x(1 - \alpha)A(x).
+\end{align*}
+This gives us
+$$
+x A(x) \ge \frac{1}{1 - \alpha} \{ A_1(x) - A_1(\alpha x) \}.
+$$
+or
+$$
+\frac{A(x)}{x^{c - 1}} \ge \frac{1}{1 - \alpha}
+\left\{ \frac{A_1(x)}{x^c} - \frac{A_1(\alpha x)}{\alpha^c x^c} \alpha^c \right\}
+$$
+Keep $ \alpha $ fixed and let $ x \to \infty $ in this inequality. We find
+$$
+\liminf_{x \to \infty} \frac{A(x)}{x^{c - 1}}
+\ge \frac{1}{1 - \alpha} (L - L \alpha^c)
+= L \frac{1 - \alpha^c}{1 - \alpha}.
+$$
+As $ \alpha \to 1- $, the quotient on the right is the difference
+quotient for the derivative of $ x^c $ at $ x = 1 $ and has the limit
+$ c $. Therefore
+$$
+\liminf_{x \to \infty} \frac{A(x)}{x^{c - 1}}
+\ge cL.
+$$
+
+</div>
+</textarea>

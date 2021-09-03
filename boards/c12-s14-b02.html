@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Solving Integral in Proof of Theorem 12.21</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Solving Integral in Proof of Theorem 12.21
+\begin{align*}
+  \int_N^{\infty} \frac{dt}{(t + a)^s}
+  = \int_N^{\infty} (t + a)^{-s} \, dt
+  &= \frac{(t + a)^{-s + 1}}{-s + 1} \Biggr\rvert_N^{\infty} \\
+  &= \frac{-1}{s - 1} \frac{1}{(t + a)^{s-1}} \Biggr\rvert_N^{\infty} \\
+  &= \frac{-1}{s - 1} \left\{ 0 - \frac{1}{(N + a)^{s - 1}} \right\} \\
+  &= \frac{(N + a)^{1 - s}}{s - 1}.
+\end{align*}
+
+</div>
+</textarea>

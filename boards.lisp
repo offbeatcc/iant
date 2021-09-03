@@ -127,6 +127,10 @@
     :c12-s14 "Approximation of $ \\zeta(s, a) $ by Finite Sums"
     :c12-s15 "Inequalities for $ \\lvert \\zeta(s, a) \\rvert $"
     :c12-s16 "Inequalities for $ \\lvert \\zeta(s) \\rvert $ and $ \\lvert L(s, \\chi) \\rvert $"
+    :c13 "Analytic Proof of Prime Number Theorem"
+    :c13-s01 "The Plan of the Proof"
+    :c13-s02 "Lemmas"
+    :c13-s03 "A Contour Integral Representation for \\( \\psi_1(x) / x^2 \\)"
     :end t))
 
 (defun extract-string (string start-token end-token)

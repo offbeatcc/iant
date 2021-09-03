@@ -20,11 +20,10 @@ a:focus, a:hover, a:active {
   color: #adf;
   text-decoration: underline;
 }
-a:empty:before, a:empty:before, a:empty:before,
-a:empty:before, a:empty:before, a:empty:before {
+a:empty:before {
   content: "#";
 }
-a:empty, a:empty, a:empty, a:empty, a:empty, a:empty {
+a:empty {
   visibility: hidden;
   padding-left: 0.25em;
 }

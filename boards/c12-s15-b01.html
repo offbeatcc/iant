@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying Equation (25) in Proof of Theorem 12.23</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying Equation (25) in Proof of Theorem 12.23
+
+From equation (25), for any integer $ N \ge 0 $ and $ \sigma > 0 $, we have
+$$
+\zeta(s, a)
+= \sum_{n=0}^N \frac{1}{(n + a)^s} + \frac{(N + a)^{1 - s}}{s - 1} - s\int_N^{\infty} \frac{x - [x]}{(x + a)^{s + 1}} \, dx.
+$$
+Subtracting $ 1/a^s $ and taking absolute values on both sides, we get
+$$
+\lvert \zeta(s, a) - a^{-s} \rvert
+\le \sum_{n=1}^N \frac{1}{(n + a)^{\sigma}} + \frac{(N + a)^{1 - \sigma}}{\lvert s - 1 \rvert} + \lvert s \rvert\int_N^{\infty} \frac{1}{(x + a)^{\sigma + 1}} \, dx.
+$$
+
+</div>
+</textarea>

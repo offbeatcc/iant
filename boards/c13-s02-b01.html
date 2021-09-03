@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying Abel's Identity in Proof of Lemma 1</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying Abel's Identity in Proof of Lemma 1
+
+From Theorem 4.2 (Abel's identity) we have
+
+$$
+\sum_{y < n \le x} a(n) f(n) = A(x) f(x) - A(y) f(y) - \int_y^x A(t) f'(t) \, dt
+$$
+
+where $ A(x) = \sum_{n \le x} a(n) $, $ A(x) = 0 $ if $ x < 1 $, $ 0 <
+y < x $, and $ f $ has a continuous derivative on the interval $ [y,
+  x] $.
+
+---
+
+From Abel's Identity we get
+
+$$
+\sum_{n \le x} a(n) f(n) = A(x) f(x) - \int_1^x A(t) f'(t) \, dt.
+$$
+
+---
+
+Some illustrations:
+
+$$
+\sum_{1 < n \le x} a(n) f(n) = A(x) f(x) - A(1) f(1) - \int_1^x A(t) f'(t) \, dt
+$$
+
+Let $ 0 < \delta < 1 $. That is, imagine $ \delta = 0.5 $ or $ 0.6 $ or
+something like that to imagine what is going on.
+
+$$
+\sum_{\delta < n \le x} a(n) f(n) = A(x) f(x) - \underbrace{A(\delta)}_{=\,0} f(\delta) - \int_{\delta}^x A(t) f'(t) \, dt
+$$
+
+Thus
+
+\begin{align*}
+  \sum_{n \le x} a(n) f(n)
+  & = A(x) f(x) - \int_{\delta}^1 \underbrace{A(t)}_{=\,0} f'(t) \, dt - \int_1^{\infty} A(t) f'(t) \, dt \\
+  & = A(x) f(x) - \int_1^{\infty} A(t) f'(t) \, dt.
+\end{align*}
+
+</div>
+</textarea>

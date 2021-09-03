@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Summarizing Proof of Theorem 13.1</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Summarizing Proof of Theorem 13.1
+
+Take $ a(n) = \Lambda(n) $.
+
+Thus $ A(x) = \sum_{n \le x} a(n) = \sum_{n \le x} \Lambda(n) = \psi(x) $ and
+
+$ A_1(x) = \int_1^x A(t) \, dt = \int_1^x \psi(x) \, dt = \psi_1(x). $
+
+## Quick Recap
+
+$$
+a(n) = \Lambda(n), \quad
+A(x) = \psi(x), \quad
+A_1(x) = \psi_1(x).
+$$
+
+## Applying Lemma 1
+
+From Lemma 1 we have,
+$$
+\sum_{n \le x} (x - n) a(n) = A_1(x) \, dt.
+$$
+Thus
+$$
+\sum_{n \le x} (x - n) \Lambda(n) = \psi_1(x).
+$$
+
+From Lemma 2 we have, as $ x \to \infty $
+$$
+A_1(x) \sim Lx^c \implies
+A(x) \sim cLx^{c - 1}.
+$$
+Thus as $ x \to \infty $
+$$
+\psi_1(x) \sim \frac{1}{2} x^2 \implies
+\psi(x) \sim x.
+$$
+</div>
+</textarea>

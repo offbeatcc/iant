@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Final Steps in Proof of Lemma 1</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Final Steps in Proof of Lemma 1
+
+From equation (6) we have
+$$
+\sum_{n \le x} a(n) f(n) = A(x) f(x) - \int_1^{\infty} A(t) f'(t) \, dt.
+$$
+
+Let $ f(t) = t $.
+
+## LHS
+
+$$
+\sum_{n \le x} a(n) f(n)
+= \sum_{n \le x} n a(n).
+$$
+
+## RHS
+
+\begin{align*}
+A(x) f(x) - \int_1^{\infty} A(t) f'(t) \, dt
+= A(x) x - \int_1^{\infty} A(t) \, dt
+= x \sum_{n \le x} a(n) - \int_1^{\infty} A(t) \, dt
+\end{align*}
+
+## Conclusion
+
+$$
+\sum_{n \le x} n a(n)
+= x \sum_{n \le x} a(n) - \int_1^{\infty} A(t) \, dt.
+$$
+
+Thus
+$$
+\sum_{n \le x} (x - n)a(n) = \int_1^{\infty} A(t) \, dt.
+$$
+
+</div>
+</textarea>
