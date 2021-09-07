@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying Lemma 3 in Theorem 13.3</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying Lemma 3 in Theorem 13.3
+
+From Lemma 3, for $ c > 0 $, $ u > 0 $, and for every integer $ k \ge
+1 $, we have
+$$
+\frac{1}{2\pi i} \int_{c - \infty i}^{c + \infty i} \frac{u^{-z}}{z(z + 1) \dots (z + k)} \, dz
+= \begin{cases}
+\frac{1}{k!} (1 - u)^k & \text{ if } 0 < u \le 1, \\
+0 & \text{ if } u > 1.
+\end{cases}
+$$
+
+Take $ k = 2 $ and $ u = 1/x $ to get
+$$
+\frac{1}{2\pi i} \int_{c - \infty i}^{c + \infty i} \frac{x^s}{s(s + 1)(s + 2)} \, ds
+= \begin{cases}
+\frac{1}{2}\left( 1 - \frac{1}{x} \right)^2 & \text{ if } x \ge 1, \\
+0 & \text{ if } x < 1.
+\end{cases}
+$$
+
+Replace $ s $ with $ s - 1 $ to write the integral as
+$$
+\frac{1}{2\pi i} \int_{c - 1 - \infty i}^{c - 1 + \infty i} \frac{x^s}{(s - 1)s(s + 1)} \, ds
+$$
+
+Let $ c' = c - 1 $ with $ c > 1 $, we now get
+$$
+\frac{1}{2\pi i} \int_{c' - \infty i}^{c' + \infty i} \frac{x^s}{(s - 1)s(s + 1)} \, ds
+$$
+with $ c' > 0 $.
+
+</div>
+</textarea>
