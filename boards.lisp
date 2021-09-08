@@ -130,7 +130,9 @@
     :c13 "Analytic Proof of Prime Number Theorem"
     :c13-s01 "The Plan of the Proof"
     :c13-s02 "Lemmas"
-    :c13-s03 "A Contour Integral Representation for \\( \\psi_1(x) / x^2 \\)"
+    :c13-s03 "A Contour Integral Representation for $ \\psi_1(x) / x^2 $"
+    :c13-s04 "Upper Bounds for $ \\zeta(s) $ and $ \\zeta'(s) $ Near the Line $ \\sigma = 1 $"
+    :c13-s05 "The Nonvanishing of $ \\zeta(s) $ on the Line $ \\sigma = 1 $"
     :end t))
 
 (defun extract-string (string start-token end-token)

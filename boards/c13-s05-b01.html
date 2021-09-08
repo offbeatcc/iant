@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Formula for $ G(s) $ in Proof of Theorem 13.5</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Formula for $ G(s) $ in Proof of Theorem 13.5
+
+\begin{align*}
+  \sum_{n=2}^{\infty} \frac{\Lambda(n)}{\log n} n^{-s}
+  = \begin{aligned}[t]
+    &\frac{\Lambda(2)}{\log 2 \cdot 2^s} +
+    \frac{\Lambda(4)}{\log 4 \cdot 4^s} +
+    \frac{\Lambda(8)}{\log 8 \cdot 8^s} + \dots \\
+    &\frac{\Lambda(3)}{\log 3 \cdot 3^s} +
+    \frac{\Lambda(9)}{\log 9 \cdot 9^s} +
+    \frac{\Lambda(27)}{\log 27 \cdot 27^s} + \dots \\
+    &\;\,\vdots
+  \end{aligned}
+\end{align*}
+
+Each term is
+
+\begin{align*}
+\frac{\Lambda(p^m)}{\log p^m \cdot p^{ms}}
+&= \frac{\log p}{m \log p \cdot p^{ms}}
+= \frac{\log p}{m \log p \cdot p^{ms}}
+= \frac{1}{m p^{ms}} \\
+&= \frac{1}{m p^{m(\sigma + it)}}
+= \frac{p^{-imt}}{m p^{m \sigma}}
+= \frac{e^{-imt \log p}}{mp^{m \sigma}}.
+\end{align*}
+
+</div>
+</textarea>
