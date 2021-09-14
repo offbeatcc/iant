@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying Theorem 13.4 in Proof of Theorem 13.10</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying Theorem 13.4 in Proof of Theorem 13.10
+
+From Theoerm 13.4 we know that for every $ A > 0 $ there is a constant $ M $ such that
+$$
+\lvert \zeta'(s) \rvert \le M \log^2 t
+$$
+
+\begin{align*}
+\lvert \zeta(1 + it) - \zeta(\sigma + it) \rvert
+&\le \int_{\sigma}^1 \lvert \zeta'(u + it) \rvert \, du \\
+&\le \int_{\sigma}^1 M \log^2 t du \\
+&= M \log^2 t (1 - \sigma).
+\end{align*}
+
+Then from (25) we have $ 1 - A / \log^9 t < \sigma $. Thus
+$$
+1 - \sigma < \frac{A}{\log^9 t}.
+$$
+Thus
+$$
+M \log^2 t (1 - \sigma)
+< M \log^2 t \frac{A}{\log^9 t}
+= \frac{MA}{\log^7 t}.
+$$
+
+</div>
+</textarea>

@@ -82,6 +82,7 @@ footer {
 }
 footer .links a {
   margin-right: 1.25em;
+  line-height: 2.5;
 }
 footer .links a:last-child {
   margin-right: 0;
