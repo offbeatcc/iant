@@ -135,6 +135,7 @@
     :c13-s05 "The Nonvanishing of $ \\zeta(s) $ on the Line $ \\sigma = 1 $"
     :c13-s06 "Inequalities for $ \\lvert 1/\\zeta(s) \\rvert $ and $ \\lvert \\zeta'(s) / \\zeta(s) \\rvert $"
     :c13-s07 "Completion of the Proof of the Prime Number Theorem"
+    :c13-s08 "Zero-Free Regions for $ \\zeta(s) $$"
     :end t))
 
 (defun extract-string (string start-token end-token)
