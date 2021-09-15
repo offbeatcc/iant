@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Average Order $ d(n) $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Average Order of $ d(n) $
+
+From Theorem 3.3, for all $ x \ge 1 $, we have
+$$
+\sum_{n \le x} d(n) = x \log x + (2C - 1)x + O(\sqrt{x}).
+$$
+Thus the average order of $ d(n) $ is
+\begin{align*}
+  \tilde{d}
+  = \frac{1}{n} \sum_{k=1}^n d(n)
+  &= \frac{1}{n} \left\{ n \log n + (2C - 1)n + O(\sqrt{n}) \right \} \\
+  &= \log n + (2C - 1) + O\left( \frac{1}{\sqrt{n}} \right).
+\end{align*}
+Therefore
+$$
+\lim_{n \to \infty} \frac{\tilde{d}(n)}{\log n} = 1.
+$$
+The above equation can also be stated as
+$$
+\tilde{d}(n) \sim \log n \text{ as } n \to \infty.
+$$
+
+</div>
+</textarea>

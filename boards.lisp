@@ -135,7 +135,15 @@
     :c13-s05 "The Nonvanishing of $ \\zeta(s) $ on the Line $ \\sigma = 1 $"
     :c13-s06 "Inequalities for $ \\lvert 1/\\zeta(s) \\rvert $ and $ \\lvert \\zeta'(s) / \\zeta(s) \\rvert $"
     :c13-s07 "Completion of the Proof of the Prime Number Theorem"
-    :c13-s08 "Zero-Free Regions for $ \\zeta(s) $$"
+    :c13-s08 "Zero-Free Regions for $ \\zeta(s) $"
+    :c13-s09 "The Riemann Hypothesis"
+    :c13-s10 "Application to the Divisor Function"
+    :c13-s11 "Application to Euler's Totient"
+    :c13-s12 "Extension of Pólya's Inequality for Character Sums"
+    :c14 "Partitions"
+    :c14-s01 "Introduction"
+    :c14-s02 "Geometric Representation of Partitions"
+    :c14-s03 "Generating Functions for Partitions"
     :end t))
 
 (defun extract-string (string start-token end-token)
