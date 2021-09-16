@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Partial Sum of $ a_p $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Partial Sum of $ a_p $
+
+We have
+$$
+\log P(x) = \sum_{p \le x} \log\left( 1 - \frac{1}{p} \right).
+$$
+Thus
+\begin{align*}
+  \sum_{p \le x} a_p
+  &= \sum_{p \le x} -\log\left( 1 - \frac{1}{p} \right) - \frac{1}{p} \\
+  &= - \sum_{p \le x} \log\left( 1 - \frac{1}{p} \right) - \sum_{p \le x} \frac{1}{p} \\
+  &= - \log P(x) - \sum_{p \le x} \frac{1}{p}.
+\end{align*}
+
+</div>
+</textarea>
