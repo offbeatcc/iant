@@ -144,6 +144,14 @@
     :c14-s01 "Introduction"
     :c14-s02 "Geometric Representation of Partitions"
     :c14-s03 "Generating Functions for Partitions"
+    :c14-s04 "Euler's Pentagonal-Number Theorem"
+    :c14-s05 "Combinatorial Proof of Euler's Pentagonal-Number Theorem"
+    :c14-s06 "Euler's Recursion Formula for $ p(n) $"
+    :c14-s07 "An Upper Bound for $ p(n) $"
+    :c14-s08 "Jacobi's Triple Product Identity"
+    :c14-s09 "Consequences of Jacobi's Identity"
+    :c14-s10 "Logarithmic Differentiation of Generating Functions"
+    :c14-s11 "The Partition Identities of Ramanujan"
     :end t))
 
 (defun extract-string (string start-token end-token)
