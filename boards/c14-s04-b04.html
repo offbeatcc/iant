@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Elaborating Steps for $ F_n - F_{n-1} $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Elaborating Steps for $ F_n - F_{n-1} $
+
+\begin{align*}
+  F_n - F_{n-1}
+  &= \sum_{r=0}^n (-1)^r \frac{P_n}{P_r} x^{rn + g(r)} -
+  \sum_{r=0}^{n-1} (-1)^r \frac{P_{n-1}}{P_r} x^{r(n - 1) + g(r)} \\
+  &= \sum_{r=0}^n (-1)^r (1 - x^n) \frac{P_{n-1}}{P_r} x^{rn + g(r)} -
+  \sum_{r=0}^{n-1} (-1)^r \frac{P_{n-1}}{P_r} x^{r(n - 1) + g(r)} \\
+  &= (-1)^n \underbrace{(1 - x^n) \frac{P_{n-1}}{P_n}}_{= 1} x^{n^2 + g(n)} +
+  \sum_{r=0}^{n-1} (-1)^r (1 - x^n) \frac{P_{n-1}}{P_r} x^{rn + g(r)} -
+  \sum_{r=0}^{n-1} (-1)^r \frac{P_{n-1}}{P_r} x^{r(n - 1) + g(r)} \\
+  &= (-1)^n x^{n^2 + g(n)} +
+  \sum_{r=0}^{n-1} (-1)^r \frac{P_{n-1}}{P_r} x^{rn + g(r)} -
+  \sum_{r=0}^{n-1} (-1)^r \frac{P_{n-1}}{P_r} x^{(r + 1)n + g(r)} -
+  \sum_{r=0}^{n-1} (-1)^r \frac{P_{n-1}}{P_r} x^{r(n - 1) + g(r)} \\
+\end{align*}
+
+</div>
+</textarea>

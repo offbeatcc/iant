@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Generating Function for Euler's Pentagonal Theorem</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Generating Function for Euler's Pentagonal Theorem
+
+\begin{align*}
+  \prod_{m=1}^{\infty} (1 - x^m)
+  &= (1 - x)(1 - x^2)(1 - x^3)(1 - x^4)(1 - x^5)\dots \\
+  &= 1 + p(1)x + p(2)x^2 + p(3)x^3 + p(4)x^4 + p(5)x^5 + \dots.
+\end{align*}
+
+From above we get
+\begin{align*}
+  p(1)x &= -x, \\
+  p(2)x^2 &= -x^2, \\
+  p(3)x^3 &= (-x)(-x^2) + (-x^3) = 0, \\
+  p(4)x^4 &= (-x)(-x^3) + (-x^4) = 0, \\
+  p(5)x^5 &= (-x)(-x^4) + (-x^2)(-x^3) + (-x^5) = x^5, \\
+  &\;\,\vdots
+\end{align*}
+
+</div>
+</textarea>

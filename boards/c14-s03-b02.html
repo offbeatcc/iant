@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Generating Function for Partitions With Unequal Parts</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Generating Function for Partions With Unequal Parts
+
+\begin{align*}
+  \prod_{m=1}^{\infty} (1 + x^m)
+  &= (1 + x)(1 + x^2)(1 + x^3)(1 + x^4)\dots \\
+  &= 1 + p(1)x + p(2)x^2 + p(3)x^3 + p(4)x^4 + \dots.
+\end{align*}
+
+Considering the coefficient of $ x^4 $ on both sides, we get
+$$
+p(4) x^4 = x^1 x^3 + x^4 = 2 x^4.
+$$
+
+The two partitions of $ 4 $ with unequal parts are $ 1 + 3 $ and $ 4 $.
+
+</div>
+</textarea>
