@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Proof of Theorem 14.4</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Proof of Theorem 14.4
+
+From Theorem 14.2, for $ \lvert x \rvert < 1 $ we have
+$$
+\prod_{m=1}^{\infty} \frac{1}{1 - x^m} = \sum_{m=0}^{\infty} p(m) x^m.
+$$
+
+From Theorem 14.3, for $ \lvert x \rvert < 1 $ we have
+$$
+\prod_{m=1}^{\infty} (1 - x^m)
+= 1 + \sum_{k=1}^{\infty} (-1)^k \left\{ x^{\omega(k)} + x^{\omega(-k)} \right\}.
+$$
+
+Multiplying each side of the second equation with each side of the
+first equation,
+$$
+\left( 1 + \sum_{k=1}^{\infty} (-1)^k \left\{ x^{\omega(k)} + x^{\omega(-k)} \right\} \right)
+\left( \sum_{m=0}^{\infty} p(m) x^m \right)
+= \prod_{m=1}^{\infty} (1 - x^m) \prod_{m=1}^{\infty} \frac{1}{1 - x^m} = 1.
+$$
+
+</div>
+</textarea>

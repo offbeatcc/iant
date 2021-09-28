@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Illustration of Theorem 14.4</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Illustration of Theorem 14.4
+
+From Theorem 14.4, we can obtain
+$$
+p(n) = p(n - 1) + p(n - 2) - p(n - 5) - p(n - 7) + \dots
+$$
+
+Thus
+\begin{align*}
+  p(0) &= 1, \\
+  p(1) &= p(0) = 1, \\
+  p(2) &= p(1) + p(0) = 2, \\
+  p(3) &= p(2) + p(1) = 3, \\
+  p(4) &= p(3) + p(2) = 5, \\
+  p(5) &= p(4) + p(3) - p(0) = 7, \\
+  p(6) &= p(5) + p(4) - p(1) = 11, \\
+  p(7) &= p(6) + p(5) - p(2) - p(0) = 15.
+\end{align*}
+
+</div>
+</textarea>
