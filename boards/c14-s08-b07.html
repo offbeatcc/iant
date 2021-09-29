@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining Product Formula for $ G_x(e^{\pi i / 4}) $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining Product Formula for $ G_x(e^{\pi i / 4}) $
+
+We know that
+$$
+G_x(z) = \prod_{n=1}^{\infty} (1 - x^{2n})(1 + x^{2n - 1} z^2)(1 + x^{2n - 1} z^{-2}).
+$$
+
+Setting $ z = e^{\pi i/4} $ (thus $ z^2 = e^{\pi i/2} = i $ and $
+z^{-2} = -i $) we get
+\begin{align*}
+G_x(e^{\pi i/4})
+&= \prod_{n=1}^{\infty} (1 - x^{2n})(1 + x^{2n - 1} i)(1 - x^{2n - 1} i) \\
+&= \prod_{n=1}^{\infty} (1 - x^{2n})(1 - x^{4n - 2} i^2) \\
+&= \prod_{n=1}^{\infty} (1 - x^{2n})(1 + x^{4n - 2}). \\
+\end{align*}
+
+</div>
+</textarea>

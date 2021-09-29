@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining the Recursion Formula for Coefficients</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining the Recursion Formula for Coefficients
+
+$$
+G(z)
+= F(z) \prod_{n=1}^{\infty} (1 - x^{2n})
+= \sum_{m=-\infty}^{\infty} a_m z^{2m}.
+$$
+
+---
+
+$$
+xz^2 G(xz)
+= xz^2 F(xz) \prod_{n=1}^{\infty} (1 - x^{2n})
+= F(z) \prod_{n=1}^{\infty} (1 - x^{2n}) = G(z)
+= \sum_{m=-\infty}^{\infty} a_m z^{2m}.
+$$
+
+$$
+xz^2 G(xz)
+= xz^2 \sum_{m=-\infty}^{\infty} a_m x^{2m} z^{2m}
+= \sum_{m=-\infty}^{\infty} a_m x^{2m + 1} z^{2m + 2}.
+$$
+
+---
+
+Comparing the previous two equations, we get
+$$
+\sum_{m=-\infty}^{\infty} a_m z^{2m}
+= \sum_{m=-\infty}^{\infty} a_m x^{2m + 1} z^{2m + 2}.
+$$
+
+Comparing the terms involving $ z^{2m} $ on both sides, we get
+$$
+a_m z^{2m} = a_{m-1} x^{2m - 1} z^{2m}.
+$$
+
+Therefore
+$$
+a_m = a_{m-1} x^{2m - 1}.
+$$
+
+</div>
+</textarea>

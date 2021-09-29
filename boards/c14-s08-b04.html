@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Applying the Recursion Formula for Coefficients for Positive $ m $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Applying the Recursion Formula for Coefficients for Positive $ m $
+
+## Recursion Formula
+$$
+a_m = x^{2m - 1} a_{m - 1}.
+$$
+
+## Application
+
+\begin{align*}
+  a_m
+  &= x^{2m - 1} a_{m - 1} \\
+  &= (x^{2m - 1} x^{2m - 3}) a_{m - 2} \\
+  &= (x^{2m - 1} x^{2m - 3} x^{2m - 5}) a_{m - 3} \\
+  &\;\,\vdots \\
+  &= (x^{2m - 1} x^{2m - 3} x^{2m - 5} \dots x) a_0 \\
+  &= x^{m^2} a_0.
+\end{align*}
+
+</div>
+</textarea>

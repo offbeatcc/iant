@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Finding minimum for $ f(t) $ in the Note After Theorem 14.5</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Finding minimum for $ f(t) $ in the Note After Theorem 14.5
+
+We know that
+$$
+f(t) = \frac{\pi^2}{6t} + nt + \log t.
+$$
+
+
+## First Derivative Test
+
+Now we solve $ f'(t) = 0 $ as follows:
+$$
+- \frac{\pi^2}{6t^2} + n + \frac{1}{t} = 0.
+$$
+
+Multiplying both sides by $ t^2 $ we get,
+$$
+nt^2 + t - \frac{\pi^2}{6} = 0.
+$$
+
+Solving this quadratic equation and considering that $ t_0 > 0 $ we get
+the solution
+$$
+t
+= \frac{-1 + \sqrt{1 + 4n\pi^2/6}}{2n}
+= \frac{-1 + \sqrt{1 + 2n\pi^2/3}}{2n}.
+$$
+
+
+## Second Derivative Test
+
+We now find $ f''(t) $ as follows:
+$$
+f''(t)
+= \frac{2\pi^2}{6t^3} - \frac{1}{t^2}
+= \frac{1}{t^2} \left( \frac{\pi^2}{3t} - 1 \right).
+$$
+
+From the first derivative test we know that our solution $ t_0 $
+satisfies
+$$
+nt_0^2 + t_0 = \frac{\pi^2}{6}.
+$$
+
+Thus
+$$
+t_0 < \frac{\pi^2}{6} < \frac{\pi^2}{3}.
+$$
+
+Since $ t_0 > 0 $, from the above inequality we get,
+$$
+\frac{\pi^2}{3t_0} > 1.
+$$
+
+Thus
+$$
+\frac{1}{t_0} \left( \frac{\pi^2}{3t_0} - 1 \right) > 0.
+$$
+
+
+## Conclusion
+
+We have shown that
+\begin{align*}
+f'(t_0) &= 0, \\
+f''(t_0) &> 0,
+\end{align*}
+so $ t_0 $ is the minimum for $ f(t) $.
+
+</div>
+</textarea>

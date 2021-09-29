@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining Euler's Pentagonal Number Theorem from Jacobi's Identity</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining Euler's Pentagonal Number Theorem from Jacobi's Identity
+
+At the beginning of section 14.9, we have already obtained
+$$
+\prod_{n=1}^{\infty}
+(1 - x^{2na})
+(1 - x^{2na - a + b})
+(1 - x^{2na - a - b})
+= \sum_{m=-\infty}^{\infty} (-1)^m x^{am^2 + bm}.
+$$
+
+Substituting $ a = 3/2 $ and $ b = 1/2 $, we get
+$$
+\prod_{n=1}^{\infty}
+(1 - x^{3n})
+(1 - x^{3n - 3/2 + 1/2})
+(1 - x^{3n - 3/2 - 1/2})
+= \sum_{m=-\infty}^{\infty} (-1)^m x^{3m^2/2 + m/2}.
+$$
+
+Thus
+$$
+\prod_{n=1}^{\infty}
+(1 - x^{3n})
+(1 - x^{3n - 1})
+(1 - x^{3n - 2})
+= \sum_{m=-\infty}^{\infty} (-1)^m x^{\omega(-m)}.
+$$
+
+The above can be simplified to
+$$
+\prod_{m=1}^{\infty}
+(1 - x^{m})
+= \sum_{n=-\infty}^{\infty} (-1)^n x^{\omega(n)}.
+$$
+
+</div>
+</textarea>
