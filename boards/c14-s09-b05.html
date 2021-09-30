@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Rearrangement of Terms in Proof of Theorem 14.7</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Rearrangement of Terms in Proof of Theorem 14.7
+
+We obtained earlier,
+$$
+\prod_{n=1}^{\infty} (1 - x^{2n})(1 - x^{2n} z)\underbrace{(1 - x^{2n - 2}z^{-1})}
+= \sum_{m=0}^{\infty} (-1)^m x^{m^2 + m}\underbrace{(z^m - z^{-m - 1})}.
+$$
+
+Using the two relations obtained earlier, we get
+\begin{align*}
+(1 - z^{-1}) \prod_{n=1}^{\infty} (1 - x^{2n})&(1 - x^{2n} z)(1 - x^{2n}z^{-1}) \\
+&= (1 - z^{-1})\sum_{m=0}^{\infty} (-1)^m x^{m^2 + m}(1 + z^{-1} + z^{-2} + \dots + z^{-2m}) z^m.
+\end{align*}
+
+Cancelling $ (1 - z^{-1}) $ on both sides we get
+\begin{align*}
+\prod_{n=1}^{\infty} (1 - x^{2n})&(1 - x^{2n} z)(1 - x^{2n}z^{-1}) \\
+&= \sum_{m=0}^{\infty} (-1)^m x^{m^2 + m}(1 + z^{-1} + z^{-2} + \dots + z^{-2m}) z^m.
+\end{align*}
+
+</div>
+</textarea>

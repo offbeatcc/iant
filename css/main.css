@@ -48,14 +48,14 @@ pre kbd {
   color: #9c9;
 }
 pre, blockquote {
-  background: #111;
+  background: #011;
   padding: 0.5em;
 }
 pre {
   overflow: auto;
 }
 blockquote {
-  border-left: medium solid #444;
+  border-left: medium solid #344;
   margin: 1em 0;
 }
 blockquote :first-child {
@@ -99,5 +99,12 @@ footer .links a:last-child {
 .highlight {
   background: #011;
   color: #bbb;
-  border-color: #666}
+  border-color: #666;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.right th, .right td{
+  text-align: right;
 }

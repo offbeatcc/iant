@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining $ G'_A(x^m) $</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining $ G'_A(x^m) $
+
+We have
+$$
+G_A(x) = \sum_{n \in A} \frac{f(n)}{n} x^n.
+$$
+
+We obtain its derivative as follows:
+\begin{align*}
+  G'_A(x)
+  &= \frac{d}{dx} \sum_{n \in A} \frac{f(n)}{n} x^n \\
+  &= \sum_{n \in A} \frac{d}{dx} \frac{f(n)}{n} x^n \\
+  &= \sum_{n \in A} f(n) x^{n-1}.
+\end{align*}
+
+Thus
+$$
+  G'_A(x^m) = \sum_{n \in A} f(n) x^{m(n - 1)}.
+$$
+
+Multiplying $ x^m $ on both sides we get
+$$
+G'_A(x^m) x^m
+= \sum_{n \in A} f(n) x^{m(n - 1)} x^m
+= \sum_{n \in A} f(n) x^{mn}.
+$$
+
+</div>
+</textarea>

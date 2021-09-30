@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Obtaining Equation (24) of Theorem 14.8</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Obtaining Equation (24) of Theorem 14.8
+
+## Definition
+$$
+F_A(x) = \sum_{n=0}^{\infty} p_{A,f}(n) x^n.
+$$
+
+
+## Derivative
+$$
+F_A'(x) = \sum_{n=0}^{\infty} p_{A,f}(n) n x^{n-1}.
+$$
+
+
+## Equating Coefficients in (22)
+
+From equation (22) we have
+$$
+x F_A'(x) = F_A(x) \sum_{k=1}^{\infty} f_A(k) x^k.
+$$
+Replacing $ F_A'(x) $ and $ F_A(x) $ from above we get
+$$
+\sum_{n=0}^{\infty} p_{A,f}(n) n x^n
+= \left( \sum_{n=0}^{\infty} p_{A,f}(n) x^n \right)
+\left( \sum_{k=1}^{\infty} f_A(k) x^k \right).
+$$
+Comparing the coefficients of $ x^n $ we get
+$$
+n p_{A,f}(n) = \sum_{k=1}^n f_A(k) p_{A,f}(n - k).
+$$
+
+</div>
+</textarea>
