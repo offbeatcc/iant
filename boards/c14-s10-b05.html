@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Elaborating Example 2</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+We know that $ p_{A,f}(n) $ defined by
+
+$$
+\prod_{n \in A} (1 - x^n)^{-f(n)/n}
+= 1 + \sum_{n=1}^{\infty} p_{A,f}(n) x^n
+$$
+satisfies
+$$
+np_{A,f}(n) = \sum_{k=1}^n f_A(k) p_{A,f}(n - k)
+\qquad \text{ where } \qquad
+f_A(k) = \sum_{\substack{d \mid k \\ d \in A}} f(d).
+$$
+
+---
+
+Consider
+$$
+\prod_{n=1}^{\infty} (1 - x^n)
+= 1 + \sum_{n=-\infty}^{\infty} (-1)^n x^{\omega(n)}.
+$$
+Comparing with the first equation we see that
+$$
+A = \mathbb{N}, \quad
+f(n) = -n, \quad
+f_A(k) = -\sigma(k), \quad
+p_{A,f}(n) = \begin{cases}
+  (-1)^m \text{ if } n = \omega(\pm m), \\
+  0 \text{ otherwise.}
+\end{cases}
+$$
+Thus
+$$
+np_{A,f}(n) = -\sum_{k=1}^n \sigma(k) p_{A,f}(n - k).
+$$
+
+</div>
+</textarea>

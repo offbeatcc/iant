@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Result from Equation (25)</title>
+<script src="https://cdn.jsdelivr.net/npm/muboard"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Result from Equation (25)
+
+From equation (25) we have
+$$
+np_{A,f}(n)
+\begin{aligned}[t]
+  = -\sigma(n)
+  &- p_{A,f}(1) \sigma(n - 1) - p_{A,f}(2) \sigma(n - 2) - p_{A,f}(3) \sigma(n - 3) \\
+  &- p_{A,f}(4) \sigma(n - 4) - p_{A,f}(5) \sigma(n - 5) - p_{A,f}(6) \sigma(n - 6) \\
+  &- p_{A,f}(7) \sigma(n - 7) - p_{A,f}(8) \sigma(n - 8) - \dots
+\end{aligned}[t]
+$$
+Rearranging the terms we get
+$$
+\begin{aligned}[b]
+  \sigma(n)
+  &+ p_{A,f}(1) \sigma(n - 1) + p_{A,f}(2) \sigma(n - 2) + p_{A,f}(3) \sigma(n - 3) \\
+  &+ p_{A,f}(4) \sigma(n - 4) + p_{A,f}(5) \sigma(n - 5) + p_{A,f}(6) \sigma(n - 6) \\
+  &+ p_{A,f}(7) \sigma(n - 7) + p_{A,f}(8) \sigma(n - 8) + \dots
+\end{aligned}
+= -np_{A,f}(n).
+$$
+Since $ p_{A,f}(n) = 0 $ when $ n $ is not a pentagonal number we get
+$$
+\begin{aligned}[b]
+  \sigma(n)
+  &+ p_{A,f}(\omega(1)) \sigma(n - 1) + p_{A,f}(\omega(-1)) \sigma(n - 2) \\
+  &+ p_{A,f}(\omega(2)) \sigma(n - 5) + p_{A,f}(\omega(-2)) \sigma(n - 7) + \dots
+\end{aligned}
+  = -n p_{A,f}(n).
+$$
+Since $ p_{A,f}(\omega(m)) = p_{A,f}(\omega(-m)) = (-1)^m $ we get  
+\begin{align*}
+  \begin{aligned}[b]
+    \sigma(n)
+    &- \sigma(n - 1) - \sigma(n - 2) \\
+    &+ \sigma(n - 5) + \sigma(n - 7) + \dots
+  \end{aligned}
+  &= -n p_{A,f}(n) \\
+  &= \begin{cases}
+    -n (-1)^m & \text{ if } n = \omega(m) \text{ or } \omega(-m), \\
+    0 & \text{ otherwise}
+  \end{cases} \\
+  &= \begin{cases}
+    n (-1)^{m - 1} & \text{ if } n = \omega(m) \text{ or } \omega(-m), \\
+    0 & \text{ otherwise}
+  \end{cases} \\
+  &= \begin{cases}
+    (-1)^{m - 1} \omega(m) & \text{ if } n = \omega(m), \\
+    (-1)^{m - 1} \omega(-m) & \text{ if } n = \omega(-m), \\
+    0 & \text{ otherwise}.
+  \end{cases}
+\end{align*}
+
+</div>
+</textarea>
