@@ -1,7 +1,7 @@
 all: css boards
 
 css:
-	curl -sS https://offbeatcc.github.io/css/main.css -o css/main.css
+	curl -sS https://offbeatcc.github.io/css/main.css -o main.css
 
 boards: FORCE
 	sbcl --script boards.lisp
