@@ -108,3 +108,8 @@ footer .links a:last-child {
 .right th, .right td{
   text-align: right;
 }
+/* Meets */
+.future {
+  font-style: italic;
+  background: #011;
+}
