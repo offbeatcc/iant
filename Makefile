@@ -13,6 +13,6 @@ code: FORCE
 pub: all
 	git diff --exit-code
 	git push
-	cd ../offbeat && make pub
+	cd ../offbeat.cc && make pub
 
 FORCE:
